@@ -1,0 +1,13 @@
+{
+    "name": "wcs/projetklapaffaire",
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "authors": [
+        {
+            "name": "tanguilb",
+            "email": "tangui.lebourdonnec@gmail.com"
+        }
+    ],
+    "require": {}
+}
