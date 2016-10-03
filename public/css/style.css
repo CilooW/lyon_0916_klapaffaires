@@ -1,3 +1,37 @@
-header {
+
+
+#videoindex {
+
+        position: relative;
+        min-width: 100vw;
+        min-height: 100vh;
+        background: url(media/intro.jpg) no-repeat;
+        background-size: cover;
+
 
 }
+
+#videointro {
+
+        padding: 0;
+        margin:0;
+}
+
+#videointro .col-xs-12{
+
+        padding: 0;
+}
+
+#videointro, .introprez {
+
+        display: block;
+        clear: both;
+}
+
+.introprez p {
+
+        line-height: ;
+}
+
+
+
