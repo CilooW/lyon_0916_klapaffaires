@@ -9,10 +9,12 @@
 
     $window.scroll(function(){
         var scrollTop = $(this).scrollTop() + ($(window).height() / 2);
-        if (scrollTop > section.height()) {
+        if (scrollTop < section.height()) {
 
+            $logo.show();
+
+        } else {
             $logo.hide();
-
         }
 
     });
