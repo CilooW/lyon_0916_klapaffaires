@@ -1,74 +1,94 @@
-
-/**//**//**//**/
-/*FOOTER*/
-/**//**//**//**/
-
 #footer-global {
     background-color: #363636;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    color: #ffffff;
+    font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
 }
-
-#footer-global p {
-    color: #ffffff;
-}
-#footer-global a:hover {
-    text-decoration: none;
-}
-#footer-global button:hover {
-    color: #141414;
+.logo-footer,
+.social-container {
+    padding-top: 40px;
+    height: 150px;
 }
 
-.social li {
-    display: inline;
-    border-color: #f8f8f8;
-    padding-right: 15px;
-}
-
-.social-icons {
-    width: 30px;
-    padding-bottom: 10px;
-}
-
-#logo-footer {
-    display: block;
+.logo-klap {
     width: 180px;
-    margin-bottom: 10px;
-    margin-right: 15px;
+    display: block;
 }
 
-@media screen and (max-width: 1000px){
-    #logo-footer {
-        margin: 0 auto 10px auto;
+@media screen and (max-width: 1024px){
+    .logo-footer img {
+        margin: 0 auto;
     }
 }
 
-.call-to-action p {
-    text-align: center;
-    font-size: 0.9em;
+.social-container ul,
+.social-container p {
+    text-align: right;
 }
 
-#button-footer {
-    display:block;
-    width: 100px;
-    border-radius: 30px;
+@media screen and (max-width: 1024px){
+    .social-container ul,
+    .social-container p {
+        text-align: center;
+    }
+}
+
+.social {
+    display: block;
+    margin-right: 0;
+}
+
+.social li {
+    display: inline-block;
+    padding-right: 35px;
+    font-size: 1.5em;
+}
+
+
+.social li:hover {
+    color: #00a1e5;
+}
+
+.social-icons {
+    width: 35px;
+}
+
+.contact-container {
+    text-align: right;
+}
+
+.mentions-legales {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px){
+    .mentions-legales,
+    .contact-container {
+        text-align: center;
+    }
+}
+
+.contact-container button {
+    background-color: #00a1e5;
     color: #ffffff;
-    font-weight:500;
-    background: #00a1e5;
-    font-size: 0.8em;
-    line-height: 10px;
-    padding:5px;
-    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 100px;
     border: 0px;
-    margin: 0 auto 10px auto;
+    height: 25px;
 }
 
-#button-footer:hover {
-    background: #ffffff;
+.contact-container button:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 #mentions-legales {
     text-decoration: none;
-    color: #00a1e5;
+    color: #ffffff;
+}
+
+#mentions-legales:hover {
+    text-decoration: underline;
 }

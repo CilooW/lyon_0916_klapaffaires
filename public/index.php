@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600,700|Roboto+Condensed|Roboto:400,500,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<?php include 'footer2.php'; ?>
+<?php include 'footer.php'; ?>
 
 </body>
