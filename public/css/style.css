@@ -1,6 +1,11 @@
-<<<<<<< HEAD
-/* Navabar */
 
+/* Navabar */
+.navbar-inverse{
+    background:transparent;
+    background-image:none;
+    border-color:transparent;
+    box-shadow:none;
+}
 
 .navbar-header img {
     width: 200px;
@@ -16,8 +21,8 @@
 }
 
 #myNavbar a{
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #myNavbar li:last-child{
@@ -37,24 +42,13 @@
 
 }
 
-/*.navbar-brand{
-    visibility: hidden;
-}*/
+
 body {
     min-height: 3000px;
 }
 
 
-#texteJQ {
-    color: green;
-}
-
-#video {
-    background-color: blue;
-    height: 400px;
-}
-
-
+/* footer */
 #footer-global {
     background-color: #363636;
     color: #ffffff;
@@ -132,7 +126,7 @@ body {
     border-radius: 10px;
     margin-bottom: 40px;
     width: 100px;
-    border: 0px;
+    border: 0;
     height: 25px;
 }
 
@@ -148,5 +142,5 @@ body {
 
 #mentions-legales:hover {
     text-decoration: underline;
->>>>>>> masterdev
+
 }

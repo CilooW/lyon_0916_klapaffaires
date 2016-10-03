@@ -16,7 +16,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo-klap-affaires.png"/></a>
+            <a class="navbar-brand" href="#"><img class="logo-klap" src="img/logo-klap-affaires-det.png" alt="logo klap affaire"/></a>
 
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -36,10 +36,19 @@
             </ul>
 
         </div>
-        <div class="social_media">
-            <a class="navbar-icon" href="#"><img src="img/logo-facebook-klap-affaires.png"/></a>
+        <div class="col-xs-12 col-md-4 col-md-offset-5 social-container">
+
+            <ul class="social">
+                <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            </ul>
         </div>
+
     </div>
 </nav>
+
+
 <script type="text/javascript" src="js/headerhidden.js"></script>
 

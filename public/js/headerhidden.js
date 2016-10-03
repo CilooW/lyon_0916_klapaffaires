@@ -5,18 +5,31 @@
     var $window = $(window),
         $logo = $(".navbar-brand"),
         offset = 300,
-        section = $("#video");
+        social = $(".social"),
+        $navbar = $(".navbar-inverse"),
+        $elements = $('body').children();
+
+
 
     $window.scroll(function(){
-        var scrollTop = $(this).scrollTop() + ($(window).height() / 2);
-        if (scrollTop < section.height()) {
+        var scrollTop = $(this).scrollTop();
+        $elements.each(function(){
+            if (scrollTop < offset) {
 
-            $logo.show();
+                $logo.show();
+                social.show();
 
-        } else {
-            $logo.hide();
-        }
 
+
+
+
+            } else {
+                $logo.hide();
+                social.hide();
+                $navbar.css("background-color", "black");
+
+            }
+        })
     });
 
 

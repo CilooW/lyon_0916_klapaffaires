@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 /**
  * Created by PhpStorm.
