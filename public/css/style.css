@@ -1,3 +1,94 @@
-header {
+#footer-global {
+    background-color: #363636;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo-footer,
+.social-container {
+    padding-top: 40px;
+    height: 150px;
+}
 
+.logo-klap {
+    width: 180px;
+    display: block;
+}
+
+@media screen and (max-width: 1024px){
+    .logo-footer img {
+        margin: 0 auto;
+    }
+}
+
+.social-container ul,
+.social-container p {
+    text-align: right;
+}
+
+@media screen and (max-width: 1024px){
+    .social-container ul,
+    .social-container p {
+        text-align: center;
+    }
+}
+
+.social {
+    display: block;
+    margin-right: 0;
+}
+
+.social li {
+    display: inline-block;
+    padding-right: 35px;
+    font-size: 1.5em;
+}
+
+
+.social li:hover {
+    color: #00a1e5;
+}
+
+.social-icons {
+    width: 35px;
+}
+
+.contact-container {
+    text-align: right;
+}
+
+.mentions-legales {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px){
+    .mentions-legales,
+    .contact-container {
+        text-align: center;
+    }
+}
+
+.contact-container button {
+    background-color: #00a1e5;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 100px;
+    border: 0px;
+    height: 25px;
+}
+
+.contact-container button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#mentions-legales {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#mentions-legales:hover {
+    text-decoration: underline;
 }
