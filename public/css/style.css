@@ -1,11 +1,6 @@
 
 /* Navabar */
-.navbar-inverse{
-    background:transparent;
-    background-image:none;
-    border-color:transparent;
-    box-shadow:none;
-}
+
 
 .navbar-header img {
     width: 200px;
