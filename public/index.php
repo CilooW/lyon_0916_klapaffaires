@@ -77,14 +77,14 @@
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
 
-            <div class="row videos">
+           <div class="row videos">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
                     <iframe width="400" height="315" src="https://www.youtube.com/embed/-L-r0BfmlcM" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
                     <iframe width="400" height="315" src="https://www.youtube.com/embed/V9H8s565uvs" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
                     <iframe width="400" height="315" src="https://www.youtube.com/embed/uvPHZWMMMw4" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
