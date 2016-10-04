@@ -1,3 +1,12 @@
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: tangui
+ * Date: 29/09/16
+ * Time: 13:15
+ */
+?>
 <!DOCTYPE HTML>
 <html>
 
@@ -16,7 +25,8 @@
 </head>
 
 <body>
+<?php include 'header.php'; ?>
 
 <?php include 'footer.php'; ?>
-
 </body>
+

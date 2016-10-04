@@ -1,3 +1,66 @@
+/* Loader */
+/*
+.loader {
+
+    position : fixed;
+    z-index: 9999;
+    background : url('ajax-loader(1).gif') 50% 50% no-repeat #ffffff;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    cursor : wait;
+}
+
+
+/* Navabar */
+
+
+.navbar-header img {
+    width: 180px;
+}
+
+#myNavbar a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#myNavbar li{
+    border-right: 1px solid white;
+
+}
+.navbar .social-container{
+    padding-right: 40px;
+}
+.fa {
+    color: white;
+}
+
+.fa:hover{
+    color: #00a1e5;
+}
+#myNavbar a{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#myNavbar li:last-child{
+    border-right: none;
+}
+.navbar-nav{
+
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.social_media {
+    float: right;
+    margin-right: 50px;
+    height: 20px;
+    visibility: hidden;
+
+}
+
+
 /**//**/ /**//**/
 /* PAGE | VIDEO */
 /**//**/ /**//**/
@@ -54,7 +117,6 @@
 
 #video-presentation h2 {
     text-align: center;
-    margin-top: 75px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -65,25 +127,22 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+.img-presentation {
+    width : 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.text-presentation {
+    vertical-align: middle;
 }
 
 
 /**//**//**//**/
 /*   FOOTER   */
 /**//**//**//**/
+
 
 #footer-global {
     background-color: #363636;
@@ -137,9 +196,6 @@
     color: #00a1e5;
 }
 
-.social-icons {
-    width: 35px;
-}
 
 .contact-container {
     text-align: right;
@@ -156,20 +212,24 @@
         text-align: center;
     }
 }
-
+.category button,
 .contact-container button {
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
     margin-bottom: 40px;
-    width: 100px;
-    border: 0px;
-    height: 25px;
+    width: 150px;
+    border: 0;
+    height: 40px;
+    font-size: 0.9em;
 }
 
+.category button:hover,
 .contact-container button:hover {
     background-color: #ffffff;
     color: #000000;
+    border: 2px solid #363636;
+    font-size: 0.9em;
 }
 
 #mentions-legales {
@@ -179,4 +239,5 @@
 
 #mentions-legales:hover {
     text-decoration: underline;
+
 }
