@@ -28,14 +28,14 @@
 <body>
 
 
-<div id="maintitle">
+<div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
     <h1>Votre vidéo professionnelle est ici</h1>
 </div>
 
     <div id="videointro">
-        <div class="greyopacity"></div>
-        <div">
-            <video autoplay loop poster="media/intro.jpg" id="videoindex" >
+
+        <div>
+            <video autoplay loop poster="media/intro.jpg" id="videoindex" class = "hidden-xs hidden-sm"  >
                 <source src="media/intro.webm" type="video/webm">
                 <source src="media/intro.mp4" type="video/mp4">
             </video>
@@ -73,18 +73,18 @@
 
     <section id="nosvideos" class="container-fluid">
 
-        <div class="col-xs-8 col-xs-offset-2 text-center">
+        <div class="col-xs-12 text-center">
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
 
             <div class="row videos">
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
                     <iframe width="400" height="315" src="https://www.youtube.com/embed/-L-r0BfmlcM" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <iframe width="400" height="315" src="https://www.youtube.com/embed/V9H8s565uvs" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <iframe width="400" height="315" src="https://www.youtube.com/embed/uvPHZWMMMw4" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -108,12 +108,14 @@
 
 
 
-    <section>
+    <section class="container-fluid">
         <div class="col-xs-8 col-xs-offset-2 text-center temoignage">
             <h1>Témoignages</h1>
 
             <div class="row">
-                <img class="col-md-4 col-xs-12 img-circle" src="img/temoin.png">
+                    <div class="col-xs-12 col-md-4 img-circle temoin">
+                    <img  src="img/temoin.png">
+                    </div>
                 <p class="col-xs-12 col-md-8">Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
 
                     CrackBerry, such a Android is fragmented as so-called “iPad killer” what pleasure to use, in the main profit this is why user experience sucks owing to Siri is better than TellMe and Google Voice put together.

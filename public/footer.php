@@ -9,7 +9,7 @@
 
 <footer class="container-fluid" id="footer-global">
     <div class="container">
-        <div class="row" class="wrap-footer">
+        <div class="row">
 
             <div class="col-xs-12 col-md-3 logo-footer">
                 <a href="index.php"><img class="logo-klap" src="img/logo-klap-affaires-det.png"></a>

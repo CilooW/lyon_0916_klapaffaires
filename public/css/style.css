@@ -4,27 +4,57 @@ html body {
         padding: 0;
 }
 
+p  {
+    padding: 30px;
+    line-height: 30px; }
+
+section {
+    min-height : 300px;
+    display: flex;
+
+}
+
+section div {
+    margin : auto
+}
+
+.imgfix {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
 #maintitle h1 {
         position : absolute;
         color : white;
         font-size: 6em;
         z-index: 5;
-        margin-left: 15%;
         margin-top: 25%;
+        text-align: center;
 
 }
 
 
-#videoindex {
+@media screen and (max-width: 1024px){
+    #maintitle h1 {
+
+        margin-top: 45%;
+    }
+}
+
+
+#videoindex, #videointro {
 
         position: relative;
-        min-width: 100vw;
+        min-width: 100%;
         min-height: 100vh;
         background: url(../media/intro.jpg) no-repeat;
         background-size: cover;
 }
 
-.greyopacity {
+/*.greyopacity {
         position: absolute;
         min-width: 100vw;
         min-height: 108vh;
@@ -32,7 +62,7 @@ html body {
         background-size: cover;
         z-index: 4;
         opacity: 0.6;
-}
+}*/
 
 
 #introprez {
@@ -50,39 +80,33 @@ html body {
         background-image: url(../img/lyon.jpg);
 }
 
-.imgfix {
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-
-}
-
-section {
-        min-height : 300px;
-        display: flex;
-
-}
-
-section div {
-        margin : auto
-}
-
 .videos {
         margin-top : 20px;
         margin-bottom: 20px;
 
 }
 
-.temoignage img{
-        width: 250px;
+
+@media screen and (max-width: 1024px){
+    .temoin {
+        width: 100%;
+        display: block;
+
+    }
+
+    .temoignage img {
+        margin: 0 auto;
+        display: block;
+    }
 }
 
- p  {
-        padding: 30px;
-        line-height: 30px; }
 
 
+/*
+                                         ***footer***
+                                        ----------------
+                                        ----------------
+*/
 
 #footer-global {
     background-color: #363636;
