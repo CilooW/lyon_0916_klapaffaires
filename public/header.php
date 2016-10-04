@@ -25,7 +25,7 @@
 
                 <li><a href="#">Nos prestations</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos vidéos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Catégorie 1</a></li>
                         <li><a href="#">Catégorie 2</a></li>
@@ -36,7 +36,7 @@
             </ul>
 
         </div>
-        <div class="col-xs-12 col-md-4 col-md-offset-5 social-container">
+        <div class="col-xs-12 col-md-4 col-md-offset-8 social-container">
 
             <ul class="social">
                 <li><i class="fa fa-youtube" aria-hidden="true"></i></li>

@@ -3,7 +3,7 @@
 
 
 .navbar-header img {
-    width: 200px;
+    width: 180px;
 }
 
 #myNavbar a:hover{
@@ -14,7 +14,16 @@
     border-right: 1px solid white;
 
 }
+.navbar .social-container{
+    padding-right: 40px;
+}
+.fa {
+    color: white;
+}
 
+.fa:hover{
+    color: #00a1e5;
+}
 #myNavbar a{
     padding-top: 0;
     padding-bottom: 0;
@@ -95,9 +104,6 @@ body {
     color: #00a1e5;
 }
 
-.social-icons {
-    width: 35px;
-}
 
 .contact-container {
     text-align: right;
