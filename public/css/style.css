@@ -43,16 +43,119 @@
     margin-right: 50px;
     height: 20px;
     visibility: hidden;
+}
+html body {
+        margin: 0;
+        padding: 0;
+}
+
+p  {
+    padding: 30px;
+    line-height: 30px; }
+
+section {
+    min-height : 300px;
+    display: flex;
+
+}
+
+section div {
+    margin : auto
+}
+
+.imgfix {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+#maintitle h1 {
+        position : absolute;
+        color : white;
+        font-size: 6em;
+        z-index: 5;
+        margin-top: 25%;
+        text-align: center;
 
 }
 
 
-body {
-    min-height: 3000px;
+@media screen and (max-width: 1024px){
+    #maintitle h1 {
+
+        margin-top: 45%;
+    }
 }
+
+
+#videoindex, #videointro {
+
+        position: relative;
+        min-width: 100%;
+        min-height: 100vh;
+        background: url(../media/intro.jpg) no-repeat;
+        background-size: cover;
+}
+
+/*.greyopacity {
+        position: absolute;
+        min-width: 100vw;
+        min-height: 108vh;
+        background-color: black;
+        background-size: cover;
+        z-index: 4;
+        opacity: 0.6;
+}*/
+
+
+#introprez {
+        background: white;
+        clear: both;
+}
+
+#videaste{
+        background-image: url(../img/videaste_index.jpg);
+
+
+}
+
+#imgtransition {
+        background-image: url(../img/lyon.jpg);
+}
+
+.videos {
+        margin-top : 20px;
+        margin-bottom: 20px;
+}
+
+
 
 
 /* footer */
+
+@media screen and (max-width: 1024px){
+    .temoin {
+        width: 100%;
+        display: block;
+
+    }
+
+    .temoignage img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+
+/*
+                                         ***footer***
+                                        ----------------
+                                        ----------------
+*/
+
 #footer-global {
     background-color: #363636;
     color: #ffffff;
