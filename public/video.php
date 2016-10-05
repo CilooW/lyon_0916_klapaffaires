@@ -25,7 +25,6 @@
 
 <body>
     <?php include 'header.php'; ?>
-    <div class="loader"></div>
 
     <header class="container-fluid" id="img-header-video">
         <div class="container">
