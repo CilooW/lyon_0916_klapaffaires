@@ -1,3 +1,9 @@
+/* Html */
+
+html p h1 h2 h3 a ul  {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Loader */
 /*
 .loader {
@@ -135,7 +141,12 @@
 }
 
 .text-presentation {
-    vertical-align: middle;
+    padding-top: 9%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-presentation2 {
+    text-align: center;
 }
 
 
@@ -149,6 +160,7 @@
     color: #ffffff;
     font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
 }
 
 .logo-footer,

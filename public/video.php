@@ -84,19 +84,30 @@
                 <h2>Hook numéro 3</h2>
                 <h3><em>Sous-titre description texte.</em></h3>
             </div>
-            <div class="col-xs-12 col-md-6">
-                <img class="img-presentation" src="img/reportage-video-lyon-klap-affaires.jpeg" alt="#">
-            </div>
-            <div class="col-xs-12 col-md-6 text-presentation">
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!
-                </p>
-            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <img class="img-presentation" src="img/reportage-video-lyon-klap-affaires.jpeg" alt="#">
+                </div>
+                <div class="col-xs-12 col-md-6 text-presentation">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!
+                    </p>
+                </div>
 
+                <div class="col-xs-12 text-presentation2">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <?php include 'footer.php'; ?>
