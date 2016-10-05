@@ -19,12 +19,12 @@
 <body>
     <?php include 'header.php'; ?>
 
-    <header class="container-fluid" id="img-header-video">
+    <header class="container-fluid" id="#">
         <div class="container">
             <h1>Spécialiste du <strong>publireportage</strong> vidéo!</h1>
-            <video autoplay loop poster="polina.jpg" id="bgvid">
-                <source src="polina.webm" type="video/webm">
-                <source src="polina.mp4" type="video/mp4">
+            <video autoplay loop poster="img/lyon.jpg" id="bgvid">
+                <source src="media/intro.webm" type="video/webm">
+                <source src="media/intro.mp4" type="video/mp4">
             </video>
         </div>
     </header>

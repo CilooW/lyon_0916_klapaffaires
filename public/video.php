@@ -28,6 +28,7 @@
         <div class="container video-category">
             <h2>Nos catégories</h2>
             <hr />
+            <h3><em>Courte description.</em></h3>
             <ul class="category">
                 <li><button>Catégorie 1</button></li>
                 <li><button>Catégorie 2</button></li>

@@ -5,6 +5,11 @@ html p h1 h2 h3 a ul  {
     line-height: 15px;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 hr {
     width: 50px;
     height: 1px;
@@ -48,8 +53,8 @@ hr {
 #myNavbar li:last-child{
     border-right: none;
 }
-.navbar-nav{
 
+.navbar-nav{
     margin-top: 40px;
     margin-right: 50px;
 }
@@ -60,6 +65,33 @@ hr {
     height: 20px;
     visibility: hidden;
 }
+
+
+/**//**/ /**//**/
+/* PAGE | INDEX2 */
+/**//**/ /**//**/
+
+
+video #bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(../img/lyon.jpg) no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+        background: url(../img/lyon.jpg) #000 no-repeat center center fixed; }
+    #bgvid {
+        display: none; }
+}
+
 
 /**//**/ /**//**/
 /* PAGE | INDEX */
@@ -210,7 +242,8 @@ section div {
     text-align: center;
 }
 
-#video-presentation h3 {
+#video-presentation h3,
+.video-category h3 {
     font-size: 1.2em;
     text-align: center;
     padding: 0px 0px 30px 0px;
