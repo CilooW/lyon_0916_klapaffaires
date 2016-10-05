@@ -106,6 +106,7 @@ section div {
         height: 100vh;
         background: url(../img/intro.jpg) no-repeat;
         background-size: cover;
+        object-fit: cover;
 
 }
 
