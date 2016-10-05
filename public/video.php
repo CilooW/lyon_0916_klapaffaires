@@ -1,11 +1,3 @@
-<?php
-/**
- * User: riad
- * Date: 03/10/16
- * Time: 14:34
- */
-?>
-
 <!DOCTYPE HTML>
 <html>
 
@@ -35,6 +27,7 @@
     <section class="container-fluid">
         <div class="container video-category">
             <h2>Nos catégories</h2>
+            <hr />
             <ul class="category">
                 <li><button>Catégorie 1</button></li>
                 <li><button>Catégorie 2</button></li>
@@ -49,6 +42,7 @@
         <div class="container">
             <div class="col-xs-12">
                 <h2>Hook numéro 2</h2>
+                <hr />
                 <h3><em>Courte description sur les vidéos.</em></h3>
             </div>
         </div>
@@ -75,12 +69,12 @@
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/azsPDiSR7UU" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/hFoP9jEuxaY" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/J14lEp-U954" allowfullscreen></iframe>
                 </div>
@@ -92,6 +86,7 @@
         <div class="container">
             <div class="col-xs-12">
                 <h2>Hook numéro 3</h2>
+                <hr />
                 <h3><em>Sous-titre description texte.</em></h3>
             </div>
             <div class="row">

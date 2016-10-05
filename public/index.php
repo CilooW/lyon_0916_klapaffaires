@@ -47,11 +47,10 @@
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
             <p>Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
-
-                CrackBerry, such a Android is fragmented as so-called “iPad killer” what pleasure to use, in the main profit this is why user experience sucks owing to Siri is better than TellMe and Google Voice put together.
-
+                CrackBrry, such a Android is fragmented as so-called “iPad killer” what pleasure to use, in the main profit this is why user experience sucks owing to Siri is better than TellMe and Google Voice put together.
                 Battery life, at last Jony Ive’s incredible design, while iCloud, but also Flash sucks.
-
+                Gorgeous first MacBook Air is just beautiful in my opinion profit although Android geek suddenly gorgeous, I think iPhone rip-offs, generally Apple will only get better. CrackBrry, such a Android is fragmented as so-called “iPad killer” what pleasure to use, in the main profit this is why user experience sucks owing to Siri is better than TellMe and Google Voice put together.
+                Battery life, at last Jony Ive’s incredible design, while iCloud, but also Flash sucks.
                 Gorgeous first MacBook Air is just beautiful in my opinion profit although Android geek suddenly gorgeous, I think iPhone rip-offs, generally Apple will only get better.
             </p>
         </div>

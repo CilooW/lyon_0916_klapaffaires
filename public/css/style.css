@@ -5,6 +5,13 @@ html p h1 h2 h3 a ul  {
     line-height: 15px;
 }
 
+hr {
+    width: 50px;
+    height: 1px;
+    border: 1px solid;
+    background-color: #363636;
+}
+
 
 /* Navbar */
 
@@ -76,7 +83,7 @@ section {
 section div {
     margin : auto
 }
-*/
+*//*
 
 .imgfix {
     background-attachment: fixed;
@@ -181,7 +188,6 @@ section div {
 .video-category h2 {
     text-align: center;
     padding-top: 35px;
-    padding-bottom: 20px;
 }
 
 .video-category ul {
