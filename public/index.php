@@ -22,12 +22,121 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+
 </head>
 
 <body>
-<?php include 'header.php'; ?>
+<!-- ?php include 'header.php'; ?-->
+
+
+
+
+
+<div>
+
+    <div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+        <h1>Votre vidéo professionnelle est ici</h1>
+    </div>
+
+    <video autoplay loop poster="media/intro.jpg" id="videointro" class = "hidden-xs hidden-sm">
+        <source src="media/intro.webm" type="video/webm">
+        <source src="media/intro.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+
+    <section id="introprez" >
+
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+            <h1>Titre d'accroche</h1>
+            <h2> Sous titre</h2>
+            <p>Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
+
+                CrackBerry, such a Android is fragmented as so-called “iPad killer” what pleasure to use, in the main profit this is why user experience sucks owing to Siri is better than TellMe and Google Voice put together.
+
+                Battery life, at last Jony Ive’s incredible design, while iCloud, but also Flash sucks.
+
+                Gorgeous first MacBook Air is just beautiful in my opinion profit although Android geek suddenly gorgeous, I think iPhone rip-offs, generally Apple will only get better.
+            </p>
+        </div>
+    </section>
+
+    <section class="imgfix" id="videaste">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+
+            <h1 class="text-center">Titre d'accroche</h1>
+
+        </div>
+
+    </section>
+
+
+    <section id="nosvideos" class="container-fluid">
+
+        <div class="col-xs-12 text-center">
+            <h1>Titre d'accroche</h1>
+            <h2> Sous titre</h2>
+
+
+            <div class="row videos">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <iframe class="youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 ">
+                    <iframe class="youtube"  src="https://www.youtube.com/embed/V9H8s565uvs" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 ">
+                    <iframe class="youtube"  src="https://www.youtube.com/embed/uvPHZWMMMw4" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+            <p>Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
+
+                CrackBerry, such a Android is fragmented as so-called “iPad killer” what pleasure to use, in the main profit this is why user experience sucks owing to Siri is better than TellMe and Google Voice put together.
+
+                Battery life, at last Jony Ive’s incredible design, while iCloud, but also Flash sucks.
+
+                Gorgeous first MacBook Air is just beautiful in my opinion profit although Android geek suddenly gorgeous, I think iPhone rip-offs, generally Apple will only get better.
+            </p>
+
+        </div>
+    </section>
+
+
+
+    <section class="imgfix container-fluid" id="imgtransition">
+    </section>
+
+
+
+    <section class="container-fluid">
+        <div class="col-xs-8 col-xs-offset-2 text-center temoignage">
+            <h1>Témoignages</h1>
+
+            <div class="row">
+                    <div class="col-xs-12 col-md-4 img-circle temoin">
+                    <img  src="img/temoin.png">
+                    </div>
+                <p class="col-xs-12 col-md-8">Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
+
+                    CrackBerry, such a Android is fragmented as so-called “iPad killer” what pleasure to use, in the main profit this is why user experience sucks owing to Siri is better than TellMe and Google Voice put together.
+
+                    Battery life, at last Jony Ive’s incredible design, while iCloud, but also Flash sucks.
+
+                    Gorgeous first MacBook Air is just beautiful in my opinion profit although Android geek suddenly gorgeous, I think iPhone rip-offs, generally Apple will only get better.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
 
 <?php include 'footer.php'; ?>
 
-</body>
 
