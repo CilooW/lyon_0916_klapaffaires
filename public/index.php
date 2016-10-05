@@ -26,27 +26,27 @@
 </head>
 
 <body>
-<?php include 'header.php'; ?>
+<!-- ?php include 'header.php'; ?-->
 
 
-<div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-    <h1>Votre vidéo professionnelle est ici</h1>
-</div>
 
-    <div id="videointro">
 
-        <div>
-            <video autoplay loop poster="media/intro.jpg" id="videoindex" class = "hidden-xs hidden-sm"  >
-                <source src="media/intro.webm" type="video/webm">
-                <source src="media/intro.mp4" type="video/mp4">
-            </video>
-        </div>
+
+<div>
+
+    <div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+        <h1>Votre vidéo professionnelle est ici</h1>
     </div>
 
+    <video autoplay loop poster="media/intro.jpg" id="videointro" class = "hidden-xs hidden-sm">
+        <source src="media/intro.webm" type="video/webm">
+        <source src="media/intro.mp4" type="video/mp4">
+    </video>
+
+</div>
 
 
-
-    <section id="introprez" class="container-fluid">
+    <section id="introprez" >
 
         <div class="col-xs-8 col-xs-offset-2 text-center">
             <h1>Titre d'accroche</h1>
@@ -79,14 +79,14 @@
             <h2> Sous titre</h2>
 
             <div class="row videos">
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
-                    <iframe width="400" height="315" src="https://www.youtube.com/embed/-L-r0BfmlcM" frameborder="0" allowfullscreen></iframe>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <iframe class="youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <iframe width="400" height="315" src="https://www.youtube.com/embed/V9H8s565uvs" frameborder="0" allowfullscreen></iframe>
+                <div class="col-xs-12 col-sm-12 col-md-4 ">
+                    <iframe class="youtube"  src="https://www.youtube.com/embed/V9H8s565uvs" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <iframe width="400" height="315" src="https://www.youtube.com/embed/uvPHZWMMMw4" frameborder="0" allowfullscreen></iframe>
+                <div class="col-xs-12 col-sm-12 col-md-4 ">
+                    <iframe class="youtube"  src="https://www.youtube.com/embed/uvPHZWMMMw4" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
