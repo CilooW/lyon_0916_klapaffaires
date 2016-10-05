@@ -29,14 +29,14 @@
 <?php include 'header.php'; ?>
 
 
+<div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Votre vidéo professionnelle est ici</h1>
+</div>
 
 
+<div class="videointro">
 
-<div>
 
-    <div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-        <h1>Votre vidéo professionnelle est ici</h1>
-    </div>
 
     <video autoplay loop poster="media/intro.jpg" id="videointro" class = "hidden-xs hidden-sm">
         <source src="media/intro.webm" type="video/webm">
@@ -44,6 +44,7 @@
     </video>
 
 </div>
+
 
 
     <section id="introprez" >
