@@ -56,24 +56,37 @@
             </div>
         </div>
 
-        <div class="container-fluid container-video">
-            <div class="col-xs-12 col-sm-6 col-md-4 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-L-r0BfmlcM" frameborder="0" allowfullscreen></iframe>
+        <div class="container-fluid">
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V9H8s565uvs" frameborder="0" allowfullscreen></iframe>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/V9H8s565uvs" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/guXg_5jczsk" frameborder="0" allowfullscreen></iframe>
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/guXg_5jczsk" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/azsPDiSR7UU" frameborder="0" allowfullscreen></iframe>
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/azsPDiSR7UU" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hFoP9jEuxaY" frameborder="0" allowfullscreen></iframe>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/hFoP9jEuxaY" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J14lEp-U954" frameborder="0" allowfullscreen></iframe>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/J14lEp-U954" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -94,11 +107,13 @@
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
                         quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!
+                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntureaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntureaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                        quia voluptas sit aspernatur aut odit aut fugit!
                     </p>
                 </div>
 
-                <div class="col-xs-12 text-presentation2">
+                <div class="col-xs-12 text-presentation">
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
