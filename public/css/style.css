@@ -2,21 +2,9 @@
 
 html p h1 h2 h3 a ul  {
     font-family: 'Open Sans', sans-serif;
+    line-height: 15px;
 }
 
-/* Loader */
-/*
-.loader {
-
-    position : fixed;
-    z-index: 9999;
-    background : url('ajax-loader(1).gif') 50% 50% no-repeat #ffffff;
-    top : 0px;
-    left : 0px;
-    height : 100%;
-    width : 100%;
-    cursor : wait;
-}
 
 /* Navbar */
 
@@ -29,13 +17,15 @@ html p h1 h2 h3 a ul  {
     text-decoration: underline;
     text-decoration-color: white;
 }
+
 #myNavbar li{
     border-right: 1px solid white;
-
 }
+
 .navbar .social-container{
     padding-right: 40px;
 }
+
 .fa {
     color: white;
 }
@@ -67,6 +57,7 @@ html p h1 h2 h3 a ul  {
 /**//**/ /**//**/
 /* PAGE | INDEX */
 /**//**/ /**//**/
+/*
 
 html, body {
     margin: 0;
@@ -75,9 +66,7 @@ html, body {
     overflow-x: hidden;
 }
 
-p  {
-    padding: 30px;
-    line-height: 30px; }
+
 
 section {
     min-height : 300px;
@@ -87,21 +76,29 @@ section {
 section div {
     margin : auto
 }
+*/
 
 .imgfix {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 300px;
+    position: relative;
 }
 
 #maintitle h1 {
     position : absolute;
-    color : white;
-    font-size: 6em;
-    z-index: 5;
-    margin-top: 25%;
     text-align: center;
+    font-size: 4em;
+    padding-top: 20%;
+    padding-left: 10%;
+    color: #ffffff;
+    z-index: 5;
+}
+
+#maintitle strong {
+    color: #00a1e5;
 }
 
 @media screen and (max-width: 1024px){
@@ -121,6 +118,7 @@ section div {
 
 #introprez {
     background: white;
+    height: 300px;
     clear: both;
 }
 
@@ -130,7 +128,6 @@ section div {
 
 #imgtransition {
     background-image: url(../img/lyon.jpg);
->>>>>>> masterdev
 }
 
 .videos {
@@ -172,7 +169,7 @@ section div {
 
 #img-header-video h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     padding-top: 30%;
     color: #ffffff;
 }

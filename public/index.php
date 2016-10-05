@@ -29,10 +29,9 @@
 
 <?php include 'header.php'; ?>
 
-    <div>
-
-        <div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-            <h1>Votre vidéo professionnelle est ici</h1>
+    <div id="maintitle" class ="container-fluid">
+        <div class ="container">
+            <h1>Votre vidéo <strong>professionnelle</strong> est ici</h1>
         </div>
 
         <video autoplay loop poster="media/intro.jpg" id="videointro" class = "hidden-xs hidden-sm">
@@ -71,16 +70,22 @@
             <h2> Sous titre</h2>
 
 
-            <div class="row videos">
-                <div class="col-xs-12 col-sm-12 col-md-4">
-                    <iframe class="youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" frameborder="0" allowfullscreen></iframe>
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 ">
-                    <iframe class="youtube"  src="https://www.youtube.com/embed/V9H8s565uvs" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 ">
-                    <iframe class="youtube"  src="https://www.youtube.com/embed/uvPHZWMMMw4" frameborder="0" allowfullscreen></iframe>
 
+                <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/V9H8s565uvs" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/guXg_5jczsk" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 

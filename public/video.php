@@ -28,8 +28,7 @@
 
     <header class="container-fluid" id="img-header-video">
         <div class="container">
-            <h1>Spécialiste du <span><strong>publireportage</strong></span> vidéo!</h1>
-
+            <h1>Spécialiste du <strong>publireportage</strong> vidéo!</h1>
         </div>
     </header>
 
