@@ -2,7 +2,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: tangui
+ * User: Ciloo & Yann
  * Date: 29/09/16
  * Time: 13:15
  */
@@ -35,8 +35,6 @@
 
 
 <div class="videointro">
-
-
 
     <video autoplay loop poster="media/intro.jpg" id="videointro" class = "hidden-xs hidden-sm">
         <source src="media/intro.webm" type="video/webm">
