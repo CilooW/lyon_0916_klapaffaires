@@ -34,20 +34,20 @@
 </div>
 
 
-<div class="videointro">
+<section class="videointro">
 
     <video autoplay loop poster="media/intro.jpg" id="videointro" class = "hidden-xs hidden-sm">
         <source src="media/intro.webm" type="video/webm">
         <source src="media/intro.mp4" type="video/mp4">
     </video>
 
-</div>
+</section>
 
 
 
-    <section id="introprez" >
+    <section class ="bgwhite" >
 
-        <div class="col-xs-8 col-xs-offset-2 text-center">
+        <div class="col-xs-8 col-xs-offset-2 text-center ">
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
             <p>Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
