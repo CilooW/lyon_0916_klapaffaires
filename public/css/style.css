@@ -17,7 +17,6 @@ hr {
     background-color: #363636;
 }
 
-
 /* Navbar */
 
 
@@ -67,31 +66,6 @@ hr {
 }
 
 
-/**//**/ /**//**/
-/* PAGE | INDEX2 */
-/**//**/ /**//**/
-
-
-video #bgvid {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background: url(../img/lyon.jpg) no-repeat;
-    background-size: cover;
-}
-
-@media screen and (max-device-width: 800px) {
-    html {
-        background: url(../img/lyon.jpg) #000 no-repeat center center fixed; }
-    #bgvid {
-        display: none; }
-}
-
 
 /**//**/ /**//**/
 /* PAGE | INDEX */
@@ -115,7 +89,7 @@ section {
 section div {
     margin : auto
 }
-*//*
+*/
 
 .imgfix {
     background-attachment: fixed;
@@ -201,8 +175,14 @@ section div {
     clear: both;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
     #img-header-video {
+        height: 500px;
+    }
+
+}@media screen and (max-width: 600px){
+    #img-header-video {
+        height: 400px;
     }
 }
 
@@ -213,6 +193,18 @@ section div {
     color: #ffffff;
 }
 
+@media screen and (max-width: 1200px){
+    #img-header-video h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 640px){
+    #img-header-video h1 {
+        font-size: 2em;
+        line-height: 50px;
+    }
+}
 #img-header-video strong {
     color: #00a1e5;
 }
