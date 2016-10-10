@@ -34,29 +34,29 @@
         <div id="formulaire" class="container">
             <h1>Un projet de film?</h1>
             <div class="col-xs-12 col-md-4 col-md-offset-4">
-'            <form>
+'            <form method="post" action="../src/form.php">
                 <div class="form-group">
                     <label for="Nom">Votre Nom</label>
-                    <input type="text" class="form-control" id="Nom" placeholder="Votre Nom">
+                    <input type="text" class="form-control" name="Nom" id="Nom" placeholder="Votre Nom">
                 </div>
                 <div class="form-group">
                     <label for="Prenom">Votre Prénom</label>
-                    <input type="text" class="form-control" id="Prenom" placeholder="Votre Prenom">
+                    <input type="text" class="form-control" name="Prenom" id="Prenom" placeholder="Votre Prenom">
                 </div>
 
                 <div class="form-group">
                     <label for="Email">Votre Mail</label>
-                    <input type="email" class="form-control" id="Email" placeholder="Votre Email">
+                    <input type="email" class="form-control" name="Email" id="Email" placeholder="Votre Email">
                 </div>
 
                 <div class="form-group">
                     <label for="Societe">Votre Société</label>
-                    <input type="text" class="form-control" id="Societe" placeholder="Votre Societe">
+                    <input type="text" class="form-control" name="Societe" id="Societe" placeholder="Votre Societe">
                 </div>
 
                 <div class="form-group">
                     <label for="Message">Votre Message</label>
-                    <textarea class="form-control" id="Message" placeholder="Votre Message" rows="10"></textarea>
+                    <textarea class="form-control" name="Message" id="Message" placeholder="Votre Message" rows="10"></textarea>
                 </div>
 
 
