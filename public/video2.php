@@ -48,39 +48,110 @@
         </div>
     </div>
 
-    <div class="grid">
-        <figure class="effect-zoe">
+    <div class="container-fluid">
+        <div class="grid">
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
-                </div>
+                <figure class="effect-zoe">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/J0NJ-2f66NQ" allowfullscreen></iframe>
+                    </div>
+                <figcaption>
+                    <h2>Cliquez et partagez notre vidéo sur les réseaux sociaux :</h2>
+                    <p class="icon-links">
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </p>
+                    <p class="description">Autour de la photographie, seront réunis des artistes de tous univers comme des danseurs, des acrobates, des cracheurs de feu…</p>
+                </figcaption>
+                </figure>
             </div>
-            <figcaption>
-                <h2>Titre <span>Video</span></h2>
-                <p class="icon-links">
-                    <a href="#"><span class="icon-heart"></span></a>
-                    <a href="#"><span class="icon-eye"></span></a>
-                    <a href="#"><span class="icon-paper-clip"></span></a>
-                </p>
-                <p class="description">Description de notre video</p>
-            </figcaption>
-        </figure>
 
-        <figure class="effect-zoe">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
-                </div>
-            <figcaption>
-                <h2>Titre <span>Video</span></h2>
-                <p class="icon-links">
-                    <a href="#"><span class="icon-heart"></span></a>
-                    <a href="#"><span class="icon-eye"></span></a>
-                    <a href="#"><span class="icon-paper-clip"></span></a>
-                </p>
-                <p class="description">Description de notre video</p>
-            </figcaption>
-        </figure>
-    </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <figure class="effect-zoe">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/V9H8s565uvs" allowfullscreen></iframe>
+                    </div>
+                <figcaption>
+                    <h2>Cliquez et partagez notre vidéo sur les réseaux sociaux :</h2>
+                    <p class="icon-links">
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </p>
+                    <p class="description">Développer son business autour de soirées gourmandes et conviviales. </p>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <figure class="effect-zoe">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/guXg_5jczsk" allowfullscreen></iframe>
+                    </div>
+                <figcaption>
+                    <h2>Cliquez et partagez notre vidéo sur les réseaux sociaux :</h2>
+                    <p class="icon-links">
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </p>
+                    <p class="description">Découvrez une école ayant une autre conception de la Formation, située à Sainte Consorce, à 20km de Lyon. </p>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <figure class="effect-zoe">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/azsPDiSR7UU" allowfullscreen></iframe>
+                    </div>
+                <figcaption>
+                    <h2>Cliquez et partagez notre vidéo sur les réseaux sociaux :</h2>
+                    <p class="icon-links">
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </p>
+                    <p class="description">Philippe PAGE - Conseil en développement commercial pour entreprises - www.venteactive.fr</p>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <figure class="effect-zoe">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/hFoP9jEuxaY" allowfullscreen></iframe>
+                    </div>
+                <figcaption>
+                    <h2>Cliquez et partagez notre vidéo sur les réseaux sociaux :</h2>
+                    <p class="icon-links">
+                        <a href="#"><i class="fa fa-linkedin icon-animate" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter icon-animate" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook icon-animate" aria-hidden="true"></i></a>
+                    </p>
+                    <p class="description">Lea LETELLIER - Marketing développement - Klap Affaires - RDM EDITIONS</p>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <figure class="effect-zoe">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/J14lEp-U954" allowfullscreen></iframe>
+                    </div>
+                    <figcaption>
+                        <h2>Cliquez et partagez notre vidéo sur les réseaux sociaux :</h2>
+                        <p class="icon-links">
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </p>
+                        <p class="description">Développer son business autour de soirées gourmandes et conviviales.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
 </section>
 
 <section class="container-fluid" id="video-presentation">
