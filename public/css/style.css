@@ -51,7 +51,7 @@
                                         ----------------
 */
 
-html, body {
+/*html, body {
         margin: 0;
         padding: 0;
         max-width: 100%;
@@ -71,7 +71,7 @@ section {
 
 section div {
     margin : auto
-}
+}*/
 
 .imgfix {
     background-attachment: fixed;
@@ -159,7 +159,18 @@ section div {
     }
 }
 
+/*
+                                         ***formulaire***
+                                        ----------------
+                                        ----------------
+*/
 
+#formulaire {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /*
                                          ***footer***
