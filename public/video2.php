@@ -48,38 +48,38 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
+    <div class="grid">
+        <figure class="effect-zoe">
+            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
+            <figcaption>
+                <h2>Titre <span>Video</span></h2>
+                <p class="icon-links">
+                    <a href="#"><span class="icon-heart"></span></a>
+                    <a href="#"><span class="icon-eye"></span></a>
+                    <a href="#"><span class="icon-paper-clip"></span></a>
+                </p>
+                <p class="description">Description de notre video</p>
+            </figcaption>
+        </figure>
 
-        <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/V9H8s565uvs" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/guXg_5jczsk" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/azsPDiSR7UU" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/hFoP9jEuxaY" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/J14lEp-U954" allowfullscreen></iframe>
-            </div>
-        </div>
+        <figure class="effect-zoe">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
+                </div>
+            <figcaption>
+                <h2>Titre <span>Video</span></h2>
+                <p class="icon-links">
+                    <a href="#"><span class="icon-heart"></span></a>
+                    <a href="#"><span class="icon-eye"></span></a>
+                    <a href="#"><span class="icon-paper-clip"></span></a>
+                </p>
+                <p class="description">Description de notre video</p>
+            </figcaption>
+        </figure>
     </div>
 </section>
 
