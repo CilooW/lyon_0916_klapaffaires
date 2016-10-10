@@ -2,7 +2,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: tangui
+ * User: Ciloo & Yann
  * Date: 29/09/16
  * Time: 13:15
  */
@@ -25,30 +25,29 @@
 
 </head>
 
-<body>
-<!-- ?php include 'header.php'; ?-->
+<body id="index">
+<?php include 'header.php'; ?>
 
 
+<div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Votre vidéo professionnelle est ici</h1>
+</div>
 
 
-
-<div>
-
-    <div id="maintitle" class ="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-        <h1>Votre vidéo professionnelle est ici</h1>
-    </div>
+<section class="videointro">
 
     <video autoplay loop poster="media/intro.jpg" id="videointro" class = "hidden-xs hidden-sm">
         <source src="media/intro.webm" type="video/webm">
         <source src="media/intro.mp4" type="video/mp4">
     </video>
 
-</div>
+</section>
 
 
-    <section id="introprez" >
 
-        <div class="col-xs-8 col-xs-offset-2 text-center">
+    <section class ="bgwhite" >
+
+        <div class="col-xs-8 col-xs-offset-2">
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
             <p>Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
@@ -63,9 +62,9 @@
     </section>
 
     <section class="imgfix" id="videaste">
-        <div class="col-xs-8 col-xs-offset-2 text-center">
+        <div class="col-xs-8 col-xs-offset-2">
 
-            <h1 class="text-center">Titre d'accroche</h1>
+            <h1>Titre d'accroche</h1>
 
         </div>
 
@@ -74,7 +73,7 @@
 
     <section id="nosvideos" class="container-fluid">
 
-        <div class="col-xs-12 text-center">
+        <div class="col-xs-12">
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
 
@@ -134,9 +133,9 @@
     </section>
 
 
-
+<?php include 'footer.php'; ?>
 </body>
 
-<?php include 'footer.php'; ?>
+
 
 
