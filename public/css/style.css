@@ -1,0 +1,275 @@
+
+/* Navbar */
+
+
+.navbar-header img {
+    width: 180px;
+}
+
+#myNavbar a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#myNavbar li{
+    border-right: 1px solid white;
+
+}
+.navbar .social-container{
+    padding-right: 40px;
+}
+.fa {
+    color: white;
+}
+
+.fa:hover{
+    color: #00a1e5;
+}
+#myNavbar a{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#myNavbar li:last-child{
+    border-right: none;
+}
+.navbar-nav{
+
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.social_media {
+    float: right;
+    margin-right: 50px;
+    height: 20px;
+    visibility: hidden;
+}
+
+/*
+                                         ***index***
+                                        ----------------
+                                        ----------------
+*/
+
+#index html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+#index p  {
+    padding: 30px;
+    line-height: 30px; }
+
+#index section {
+    min-height : 300px;
+    display: flex;
+    text-align: center;
+
+
+}
+
+#index section div {
+    margin : auto
+}
+
+.imgfix {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+#maintitle h1 {
+    position : absolute;
+    color : white;
+    font-size: 6em;
+    z-index: 5;
+    margin-top: 25%;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 1024px){
+    #maintitle h1 {
+
+        margin-top: 45%;
+    }
+}
+
+
+#videointro{
+    position : relative;
+    width : 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.videointro {
+    position : relative;
+    width : 100%;
+    height: 100vh;
+    background: url(../img/intro.jpg) no-repeat;
+    background-size: cover;
+    z-index: -2;
+
+}
+
+
+
+.bgwhite {
+    background: white;
+    clear: both;
+
+}
+
+#videaste{
+    background-image: url(../img/videaste_index.jpg);
+
+}
+
+#imgtransition {
+    background-image: url(../img/lyon.jpg);
+
+}
+
+.videos {
+    margin-top : 20px;
+    margin-bottom: 20px;
+
+}
+
+.youtube {
+    width:400px;
+    height: 315px;
+
+}
+
+@media screen and (min-width:992px) and (max-width: 1300px){
+    .youtube {
+        width: 300px;
+        height: 240px;
+    }
+}
+
+/* footer */
+
+@media screen and (max-width: 1024px){
+    .temoin {
+        width: 100%;
+        display: block;
+
+    }
+
+    .temoignage img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+
+/*
+                                         ***footer***
+                                        ----------------
+                                        ----------------
+*/
+
+#footer-global {
+    background-color: #363636;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo-footer,
+.social-container {
+    padding-top: 40px;
+    height: 150px;
+}
+
+.logo-klap {
+    width: 180px;
+    display: block;
+}
+
+@media screen and (max-width: 1024px){
+    .logo-footer img {
+        margin: 0 auto;
+    }
+}
+
+.social-container ul,
+.social-container p {
+    text-align: right;
+}
+
+@media screen and (max-width: 1024px){
+    .social-container ul,
+    .social-container p {
+        text-align: center;
+    }
+}
+
+.social {
+    display: block;
+    margin-right: 0;
+}
+
+.social li {
+    display: inline-block;
+    padding-right: 35px;
+    font-size: 1.5em;
+}
+
+
+.social li:hover {
+    color: #00a1e5;
+}
+
+
+.contact-container {
+    text-align: right;
+}
+
+.mentions-legales {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px){
+    .mentions-legales,
+    .contact-container {
+        text-align: center;
+    }
+}
+
+.contact-container button {
+    background-color: #00a1e5;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 100px;
+    border: 0;
+    height: 25px;
+}
+
+.contact-container button:hover {
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+#mentions-legales {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#mentions-legales:hover {
+    text-decoration: underline;
+
+}
