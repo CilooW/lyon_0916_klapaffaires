@@ -120,7 +120,7 @@
 
             <br>
                 <div class="row">
-                    <p class="col-xs-6 col-xs-offset-3 coordonnees">
+                    <p class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4 coordonnees">
                         RDM Editions <br>
                         54, rue Paul Verlaine 69100 VILLEURBANNE<br>
                         Tél : 04 37 24 31 15 <br>
