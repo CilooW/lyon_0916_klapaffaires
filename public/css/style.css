@@ -51,26 +51,25 @@
                                         ----------------
 */
 
-html, body {
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-        overflow-x: hidden;
+#index html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 
 }
 
-p  {
+#index p  {
     padding: 30px;
     line-height: 30px; }
 
-section {
+#index section {
     min-height : 300px;
     display: flex;
+    text-align: center;
 
 
 }
 
-section div {
+#index section div {
     margin : auto
 }
 
@@ -83,12 +82,12 @@ section div {
 }
 
 #maintitle h1 {
-        position : absolute;
-        color : white;
-        font-size: 6em;
-        z-index: 5;
-        margin-top: 25%;
-        text-align: center;
+    position : absolute;
+    color : white;
+    font-size: 6em;
+    z-index: 5;
+    margin-top: 25%;
+    text-align: center;
 
 }
 
@@ -102,12 +101,12 @@ section div {
 
 
 #videointro{
-        position : relative;
-        width : 100%;
-        height: 100vh;
-        object-fit: cover;
-        background-size: cover;
-        z-index: -1;
+    position : relative;
+    width : 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    z-index: -1;
 
 }
 
@@ -124,26 +123,25 @@ section div {
 
 
 .bgwhite {
-        background: white;
-        clear: both;
-
-
+    background: white;
+    clear: both;
 
 }
 
 #videaste{
-        background-image: url(../img/videaste_index.jpg);
-
+    background-image: url(../img/videaste_index.jpg);
 
 }
 
 #imgtransition {
-        background-image: url(../img/lyon.jpg);
+    background-image: url(../img/lyon.jpg);
+
 }
 
 .videos {
-        margin-top : 20px;
-        margin-bottom: 20px;
+    margin-top : 20px;
+    margin-bottom: 20px;
+
 }
 
 .youtube {

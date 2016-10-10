@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body id="index">
 <?php include 'header.php'; ?>
 
 
@@ -47,7 +47,7 @@
 
     <section class ="bgwhite" >
 
-        <div class="col-xs-8 col-xs-offset-2 text-center ">
+        <div class="col-xs-8 col-xs-offset-2">
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
             <p>Android sucks afterwards gorgeous why delay in getting Ice Cream Sandwich.
@@ -62,9 +62,9 @@
     </section>
 
     <section class="imgfix" id="videaste">
-        <div class="col-xs-8 col-xs-offset-2 text-center">
+        <div class="col-xs-8 col-xs-offset-2">
 
-            <h1 class="text-center">Titre d'accroche</h1>
+            <h1>Titre d'accroche</h1>
 
         </div>
 
@@ -73,7 +73,7 @@
 
     <section id="nosvideos" class="container-fluid">
 
-        <div class="col-xs-12 text-center">
+        <div class="col-xs-12">
             <h1>Titre d'accroche</h1>
             <h2> Sous titre</h2>
 
@@ -133,9 +133,9 @@
     </section>
 
 
-
+<?php include 'footer.php'; ?>
 </body>
 
-<?php include 'footer.php'; ?>
+
 
 
