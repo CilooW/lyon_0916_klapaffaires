@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    <section class="container-fluid" id="video-presentation">
+    <section class="container-fluid video-presentation">
         <div class="container">
             <div class="col-xs-12">
                 <h2>Hook numéro 2</h2>
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section class="container-fluid" id="video-presentation">
+    <section class="container-fluid video-presentation">
         <div class="container">
             <div class="col-xs-12">
                 <h2>Hook numéro 3</h2>
