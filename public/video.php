@@ -44,7 +44,7 @@
             <div class="col-xs-12">
                 <h2>Hook numéro 2</h2>
                 <hr />
-                <h3><em>Courte description sur les vidéos.</em></h3>
+                <h3><em>Courte description de la catégorie de vidéo.</em></h3>
             </div>
         </div>
 
@@ -53,31 +53,49 @@
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
                 </div>
+                <div class="video-description">
+                <p>Description de la video</p>
+                </div>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/V9H8s565uvs" allowfullscreen></iframe>
                 </div>
+                <div class="video-description">
+                    <p>Description de la video</p>
+                </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/guXg_5jczsk" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <p>Description de la video</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/azsPDiSR7UU" allowfullscreen></iframe>
                 </div>
+                <div class="video-description">
+                    <p>Description de la video</p>
+                </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/hFoP9jEuxaY" allowfullscreen></iframe>
                 </div>
+                <div class="video-description">
+                    <p>Description de la video</p>
+                </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/J14lEp-U954" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <p>Description de la video</p>
                 </div>
             </div>
         </div>

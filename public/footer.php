@@ -27,20 +27,20 @@
 
         </div>
 
-        <div class="row" class="wrap-footer">
-
+        <div class="row">
             <div class="col-xs-12 contact-container">
                 <p>Discutons ensemble de votre projet :</p>
                 <button>Contact</button>
             </div>
-
         </div>
+    </div>
 
+    <div class="container">
         <div class="row" class="wrap-footer">
             <div class="col-xs-12 mentions-legales" >
                 <a href="mentions-legales.php" id="mentions-legales">Mentions Légales</a>
+                <p>Copyright 2016 - Klap Affaires</p>
             </div>
         </div>
-
     </div>
 </footer>
