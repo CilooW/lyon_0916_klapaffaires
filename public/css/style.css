@@ -353,6 +353,29 @@ hr {
     }
 }
 
+/**//**//**//**//**//**/
+/* MENTIONS LEGALES   */
+/**//**//**//**//**//**/
+
+
+#img-header-mentions_legales {
+    background-image: url(../img/bannercgv.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+.coordonnees {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
 
 /**//**//**//**/
 /*   FOOTER   */
