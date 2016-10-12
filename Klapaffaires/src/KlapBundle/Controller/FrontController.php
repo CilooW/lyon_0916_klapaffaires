@@ -22,4 +22,14 @@ class FrontController extends Controller
     {
         return $this->render('front/aboutus.html.twig');
     }
+
+    public function categoryAction()
+    {
+        return $this->render('front/category.html.twig');
+    }
+
+    public function contact()
+    {
+        return $this->render('front/contact.html.twig');
+    }
 }

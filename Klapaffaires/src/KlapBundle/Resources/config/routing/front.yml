@@ -2,3 +2,13 @@ front_index:
     path:     /
     defaults: { _controller: "KlapBundle:Front:index" }
     methods: GET
+
+front_aboutus:
+    path:     /aboutus
+    defaults: { _controller: "KlapBundle:Front:aboutus" }
+    methods: GET
+
+front_contact:
+    path:     /contact
+    defaults: { _controller: "KlapBundle:Front:contact" }
+    methods: GET
