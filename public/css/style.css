@@ -2,7 +2,7 @@
 
 html p h1 h2 h3 a ul li span  {
     font-family: 'Open Sans', sans-serif;
-    line-height: 15px;
+    line-height: 30px;
 }
 
 html, body {
@@ -68,15 +68,24 @@ hr {
 /* PAGE | INDEX */
 /**//**/ /**//**/
 
+.button-header {
+    position: absolute;
+    margin-top: 70vh;
+    margin-left: 60vh;
+    background-color: #00a1e5;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 175px;
+    border: 0;
+    height: 40px;
+    font-size: 1.2em;
+}
 
 #index html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-#index p  {
-    padding: 30px;
-    line-height: 30px; }
 
 #index section {
     text-align: center;
@@ -99,8 +108,8 @@ hr {
     position : absolute;
     font-size: 4em;
     text-align: center;
-    padding-top: 25vh;
-    padding-left: 10%;
+    padding-top: 50vh;
+    padding-left: 23vh;
     color: #ffffff;
     z-index: 5;
 }
@@ -169,7 +178,7 @@ hr {
     color: white;
     font-size: 2.2em;
     line-height: 1.5em;
-    padding-top: 60px;
+    padding-top: 8%;
 }
 
 #bg-black {
@@ -272,6 +281,7 @@ hr {
     padding-top: 35px;
 }
 
+.bgwhite h3,
 .video-intro h3,
 .video-presentation h3,
 .video-category h3 {

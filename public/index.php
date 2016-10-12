@@ -30,7 +30,8 @@
 <?php include 'header.php'; ?>
     <div class="container">
         <div id="maintitle" class ="col-xs-12">
-            <h1>Votre vidéo <strong>professionnelle</strong> est ici</h1>
+            <h1>L'humain <strong>au coeur</strong> de la vidéo!</h1>
+            <button class="button-header">Nos vidéos!</button>
         </div>
     </div>
 
