@@ -1,0 +1,40 @@
+front_index:
+    path:     /
+    defaults: { _controller: "KlapBundle:Front:index" }
+    methods: GET
+
+front_aboutus:
+    path:     /aboutus
+    defaults: { _controller: "KlapBundle:Front:aboutus" }
+    methods: GET
+
+front_videos:
+    path:     /videos
+    defaults: { _controller: "KlapBundle:Front:videos" }
+    methods: GET
+
+front_videos_category:
+    path:     /videos_category
+    defaults: { _controller: "KlapBundle:Front:videos_category" }
+    methods: GET
+
+front_service:
+    path:     /service
+    defaults: { _controller: "KlapBundle:Front:service" }
+    methods: GET
+
+front_contact:
+    path:     /contact
+    defaults: { _controller: "KlapBundle:Front:contact" }
+    methods: GET
+
+front_legal:
+    path:     /legal
+    defaults: { _controller: "KlapBundle:Front:legal" }
+    methods: GET
+
+front_footer:
+    path:     /footer
+    defaults: { _controller: "KlapBundle:Front:footer" }
+    methods: GET
+
