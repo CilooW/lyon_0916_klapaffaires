@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: riad
+ * Date: 12/10/16
+ * Time: 15:01
+ */?>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -6,6 +14,7 @@
     <meta charset="utf-8">
     <meta name="Klap Affaires Publireportage Vidéo à Lyon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="img/favico.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,6 +22,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,14 +31,16 @@
     <header class="container-fluid" id="img-header-video">
         <div class="container">
             <h1>Spécialiste du <strong>publireportage</strong> vidéo!</h1>
+            <a href="#"><button class="button-intern">Contactez-nous!</button></a>
         </div>
     </header>
-
+    <!-- Category list -->
     <section class="container-fluid">
         <div class="container video-category">
             <h2>Nos catégories</h2>
             <hr />
-            <h3><em>Courte description.</em></h3>
+            <h3><em>Les vidéos sont de plus en plus privilégiées et suscitent un véritable attrait.
+                    Un moyen simple et efficace de faire le buzz, si celle-ci est faite de manière professionnelle...</em></h3>
             <ul class="category">
                 <li><button>Catégorie 1</button></li>
                 <li><button>Catégorie 2</button></li>
@@ -47,14 +59,17 @@
                 <h3><em>Courte description de la catégorie de vidéo.</em></h3>
             </div>
         </div>
-
+        <!-- Video Bloc -->
         <div class="container-fluid">
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
-                <p>Description de la video</p>
+                <p>Symbiose - Côté zen Bien-être et esthétique Coiffure et services barbier
+                    202 Boulevard du 11 novembre -
+                    69590 Saint Symphorien sur Coise
+                    www.symbiose-cotezen.fr</p>
                 </div>
             </div>
 
@@ -63,7 +78,7 @@
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/V9H8s565uvs" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
-                    <p>Description de la video</p>
+                    <p>Un réseau d’affaires lyonnais qui propose une fois par mois des soirées thématiques sur le monde de l’entreprise.</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
@@ -71,7 +86,7 @@
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/guXg_5jczsk" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
-                    <p>Description de la video</p>
+                    <p>Découvrez une école ayant une autre conception de la Formation, située à Sainte Consorce, à 20km de Lyon. </p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
@@ -79,7 +94,7 @@
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/azsPDiSR7UU" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
-                    <p>Description de la video</p>
+                    <p>Philippe PAGE - Conseil en développement commercial pour entreprises - www.venteactive.fr</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
@@ -87,7 +102,8 @@
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/hFoP9jEuxaY" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
-                    <p>Description de la video</p>
+                    <p>Marketing développement
+                        <br /> Klap Affaires - RDM EDITIONS</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
@@ -95,12 +111,12 @@
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/J14lEp-U954" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
-                    <p>Description de la video</p>
+                    <p>Un réseau d’affaires lyonnais qui propose une fois par mois des soirées thématiques sur le monde de l’entreprise.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- Description of our videos -->
     <section class="container-fluid video-presentation">
         <div class="container">
             <div class="col-xs-12">
@@ -136,5 +152,4 @@
     </section>
     <?php include 'footer.php'; ?>
 
-<script></script>
 </body>
