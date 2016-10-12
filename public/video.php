@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: riad
+ * Date: 12/10/16
+ * Time: 15:01
+ */?>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -26,7 +34,7 @@
             <a href="#"><button class="button-intern">Contactez-nous!</button></a>
         </div>
     </header>
-
+    <!-- Category list -->
     <section class="container-fluid">
         <div class="container video-category">
             <h2>Nos catégories</h2>
@@ -51,7 +59,7 @@
                 <h3><em>Courte description de la catégorie de vidéo.</em></h3>
             </div>
         </div>
-
+        <!-- Video Bloc -->
         <div class="container-fluid">
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -108,7 +116,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Description of our videos -->
     <section class="container-fluid video-presentation">
         <div class="container">
             <div class="col-xs-12">
@@ -144,5 +152,4 @@
     </section>
     <?php include 'footer.php'; ?>
 
-<script></script>
 </body>
