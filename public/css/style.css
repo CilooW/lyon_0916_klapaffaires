@@ -70,7 +70,7 @@ hr {
 
 .button-header {
     position: absolute;
-    margin-top: 70vh;
+    margin-top: 65vh;
     margin-left: 55.5vh;
     background-color: #00a1e5;
     color: #ffffff;
@@ -80,6 +80,12 @@ hr {
     border: 0;
     height: 40px;
     font-size: 1.2em;
+}
+
+.button-header:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
 }
 
 @media screen and (max-width: 1200px){
@@ -226,6 +232,26 @@ hr {
     clear: both;
 }
 
+.button-intern {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 55.5vh;
+    background-color: #00a1e5;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 175px;
+    border: 0;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+.button-intern:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
 @media screen and (max-width: 1200px){
     #img-header-video {
         height: 500px;
@@ -287,7 +313,7 @@ hr {
     padding-top: 35px;
 }
 
-.video-presentation p {
+#video-presentation p {
     margin-bottom: 35px;
     margin-top: 30px;
     font-size: 1.2em;
@@ -314,6 +340,14 @@ hr {
     padding-top: 35px;
 }
 
+.video-description {
+    margin-top: 10px;
+    margin-bottom:15px;
+    font-style: italic;
+    font-size: 0.9em;
+    height: 5em;
+}
+
 .img-presentation {
     width : 100%;
     display: block;
@@ -323,6 +357,7 @@ hr {
 
 .text-presentation {
     font-size: 1.2em;
+    line-height: 2em;
 }
 
 @media screen and (max-width: 1024px) {
