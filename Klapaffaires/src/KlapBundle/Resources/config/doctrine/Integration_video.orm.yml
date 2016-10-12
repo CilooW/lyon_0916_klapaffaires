@@ -1,0 +1,22 @@
+KlapBundle\Entity\Integration_video:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\Integration_videoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        iframe:
+            type: string
+            length: 255
+            unique: true
+        description:
+            type: text
+        addDate:
+            type: datetime
+            unique: true
+            column: add_date
+    lifecycleCallbacks: {  }

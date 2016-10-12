@@ -1,0 +1,27 @@
+KlapBundle\Entity\Testimony:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\TestimonyRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        wName:
+            type: string
+            length: '100'
+            column: w_name
+        wFirstname:
+            type: string
+            length: '100'
+            column: w_firstname
+        wDescription:
+            type: text
+            column: w_description
+        wPicturePath:
+            type: string
+            length: 255
+            column: w_picture_path
+    lifecycleCallbacks: {  }
