@@ -396,10 +396,14 @@ hr {
     position: relative;
     clear: both;
     margin: 0 auto;
-    padding: 1em 0 4em;
-    max-width: 1000px;
+    padding: 0;
+    max-width: 100%;
     list-style: none;
     text-align: center;
+}
+.grid div {
+    margin: 0;
+    padding: 0;
 }
 
 /* Common style */
@@ -407,7 +411,6 @@ hr {
     position: relative;
     float: left;
     overflow: hidden;
-    margin: 10px 1%;
     height: auto;
     background: #3085a3;
     text-align: center;
@@ -521,11 +524,11 @@ figure.effect-apollo:hover p {
 }
 
 #img-category h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #img-category p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 1.2em;
 }
 

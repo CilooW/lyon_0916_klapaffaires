@@ -38,7 +38,7 @@
             <div class="col-xs-12">
                 <h2>Hook numéro 2</h2>
                 <hr />
-                <h3><em>Un petit speetch sur les vidéos</em></h3>
+                <h3><em> Interview - Ecriture de scénario - Tournage - Montage - Diffusion Youtube</em></h3>
             </div>
         </div>
 
@@ -46,38 +46,60 @@
 
         <div class="container-fluid">
             <div class="grid" id="img-category">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <figure class="effect-apollo">
                         <img src="img/publireportage-lyon-klap-affaires.jpg" alt="img18"/>
                         <figcaption>
-                            <h2>Strong <span>Apollo</span></h2>
+                            <h2><span>Hôtellerie - Restauration</span></h2>
                             <p>Apollo's last game of pool was so strange.</p>
                             <a href="#"></a>
                         </figcaption>
                     </figure>
                 </div>
 
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <figure class="effect-apollo">
                         <img src="img/publireportage-lyon-klap-affaires.jpg" alt="img18"/>
                         <figcaption>
-                            <h2>Strong <span>Apollo</span></h2>
+                            <h2><span>Scolaire</span></h2>
                             <p>Apollo's last game of pool was so strange.</p>
                             <a href="#"></a>
                         </figcaption>
                     </figure>
                 </div>
 
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6  col-md-4">
                     <figure class="effect-apollo">
                         <img src="img/publireportage-lyon-klap-affaires.jpg" alt="img18"/>
                         <figcaption>
-                            <h2>Strong <span>Apollo</span></h2>
+                            <h2><span>Evènements</span></h2>
                             <p>Apollo's last game of pool was so strange.</p>
                             <a href="#"></a>
                         </figcaption>
                     </figure>
                 </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <figure class="effect-apollo">
+                        <img src="img/publireportage-lyon-klap-affaires.jpg" alt="img18"/>
+                        <figcaption>
+                            <h2>PME<span>/TPE</span></h2>
+                            <p>Apollo's last game of pool was so strange.</p>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <figure class="effect-apollo">
+                        <img src="img/publireportage-lyon-klap-affaires.jpg" alt="img18"/>
+                        <figcaption>
+                            <h2>CV <span>Video</span></h2>
+                            <p>Apollo's last game of pool was so strange.</p>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+
             </div>
     </section>
 
