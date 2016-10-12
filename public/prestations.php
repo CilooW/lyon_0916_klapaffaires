@@ -20,34 +20,43 @@
 <body>
 
 <?php include 'header.php'; ?>
-<section id="img-header-presta" class="container-fluid">
-    <div>
-        <h1>Nos Prestations</h1>
-    </div>
-</section>
 
-<section id="presta-container" class="container-fluid">
-    <div class="container">
-        <h2>Prestations</h2>
-        <hr />
-        <h3><em>Description des prestations</em></h3>
-    </div>
+                                        <!--Image Bannière et accroche-->
 
-    <div class="col-xs-12 col-md-4 col-md-offset-1 imgpresta">
-        <img src="http://www.saratogachildrenstheatre.org/wp-content/uploads/2015/07/voice-lessons.jpg" alt="vocal coaching">
-    </div>
-    <div class="col-xs-12 col-md-7 presta-text">
-        <p>Le <strong>coaching vocal</strong> s’adresse à toute personne souhaitant découvrir,
+    <section id="img-header-presta" class="container-fluid">
+        <div>
+            <h1>Nos Prestations</h1>
+        </div>
+    </section>
 
-            améliorer et prendre soin de sa voix dans un but personnel ou professionnel.
+                                            <!--Bloc titres h2/3-->
 
-            Aucune formation ou aptitude préalable n’est requise. </p>
-        <ul>
-           <li>Voix parlée <strong>Tarifs</strong>: 50mn : 55€   (pour les cycles de 5  cours ou séances espacé de 2 à 3 semaines)</li>
-           <li>Voix chantée <strong>Tarifs</strong>: 1h20 : 85€   (pour les bilans pneumaphonique et les séances espacé dans le temps)</li>
-        </ul>
-    </div>
-</section>
+    <section id="presta-container" class="container-fluid">
+
+        <div class="container">
+            <h2>Prestations</h2>
+            <hr />
+            <h3><em>Description des prestations</em></h3>
+        </div>
+
+                                            <!--Bloc prestation 1-->
+
+        <div class="col-xs-12 col-md-4 col-md-offset-1 imgpresta">
+            <img src="http://www.saratogachildrenstheatre.org/wp-content/uploads/2015/07/voice-lessons.jpg" alt="vocal coaching">
+        </div>
+
+        <div class="col-xs-12 col-md-7 presta-text">
+            <p>Le <strong>coaching vocal</strong> s’adresse à toute personne souhaitant découvrir,
+                améliorer et prendre soin de sa voix dans un but personnel ou professionnel.
+                Aucune formation ou aptitude préalable n’est requise. </p>
+            <ul>
+               <li>Voix parlée <strong>Tarifs</strong>: 50mn : 55€   (pour les cycles de 5  cours ou séances espacé de 2 à 3 semaines)</li>
+               <li>Voix chantée <strong>Tarifs</strong>: 1h20 : 85€   (pour les bilans pneumaphonique et les séances espacé dans le temps)</li>
+            </ul>
+        </div>
+    </section>
+
+                                            <!--Bloc prestation 2-->
 
 <section id="presta-container" class="container-fluid">
 
@@ -59,18 +68,13 @@
 
             améliorer et prendre soin de son image dans un but personnel ou professionnel.
 
-            Aucune formation ou aptitude préalable n’est requise. </p>
+            Aucune formation ou aptitude préalable n’est requise.</p>
         <ul>
            <li>Présenter votre entreprise et savoir-faire par un film d'entreprise <strong>Tarifs</strong>: 50mn : 55€</li>
            <li>Réaliser un film sur vos produits et process industriels pour les présenter à vos clients ou diffuser lors d'un salon. <strong>Tarifs</strong>: 1h20 : 85€ </li>
         </ul>
     </div>
 
-    <div class="container">
-
-    </div>
-
 </section>
 <?php include "footer.php"; ?>
-
 </body>
