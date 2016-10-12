@@ -22,7 +22,6 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Qui sommes nous ?</a></li>
-
                 <li><a href="#">Nos prestations</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos vidéos<span class="caret"></span></a>
