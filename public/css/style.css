@@ -393,14 +393,29 @@ hr {
 /**//**//**//**//**//**/
 
 
-#img-header-mentions_legales {
-    background-image: url(../img/bannercgv.jpg) ;
+#img-header-mentions-legales {
+    background-image: url(../img/mentions-legales-klap-affaires.jpeg) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
     width: 100%;
     overflow: hidden;
     clear: both;
+}
+
+#head-mentions-legales {
+    width: 100%;
+}
+
+#head-mentions-legales h1 {
+    padding-top: 35px;
+    text-align: center;
+}
+
+#head-mentions-legales h2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
 }
 
 .coordonnees {

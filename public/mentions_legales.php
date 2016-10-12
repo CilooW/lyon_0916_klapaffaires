@@ -26,18 +26,17 @@
 
 </head>
 
-<body id="mention_legales">
+<body>
 
-<?php include 'header.php'; ?>
-
-<header class="container-fluid" id="img-header-mentions_legales">
-
+<header class="container-fluid" id="img-header-mentions-legales">
+    <?php include 'header.php'; ?>
 </header>
 
-    <div class="container-fluid">
-        <div class="container cgv">
-            <h1>Conditions Générales de Vente</h1>
-
+    <div class="container-fluid" id="head-mentions-legales">
+        <div class="container">
+            <h1>Mentions légales</h1>
+            <hr />
+            <h2>Conditions générales de vente</h2>
             <br>
 
             <p>
