@@ -71,7 +71,7 @@ hr {
 .button-header {
     position: absolute;
     margin-top: 70vh;
-    margin-left: 60vh;
+    margin-left: 55.5vh;
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
@@ -80,6 +80,12 @@ hr {
     border: 0;
     height: 40px;
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 1200px){
+    .button-header {
+        margin-left: 55vh;
+    }
 }
 
 #index html, body {
@@ -102,6 +108,7 @@ hr {
     width: 100%;
     height: 300px;
     position: relative;
+    margin-top: 35px;
 }
 
 #maintitle h1 {
@@ -121,9 +128,10 @@ hr {
     margin-top: 25%;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
     #maintitle h1 {
-        padding-top: 40%;
+        font-size: 3.5em;
+        padding-left: 20vh;
     }
 }
 
@@ -162,18 +170,23 @@ hr {
 .bgwhite {
     background: white;
     clear: both;
-    height: 300px;
+    height: 375px;
 }
 
-.bgwhite h1 {
+.bgwhite h2 {
     padding-top: 35px;
+}
 
+.bgwhite p {
+    font-size: 1.2em;
+    line-height: 2em;
 }
 
 #videaste{
-    background-image: url(../img/videaste_index.jpg);
+    background-image: url(../img/reportage-video-lyon-klap-affaires.jpeg);
 }
 
+#imgtransition h2,
 #videaste h2 {
     color: white;
     font-size: 2.2em;
@@ -190,7 +203,7 @@ hr {
 }
 
 #imgtransition {
-    background-image: url(../img/lyon.jpg);
+    background-image: url(../img/video-publireportage-lyon-Klap-Affaires.jpeg);
 }
 
 .videos {
@@ -198,13 +211,6 @@ hr {
     margin-bottom: 20px;
 }
 
-
-@media screen and (min-width:992px) and (max-width: 1300px){
-    .youtube {
-        width: 300px;
-        height: 240px;
-    }
-}
 
 /**//**/ /**//**/
 /* PAGE | VIDEO */
@@ -281,6 +287,14 @@ hr {
     padding-top: 35px;
 }
 
+.video-presentation p {
+    margin-bottom: 35px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.temoignage h3,
 .bgwhite h3,
 .video-intro h3,
 .video-presentation h3,
@@ -317,6 +331,15 @@ hr {
     }
 }
 
+.temoignage h2 {
+    padding-top: 35px;
+}
+
+.temoignage p {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
 @media screen and (max-width: 1024px){
     .temoin {
         width: 100%;
@@ -326,6 +349,7 @@ hr {
     .temoignage img {
         margin: 0 auto;
         display: block;
+        padding-bottom: 35px;
     }
 }
 

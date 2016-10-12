@@ -59,20 +59,18 @@
     </section>
 
     <section class="container-fluid imgfix" id="videaste">
-        <div class="row" id="bg-black">
             <div class="container">
                 <div class="col-xs-12">
                     <h2>Publireportage vidéo est un support incontournable dans votre communication globale</h2>
                 </div>
             </div>
-        </div>
     </section>
 
 
 <section class="container-fluid video-presentation">
     <div class="container">
         <div class="col-xs-12">
-            <h2>Hook numéro 2</h2>
+            <h2>Nos dernières vidéos</h2>
             <hr />
             <h3><em>Courte description de la catégorie de vidéo.</em></h3>
         </div>
@@ -99,6 +97,8 @@
         <div class="col-xs-12">
             <p>Important: ici dans un soucis de clarté du code, des retours à la ligne ont été utilisé.
                 Mais lorsque vous copier/coller ce code, il est possible de tout mettre sur une même ligne.
+                Et il faut aussi modifier l'URL avec la page de votre choix.mportant: ici dans un soucis de clarté du code, des retours à la ligne ont été utilisé.
+                Mais lorsque vous copier/coller ce code, il est possible de tout mettre sur une même ligne.
                 Et il faut aussi modifier l'URL avec la page de votre choix.</p>
         </div>
     </div>
@@ -106,6 +106,11 @@
 
 
     <section class="imgfix container-fluid" id="imgtransition">
+        <div class="container">
+            <div class="col-xs-12">
+                <h2>Vous souhaitez conforter votre image de marque, amplifier votre notoriété et ainsi développer votre clientèle....</h2>
+            </div>
+        </div>
     </section>
 
 
@@ -115,6 +120,7 @@
             <div class="col-xs-12 temoignage">
                 <h2>Témoignages</h2>
                 <hr />
+                <h3><em>Nos clients témoignent</em></h3>
                 <div class="row">
                         <div class="col-xs-12 col-md-4 img-circle temoin">
                         <img  src="img/temoin.png">
