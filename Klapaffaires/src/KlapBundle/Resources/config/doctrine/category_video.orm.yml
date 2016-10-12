@@ -14,4 +14,10 @@ KlapBundle\Entity\category_video:
             length: '70'
             nullable: true
             unique: true
+
+    oneToMany:
+        integration_videos:
+            targetEntity: Integration_video
+            mappedBy: video
+
     lifecycleCallbacks: {  }

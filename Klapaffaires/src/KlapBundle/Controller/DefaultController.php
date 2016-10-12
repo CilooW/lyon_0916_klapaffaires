@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $t_his->render('KlapBundle:Default:index.html.twig');
+        return $this->render('KlapBundle:Default:index.html.twig');
     }
 }

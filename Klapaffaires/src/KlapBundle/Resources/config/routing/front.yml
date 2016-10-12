@@ -1,0 +1,4 @@
+front_index:
+    path:     /
+    defaults: { _controller: "KlapBundle:Front:index" }
+    methods: GET
