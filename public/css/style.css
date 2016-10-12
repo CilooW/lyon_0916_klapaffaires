@@ -385,6 +385,13 @@ hr {
     overflow: hidden;
     clear: both;
 }
+
+#img-header-presta {
+    text-align: center;
+    font-size: 4em;
+    padding-top: 30%;
+    color: #ffffff;
+}
 @media screen and (max-width: 1200px){
     #img-header-presta {
         height: 300px;
@@ -412,8 +419,6 @@ hr {
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
-
 
 #presta-container h2 {
     text-align: center;
