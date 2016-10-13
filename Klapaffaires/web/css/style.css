@@ -196,7 +196,7 @@ hr {
 }
 
 #videaste {
-    background-image: url(../img/reportage-video-lyon-klap-affaires.jpg);
+    background-image: url(../img/reportage-video-lyon-klap-affaires.jpeg);
 }
 
 #text-index p {
@@ -582,7 +582,70 @@ figure.effect-apollo:hover p {
     font-size: 0.8em;
     line-height: 1.2em;
 }
+/*
+                                        ***prestation***
+                                        ----------------
+                                        ----------------
+*/
+#img-header-presta {
+    background-image: url(../img/publireportage-lyon-klap-affaires.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 30%;
+    color: #ffffff;
+}
 
+@media screen and (max-width: 1200px){
+    #img-header-presta {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #img-header-presta {
+        height: 400px;
+    }
+}
+
+.presta-text {
+    padding-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.presta-text ul {
+    margin-top: 2px;
+}
+
+#presta-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#presta-container h2 {
+    text-align: center;
+    margin-top: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#presta-container h3 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.imgpresta img {
+    display: block;
+    width: 100%;
+}
 /**//**//**//**//**//**/
 /* MENTIONS LEGALES   */
 /**//**//**//**//**//**/
@@ -662,18 +725,20 @@ figure.effect-apollo:hover p {
     }
 }
 
+.social-footer,
 .social {
     display: block;
     margin-right: 0;
 }
 
+.social-footer li,
 .social li {
     display: inline-block;
     padding-right: 35px;
     font-size: 1.5em;
 }
 
-
+.social-footer li:hover,
 .social li:hover {
     color: #00a1e5;
 }

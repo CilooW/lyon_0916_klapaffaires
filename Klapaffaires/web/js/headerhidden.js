@@ -32,7 +32,7 @@
                 social.hide();
                 $navbar.css({
                     "background-color": "#363636",
-                    "height": "120px"
+                    "height": "80px"
                 });
             }
         })
