@@ -64,18 +64,18 @@ hr {
     visibility: hidden;
 }
 
+
 /**//**/ /**//**/
 /* PAGE | INDEX */
 /**//**/ /**//**/
 
+
 .button-header {
     position: absolute;
-    margin-top: 65vh;
-    margin-left: 55.5vh;
+    margin: 45% 42% 0 42%;
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
-    margin-bottom: 40px;
     width: 175px;
     border: 0;
     height: 40px;
@@ -90,7 +90,13 @@ hr {
 
 @media screen and (max-width: 1200px){
     .button-header {
-        margin-left: 55vh;
+        margin: 52% 40% 0 40%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .button-header {
+        margin: 65% 36.8% 0 36.8%;
     }
 }
 
@@ -121,32 +127,33 @@ hr {
     position : absolute;
     font-size: 4em;
     text-align: center;
-    padding-top: 50vh;
-    padding-left: 23vh;
+    padding: 35% 15% 0 15%;
     color: #ffffff;
     z-index: 5;
 }
 
-
 #maintitle h1 strong {
     color: #00a1e5;
     z-index: 5;
-    margin-top: 25%;
 }
 
 @media screen and (max-width: 1200px){
     #maintitle h1 {
         font-size: 3.5em;
-        padding-left: 20vh;
     }
 }
 
-#videointro {
-    position : relative;
-    width : 100%;
-    height: 100vh;
-    background: url(../img/intro.jpg) no-repeat;
-    background-size: cover;
+@media screen and (max-width: 1000px){
+    #maintitle h1 {
+        padding: 40% 15% 0 15%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #maintitle h1 {
+        padding: 50% 0 0 0;
+        font-size: 2em;
+    }
 }
 
 #introprez {
@@ -168,7 +175,7 @@ hr {
     position : relative;
     width : 100%;
     height: 100vh;
-    background: url(../img/intro.jpg) no-repeat;
+    background: url(../img/image-remplacement-video-klap-affaires.jpg) no-repeat;
     background-size: cover;
     z-index: -2;
 }
@@ -188,8 +195,12 @@ hr {
     line-height: 2em;
 }
 
-#videaste{
+#videaste {
     background-image: url(../img/reportage-video-lyon-klap-affaires.jpeg);
+}
+
+#text-index p {
+    line-height: 2em;
 }
 
 #imgtransition h2,
@@ -198,6 +209,19 @@ hr {
     font-size: 2.2em;
     line-height: 1.5em;
     padding-top: 8%;
+}
+
+@media screen and (max-width: 1000px){
+    #videaste h2 {
+        padding-top: 12%;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 620px){
+    #videaste h2 {
+        padding-top: 0;
+    }
 }
 
 #bg-black {
@@ -234,12 +258,10 @@ hr {
 
 .button-intern {
     position: absolute;
-    margin-top: 10vh;
-    margin-left: 55.5vh;
+    margin: 3% 25% 0 26%;
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
-    margin-bottom: 40px;
     width: 175px;
     border: 0;
     height: 40px;
@@ -257,31 +279,47 @@ hr {
         height: 500px;
     }
 
-}@media screen and (max-width: 600px){
+}
+
+@media screen and (max-width: 600px){
     #img-header-video {
         height: 400px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #img-header-video {
+        height: 300px;
     }
 }
 
 #img-header-video h1 {
     text-align: center;
     font-size: 4em;
-    padding-top: 30%;
+    padding: 25% 0 0 0;
     color: #ffffff;
 }
 
 @media screen and (max-width: 1200px){
     #img-header-video h1 {
         font-size: 3em;
+        padding: 35% 0 0 0;
     }
 }
 
 @media screen and (max-width: 640px){
     #img-header-video h1 {
         font-size: 2em;
-        line-height: 50px;
+        padding: 40% 5% 0 0;
     }
 }
+
+@media screen and (max-width: 360px){
+    #img-header-video h1 {
+        padding: 70% 0 0 0;
+    }
+}
+
 #img-header-video strong {
     color: #00a1e5;
 }
@@ -307,10 +345,22 @@ hr {
     font-size: 1.5em;
 }
 
+.video-template h2,
 .video-intro h2,
 .video-presentation h2 {
     text-align: center;
     padding-top: 35px;
+}
+
+.video-template {
+    margin: 0;
+    padding: 0;
+}
+
+#category-grid {
+    padding: 20px 0 0 0;
+    margin: 0;
+
 }
 
 #video-presentation p {
@@ -320,6 +370,7 @@ hr {
     line-height: 2em;
 }
 
+.video-template h3,
 .temoignage h3,
 .bgwhite h3,
 .video-intro h3,
@@ -388,9 +439,9 @@ hr {
     }
 }
 
-/**//**//**//**//**//**/
-/* CATEGORIES VIDEO   */
-/**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**/
+/* PAGE | CATEGORIES VIDEO    */
+/**//**//**//**//**//**//**//**/
 
 .grid {
     position: relative;
@@ -531,7 +582,70 @@ figure.effect-apollo:hover p {
     font-size: 0.8em;
     line-height: 1.2em;
 }
+/*
+                                        ***prestation***
+                                        ----------------
+                                        ----------------
+*/
+#img-header-presta {
+    background-image: url(../img/publireportage-lyon-klap-affaires.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 30%;
+    color: #ffffff;
+}
 
+@media screen and (max-width: 1200px){
+    #img-header-presta {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #img-header-presta {
+        height: 400px;
+    }
+}
+
+.presta-text {
+    padding-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.presta-text ul {
+    margin-top: 2px;
+}
+
+#presta-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#presta-container h2 {
+    text-align: center;
+    margin-top: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#presta-container h3 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.imgpresta img {
+    display: block;
+    width: 100%;
+}
 /**//**//**//**//**//**/
 /* MENTIONS LEGALES   */
 /**//**//**//**//**//**/
@@ -611,18 +725,20 @@ figure.effect-apollo:hover p {
     }
 }
 
+.social-footer,
 .social {
     display: block;
     margin-right: 0;
 }
 
+.social-footer li,
 .social li {
     display: inline-block;
     padding-right: 35px;
     font-size: 1.5em;
 }
 
-
+.social-footer li:hover,
 .social li:hover {
     color: #00a1e5;
 }
@@ -671,4 +787,13 @@ figure.effect-apollo:hover p {
 
 #mentions-legales:hover {
     text-decoration: underline;
+}
+
+#wildcode {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#wildcode:hover {
+    color: #00a1e5;
 }
