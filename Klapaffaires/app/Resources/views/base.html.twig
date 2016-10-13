@@ -26,7 +26,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img class="logo-klap" src="{{ asset('img/logo-klap-affaires-det.png') }}" alt="logo klap affaire"/></a>
+                    <a class="navbar-brand" href="{{ path('front_index') }}"><img class="logo-klap" src="{{ asset('img/logo-klap-affaires-det.png') }}" alt="logo klap affaire"/></a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -34,14 +34,9 @@
                         <li><a href="#">Qui sommes nous ?</a></li>
 
                         <li><a href="{{ path('front_service') }}">Nos prestations</a></li>
-                        <li class="dropdown">
-                            <a href="{{ path('front_videos') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos vidéos<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ path('front_videos_category') }}">Catégorie 1</a></li>
-                                <li><a href="#">Catégorie 2</a></li>
-                                <li><a href="#">Catégorie 3</a></li>
-                            </ul>
-                        </li>
+
+                        <li><a href="{{ path('front_videos_category') }}">Nos vidéos</a></li>
+
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
                     <div class="col-xs-12 col-md-4 col-md-offset-8 social-container">
@@ -63,7 +58,45 @@
 
 
         {% block body %}{% endblock %}
+    <footer class="container-fluid" id="footer-global">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-xs-12 col-md-3 logo-footer">
+                    <a href="index.php"><img class="logo-klap" src="{{ asset('img/logo-klap-affaires-det.png') }}"></a>
+                </div>
+
+                <div class="col-xs-12 col-md-4 col-md-offset-5 social-container">
+                    <p>Suivez-nous sur les réseaux sociaux :</p>
+                    <ul class="social-footer">
+                        <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row" class="wrap-footer">
+
+                <div class="col-xs-12 contact-container">
+                    <p>Discutons ensemble de votre projet :</p>
+                    <button>Contact</button>
+                </div>
+
+            </div>
+
+            <div class="row" class="wrap-footer">
+                <div class="col-xs-12 mentions-legales" >
+                    <a href="mentions-legales.php" id="mentions-legales">Mentions Légales</a>
+                    <p>Copyright 2016 - Klap Affaires <br />Développé par les élèves de la <a href="http://www.wildcodeschool.fr" id="wildcode">Wild Code School.</a> </p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
         {% block javascripts %}{% endblock %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
