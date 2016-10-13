@@ -15,7 +15,7 @@ front_videos:
 
 front_videos_category:
     path:     /videos_category
-    defaults: { _controller: "KlapBundle:Front:videos_category" }
+    defaults: { _controller: "KlapBundle:Front:videosCategory" }
     methods: GET
 
 front_service:
