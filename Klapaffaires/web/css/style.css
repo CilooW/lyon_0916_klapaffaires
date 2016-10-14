@@ -273,6 +273,19 @@ hr {
 
 }
 
+.img-circle {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.logo-presta{
+    max-width: 200px;
+}
+.logo-presta img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
 .center-support-img {
     border: 1px solid black;
     border-radius: 50%;
@@ -287,7 +300,7 @@ hr {
 /**//**/ /**//**/
 
 #img-header-video {
-    background-image: url(../img/publireportage-lyon-klap-affaires.jpg) ;
+    background-image: url(../img/Img-video.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -628,7 +641,7 @@ figure.effect-apollo:hover p {
                                         ----------------
 */
 #img-header-presta {
-    background-image: url(../img/publireportage-lyon-klap-affaires.jpg) ;
+    background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
