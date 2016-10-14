@@ -1,0 +1,25 @@
+klap_category_video:
+    resource: "@KlapBundle/Resources/config/routing/category_video.yml"
+    prefix:   /category_video
+
+klap_formulaire:
+    resource: "@KlapBundle/Resources/config/routing/formulaire.yml"
+    prefix:   /formulaire
+
+klap_testimony:
+    resource: "@KlapBundle/Resources/config/routing/testimony.yml"
+    prefix:   /testimony
+
+klap_integration_video:
+    resource: "@KlapBundle/Resources/config/routing/integration_video.yml"
+    prefix:   /integration_video
+
+klap_front:
+    resource: "@KlapBundle/Resources/config/routing/front.yml"
+    prefix:   /front
+
+
+
+klap_homepage:
+    path:     /
+    defaults: { _controller: KlapBundle:Default:index }

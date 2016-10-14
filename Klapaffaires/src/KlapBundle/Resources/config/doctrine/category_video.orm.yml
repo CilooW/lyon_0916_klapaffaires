@@ -1,0 +1,23 @@
+KlapBundle\Entity\category_video:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\category_videoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        category:
+            type: string
+            length: '70'
+            nullable: true
+            unique: true
+
+    oneToMany:
+        integration_videos:
+            targetEntity: Integration_video
+            mappedBy: video
+
+    lifecycleCallbacks: {  }

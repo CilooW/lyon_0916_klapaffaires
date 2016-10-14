@@ -1,0 +1,3 @@
+klap:
+    resource: "@KlapBundle/Resources/config/routing.yml"
+    prefix:   /

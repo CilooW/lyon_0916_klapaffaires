@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Integration_videos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Iframe</th>
+                <th>Description</th>
+                <th>Adddate</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for integration_video in integration_videos %}
+            <tr>
+                <td><a href="{{ path('integration_video_show', { 'id': integration_video.id }) }}">{{ integration_video.id }}</a></td>
+                <td>{{ integration_video.iframe }}</td>
+                <td>{{ integration_video.description }}</td>
+                <td>{% if integration_video.addDate %}{{ integration_video.addDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('integration_video_show', { 'id': integration_video.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('integration_video_edit', { 'id': integration_video.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('integration_video_new') }}">Create a new integration_video</a>
+        </li>
+    </ul>
+{% endblock %}
