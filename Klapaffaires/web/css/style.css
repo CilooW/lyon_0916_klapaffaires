@@ -23,12 +23,17 @@ hr {
     width: 180px;
 }
 
+#myNavbar a{
+    font-size: 1.5em;
+    color: #00a1e5;
+}
 #myNavbar a:hover{
     text-decoration: underline;
     text-decoration-color: white;
+    color: white;
 }
 
-#myNavbar li{
+#myNavbar .border-white{
     border-right: 1px solid white;
 }
 

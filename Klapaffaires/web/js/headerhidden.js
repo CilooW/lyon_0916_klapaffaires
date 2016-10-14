@@ -30,10 +30,13 @@
                 })
             } else {
                 social.hide();
-                $navbar.css({
-                    "background-color": "#363636",
-                    "height": "80px"
-                });
+               // $navbar.fadeIn( 3000, function(){
+                    $navbar.css({
+                        "background-color": "#363636",
+                        "height": "80px",
+                        "opacity": 0.8
+                    });
+               // });
             }
         })
     });
