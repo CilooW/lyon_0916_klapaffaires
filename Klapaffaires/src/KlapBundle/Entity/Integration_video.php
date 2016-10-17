@@ -28,6 +28,12 @@ class Integration_video
     private $addDate;
 
 
+    public function __construct(){
+
+        $this->addDate = new \DateTime();
+    }
+
+
     /**
      * Get id
      *
@@ -47,8 +53,9 @@ class Integration_video
      */
     public function setIframe($iframe)
     {
-        $this->iframe = $iframe;
-
+        $search = 'watch?v=';
+        $replace = 'embed/';
+        $this->iframe = str_replace($search, $replace, $iframe);
         return $this;
     }
 
@@ -59,6 +66,7 @@ class Integration_video
      */
     public function getIframe()
     {
+
         return $this->iframe;
     }
 
