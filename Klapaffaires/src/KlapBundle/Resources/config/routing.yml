@@ -18,6 +18,10 @@ klap_front:
     resource: "@KlapBundle/Resources/config/routing/front.yml"
     prefix:   /front
 
+klap_employees:
+    resource: "@KlapBundle/Resources/config/routing/employees.yml"
+    prefix:   /employees
+
 
 
 klap_homepage:
