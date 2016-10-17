@@ -30,6 +30,11 @@ hr {
     }
     .navbar-collapse {
         float: right;
+        background-color: rgba(54, 54, 54, 0.8);
+    }
+
+    .navbar-collapse li {
+        border-right: none;
     }
 
     .navbar-fixed-top {
@@ -76,12 +81,12 @@ hr {
 
 #myNavbar a{
     font-size: 1.5em;
-    color: #00a1e5;
+    color: white;
 }
 #myNavbar a:hover{
     text-decoration: underline;
     text-decoration-color: white;
-    color: white;
+    color: #00a1e5;
 }
 
 #myNavbar .border-white{
