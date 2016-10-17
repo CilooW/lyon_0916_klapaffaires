@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Category_videos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for category_video in category_videos %}
+            <tr>
+                <td><a href="{{ path('category_video_show', { 'id': category_video.id }) }}">{{ category_video.id }}</a></td>
+                <td>{{ category_video.category }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('category_video_show', { 'id': category_video.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('category_video_edit', { 'id': category_video.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('category_video_new') }}">Create a new category_video</a>
+        </li>
+    </ul>
+{% endblock %}
