@@ -454,6 +454,17 @@ hr {
     font-size: 1.5em;
 }
 
+.video-presentation {
+    margin: 0;
+    clear: both;
+}
+
+
+.no-margin-category {
+    margin: 0;
+    padding: 0;
+}
+
 .video-template h2,
 .video-intro h2,
 .video-presentation h2 {
@@ -511,8 +522,7 @@ hr {
 .img-presentation {
     width : 100%;
     display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 0 50px;
 }
 
 .text-presentation {
@@ -676,6 +686,8 @@ figure.effect-apollo:hover p {
 #img-category {
     width: 100%;
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 #img-category figcaption {
