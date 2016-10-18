@@ -7,3 +7,15 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    admin.formulaire:
+        class: KlapBundle\Admin\FormulaireAdmin
+        arguments: [~, KlapBundle\Entity\Formulaire, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Formulaire }
+
+    admin.testimony:
+        class: KlapBundle\Admin\TestimonyAdmin
+        arguments: [~, KlapBundle\Entity\Testimony, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Testimony }
