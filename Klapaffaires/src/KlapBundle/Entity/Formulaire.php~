@@ -168,4 +168,3 @@ class Formulaire
         return $this->message;
     }
 }
-

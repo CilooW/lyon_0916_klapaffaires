@@ -109,5 +109,33 @@ class Integration_video
     {
         return $this->addDate;
     }
-}
+    /**
+     * @var \KlapBundle\Entity\category_video
+     */
+    private $video;
 
+
+    /**
+     * Set video
+     *
+     * @param \KlapBundle\Entity\category_video $video
+     *
+     * @return Integration_video
+     */
+    public function setVideo(\KlapBundle\Entity\category_video $video = null)
+    {
+        $this->video = $video;
+
+        return $this;
+    }
+
+    /**
+     * Get video
+     *
+     * @return \KlapBundle\Entity\category_video
+     */
+    public function getVideo()
+    {
+        return $this->video;
+    }
+}

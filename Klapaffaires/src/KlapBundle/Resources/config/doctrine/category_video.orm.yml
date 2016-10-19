@@ -14,6 +14,18 @@ KlapBundle\Entity\category_video:
             length: '70'
             nullable: true
             unique: true
+        short_desc:
+            type: string
+            length: '50'
+        long_desc:
+            type: text
+        picture:
+            type: string
+            length: '100'
+        category_title:
+            type: string
+            length: '100'
+            unique: true
 
     oneToMany:
         integration_videos:
