@@ -18,7 +18,7 @@ hr {
 }
 
 /* Navbar */
-@media (max-width: 980px) {
+@media (max-width: 1120px) {
     .navbar-header {
         float: none;
     }
@@ -685,6 +685,7 @@ figure.effect-apollo:hover p {
 
 #img-category {
     width: 100%;
+    height: auto;
     display: block;
     margin: 0;
     padding: 0;
@@ -692,6 +693,13 @@ figure.effect-apollo:hover p {
 
 #img-category figcaption {
     width: 100%;
+    height: auto;
+    display: block;
+}
+
+#img-category img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
