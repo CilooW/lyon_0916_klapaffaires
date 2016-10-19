@@ -6,19 +6,14 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class category_videoType extends AbstractType
+class EmployeesType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('category')        ;
-        $builder->add('short_desc')        ;
-        $builder->add('long_desc')        ;
-        $builder->add('picture')        ;
-        $builder->add('category_title')        ;
-
+        $builder->add('firstName')->add('lastName')->add('videoDescription')->add('videoUrl')        ;
     }
     
     /**
@@ -27,7 +22,7 @@ class category_videoType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'KlapBundle\Entity\category_video'
+            'data_class' => 'KlapBundle\Entity\Employees'
         ));
     }
 
@@ -36,7 +31,7 @@ class category_videoType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'klapbundle_category_video';
+        return 'klapbundle_employees';
     }
 
 

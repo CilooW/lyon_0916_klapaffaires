@@ -1,0 +1,29 @@
+KlapBundle\Entity\Employees:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\EmployeesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        firstName:
+            type: string
+            length: '50'
+            nullable: true
+            column: first_name
+        lastName:
+            type: string
+            length: '50'
+            nullable: true
+            column: last_name
+        videoDescription:
+            type: text
+            column: video_description
+        videoUrl:
+            type: string
+            length: 255
+            column: video_url
+    lifecycleCallbacks: {  }
