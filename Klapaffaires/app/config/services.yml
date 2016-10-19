@@ -19,3 +19,15 @@ services:
         arguments: [~, KlapBundle\Entity\Testimony, ~]
         tags:
             - { name: sonata.admin, manager_type: orm, label: Testimony }
+
+    admin.category_video:
+        class: KlapBundle\Admin\category_videoAdmin
+        arguments: [~, KlapBundle\Entity\category_video, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: category }
+
+    admin.integration_video:
+        class: KlapBundle\Admin\Integration_videoAdmin
+        arguments: [~, KlapBundle\Entity\Integration_video, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Integration }
