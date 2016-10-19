@@ -17,8 +17,14 @@ class Integration_videoAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('iframe');
-        $formMapper->add('description');
+        $formMapper->add('iframe', 'text',
+            array(
+                'label' => 'Mettez ici l\'url de votre vidéo'
+            ));
+        $formMapper->add('description', 'textarea',
+            array(
+                'label' => 'Entrez une description de la vidéo'
+            ));
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

@@ -12,17 +12,32 @@ use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
+use Sonata\AdminBundle\Show\ShowMapper;
 
 class FormulaireAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('nom');
+        $formMapper->add('nom', 'text',
+            array(
+                'label' => 'Votre Nom'
+            ));
         $formMapper->add('prenom');
         $formMapper->add('societe');
         $formMapper->add('email');
         $formMapper->add('message');
 
+    }
+
+    protected function configureShowFields(ShowMapper $showMapper)
+    {
+        $showMapper
+            ->add('nom')
+            ->add('prenom')
+            ->add('societe')
+            ->add('email')
+            ->add('message')
+            ;
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
