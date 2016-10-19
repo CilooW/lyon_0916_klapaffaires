@@ -14,6 +14,11 @@ class category_videoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('category')        ;
+        $builder->add('short_desc')        ;
+        $builder->add('long_desc')        ;
+        $builder->add('picture')        ;
+        $builder->add('category_title')        ;
+
     }
     
     /**

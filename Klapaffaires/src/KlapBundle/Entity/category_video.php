@@ -97,4 +97,120 @@ class category_video
     {
         return $this->integration_videos;
     }
+    /**
+     * @var string
+     */
+    private $short_desc;
+
+    /**
+     * @var string
+     */
+    private $long_desc;
+
+    /**
+     * @var string
+     */
+    private $picture;
+
+    /**
+     * @var string
+     */
+    private $category_title;
+
+
+    /**
+     * Set shortDesc
+     *
+     * @param string $shortDesc
+     *
+     * @return category_video
+     */
+    public function setShortDesc($shortDesc)
+    {
+        $this->short_desc = $shortDesc;
+
+        return $this;
+    }
+
+    /**
+     * Get shortDesc
+     *
+     * @return string
+     */
+    public function getShortDesc()
+    {
+        return $this->short_desc;
+    }
+
+    /**
+     * Set longDesc
+     *
+     * @param string $longDesc
+     *
+     * @return category_video
+     */
+    public function setLongDesc($longDesc)
+    {
+        $this->long_desc = $longDesc;
+
+        return $this;
+    }
+
+    /**
+     * Get longDesc
+     *
+     * @return string
+     */
+    public function getLongDesc()
+    {
+        return $this->long_desc;
+    }
+
+    /**
+     * Set picture
+     *
+     * @param string $picture
+     *
+     * @return category_video
+     */
+    public function setPicture($picture)
+    {
+        $this->picture = $picture;
+
+        return $this;
+    }
+
+    /**
+     * Get picture
+     *
+     * @return string
+     */
+    public function getPicture()
+    {
+        return $this->picture;
+    }
+
+    /**
+     * Set categoryTitle
+     *
+     * @param string $categoryTitle
+     *
+     * @return category_video
+     */
+    public function setCategoryTitle($categoryTitle)
+    {
+        $this->category_title = $categoryTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get categoryTitle
+     *
+     * @return string
+     */
+    public function getCategoryTitle()
+    {
+        return $this->category_title;
+    }
 }
