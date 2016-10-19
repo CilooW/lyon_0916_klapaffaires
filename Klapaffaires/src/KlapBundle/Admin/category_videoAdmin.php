@@ -23,11 +23,11 @@ class category_videoAdmin extends Admin
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('wName');
+        $datagridMapper->add('category');
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('wName');
+        $listMapper->addIdentifier('category');
     }
 }

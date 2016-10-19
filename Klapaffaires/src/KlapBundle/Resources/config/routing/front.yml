@@ -25,7 +25,7 @@ front_service:
 
 front_contact:
     path:     /contact
-    defaults: { _controller: "KlapBundle:Front:contact" }
+    defaults: { _controller: "KlapBundle:Formulaire:new" }
     methods: GET
 
 front_legal:
@@ -37,4 +37,5 @@ front_footer:
     path:     /footer
     defaults: { _controller: "KlapBundle:Front:footer" }
     methods: GET
+
 

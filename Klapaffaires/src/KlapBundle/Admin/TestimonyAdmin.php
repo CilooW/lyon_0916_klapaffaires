@@ -17,19 +17,31 @@ class TestimonyAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('wName', 'text');
-        $formMapper->add('wFirstname', 'text');
-        $formMapper->add('wDescription', 'text');
-        $formMapper->add('wPicturePath', 'text');
+        $formMapper->add('wName', 'text',
+            array('label' => 'Nom'
+            ));
+        $formMapper->add('wFirstname', 'text',
+            array('label' => 'Prénom'
+            ));
+        $formMapper->add('wDescription', 'text',
+            array('label' => 'Témoignage'
+            ));
+        $formMapper->add('wPicturePath', 'text',
+            array('label' => 'Photo du témoin'
+            ));
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('wName');
+        $datagridMapper->add('wName', 'text',
+            array('label' => 'Nom'
+            ));
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('wName');
+        $listMapper->addIdentifier('wName', 'text',
+            array('label' => 'Nom'
+            ));
     }
 }

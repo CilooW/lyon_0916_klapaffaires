@@ -124,7 +124,9 @@ class Employees
      */
     public function setVideoUrl($videoUrl)
     {
-        $this->videoUrl = $videoUrl;
+        $search = 'watch?v=';
+        $replace = 'embed/';
+        $this->videoUrl = str_replace($search, $replace, $videoUrl);
 
         return $this;
     }
