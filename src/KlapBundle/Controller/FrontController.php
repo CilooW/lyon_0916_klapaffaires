@@ -52,4 +52,5 @@ class FrontController extends Controller
     {
         return $this->render('front/footer.html.twig');
     }
+
 }

@@ -18,4 +18,13 @@ KlapBundle\Entity\IntegrationVideo:
         addDate:
             type: datetime
             unique: true
+
+    manyToOne:
+        video:
+            targetEntity: CategoryVideo
+            inversedBy: integration_video
+            joinColumn:
+                name: category_id
+                referencedColumnName: id
+
     lifecycleCallbacks: {  }

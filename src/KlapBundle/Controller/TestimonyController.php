@@ -22,7 +22,7 @@ class TestimonyController extends Controller
 
         $testimonies = $em->getRepository('KlapBundle:Testimony')->findAll();
 
-        return $this->render('testimony/index.html.twig', array(
+        return $this->render('front/index.html.twig', array(
             'testimonies' => $testimonies,
         ));
     }

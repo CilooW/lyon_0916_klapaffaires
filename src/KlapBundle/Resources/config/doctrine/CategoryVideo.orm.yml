@@ -30,4 +30,10 @@ KlapBundle\Entity\CategoryVideo:
             length: '100'
             unique: true
             column: category_title
+
+    oneToMany:
+        integration_video:
+            targetEntity: IntegrationVideo
+            mappedBy: video
+
     lifecycleCallbacks: {  }

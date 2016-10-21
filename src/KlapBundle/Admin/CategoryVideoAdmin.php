@@ -17,11 +17,25 @@ class CategoryVideoAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('category');
-        $formMapper->add('short_desc');
-        $formMapper->add('long_desc');
-        $formMapper->add('picture');
-        $formMapper->add('category_title');
+        $formMapper->add('category', 'text',
+            array('label' => 'Categorie'
+            ));
+        $formMapper->add('short_desc', 'text',
+            array(
+                'label' => 'Courte description'
+            ));
+        $formMapper->add('long_desc', 'textarea',
+            array(
+                'label' => 'Longue description'
+            ));
+        $formMapper->add('picture', 'text',
+            array(
+                'label' => 'image'
+            ));
+        $formMapper->add('category_title', 'text',
+            array(
+                'label' => 'titre de la catégorie'
+            ));
 
     }
 
