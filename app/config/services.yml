@@ -7,3 +7,33 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    admin.categoryVideo:
+        class: KlapBundle\Admin\CategoryVideoAdmin
+        arguments: [~, KlapBundle\Entity\CategoryVideo, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Categorie }
+
+    admin.employees:
+        class: KlapBundle\Admin\EmployeesAdmin
+        arguments: [~, KlapBundle\Entity\Employees, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Associés }
+
+    admin.formulaire:
+        class: KlapBundle\Admin\FormulaireAdmin
+        arguments: [~, KlapBundle\Entity\Formulaire, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Formulaire }
+
+    admin.integrationvideo:
+        class: KlapBundle\Admin\IntegrationVideoAdmin
+        arguments: [~, KlapBundle\Entity\IntegrationVideo, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Video }
+
+    admin.testimony:
+        class: KlapBundle\Admin\TestimonyAdmin
+        arguments: [~, KlapBundle\Entity\Testimony, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Témoignage }

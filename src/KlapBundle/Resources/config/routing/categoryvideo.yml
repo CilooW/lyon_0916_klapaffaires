@@ -1,0 +1,24 @@
+categoryvideo_index:
+    path:     /
+    defaults: { _controller: "KlapBundle:CategoryVideo:index" }
+    methods:  GET
+
+categoryvideo_show:
+    path:     /{id}/show
+    defaults: { _controller: "KlapBundle:CategoryVideo:show" }
+    methods:  GET
+
+categoryvideo_new:
+    path:     /new
+    defaults: { _controller: "KlapBundle:CategoryVideo:new" }
+    methods:  [GET, POST]
+
+categoryvideo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "KlapBundle:CategoryVideo:edit" }
+    methods:  [GET, POST]
+
+categoryvideo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "KlapBundle:CategoryVideo:delete" }
+    methods:  DELETE

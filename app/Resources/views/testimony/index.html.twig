@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Testimonies list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Wname</th>
+                <th>Wfirstname</th>
+                <th>Wdescription</th>
+                <th>Wpicturepath</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for testimony in testimonies %}
+            <tr>
+                <td><a href="{{ path('testimony_show', { 'id': testimony.id }) }}">{{ testimony.id }}</a></td>
+                <td>{{ testimony.wName }}</td>
+                <td>{{ testimony.wFirstname }}</td>
+                <td>{{ testimony.wDescription }}</td>
+                <td>{{ testimony.wPicturePath }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('testimony_show', { 'id': testimony.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('testimony_edit', { 'id': testimony.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('testimony_new') }}">Create a new testimony</a>
+        </li>
+    </ul>
+{% endblock %}
