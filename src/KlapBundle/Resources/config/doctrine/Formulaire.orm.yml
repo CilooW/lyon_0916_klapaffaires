@@ -1,0 +1,26 @@
+KlapBundle\Entity\Formulaire:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\FormulaireRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: '100'
+        prenom:
+            type: string
+            length: '60'
+        societe:
+            type: string
+            length: '100'
+        email:
+            type: string
+            length: '100'
+        message:
+            type: text
+    lifecycleCallbacks: {  }
