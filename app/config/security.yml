@@ -5,7 +5,11 @@ security:
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
         in_memory:
-            memory: ~
+            memory:
+              users:
+                admin:
+                  password: $2y$12$5Nyuf.wSBjuUzpkx8dBXOuXRs8B/ZEKtvj4AjCZWV/KZjEUz5Tlqy
+                  roles: 'ROLE_ADMIN'
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -15,6 +19,21 @@ security:
 
         main:
             anonymous: ~
+            http_basic: ~
+
+    access_control:
+        # require ROLE_ADMIN for /admin*
+        - { path: ^/admin, roles: ROLE_ADMIN }
+
+    encoders:
+
+        Symfony\Component\Security\Core\User\User:
+            algorithm: bcrypt
+            cost: 12
+
+
+
+
             # activate different ways to authenticate
 
             # http_basic: ~
