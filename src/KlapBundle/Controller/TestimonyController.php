@@ -2,9 +2,13 @@
 
 namespace KlapBundle\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use KlapBundle\Entity\Testimony;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use KlapBundle\Form\TestimonyType;
+use Symfony\Component\HttpFoundation\File\File;
+
 
 /**
  * Testimony controller.
@@ -38,6 +42,20 @@ class TestimonyController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $file = $testimony->getWPicturePath();
+
+            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+
+            $file->move(
+                $this->getParameter('wpictures_directory'),
+                $fileName
+            );
+
+            $testimony->setWPicturePath(
+                new File($this->getParameter('wpictures_directory').'/'.$testimony->getWPicturePath())
+            );
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($testimony);
             $em->flush($testimony);
