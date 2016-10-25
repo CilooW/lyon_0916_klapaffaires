@@ -26,7 +26,7 @@ class TestimonyAdmin extends Admin
         $formMapper->add('wDescription', 'text',
             array('label' => 'Témoignage'
             ));
-        $formMapper->add('wPicturePath', 'text',
+        $formMapper->add('wPicturePath', 'file',
             array('label' => 'Photo du témoin'
             ));
     }
