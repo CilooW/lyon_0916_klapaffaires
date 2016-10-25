@@ -25,6 +25,10 @@ class IntegrationVideoAdmin extends Admin
             array(
                 'label' => 'Entrez une description de la vidéo'
             ));
+        $formMapper->add('categoryId', 'choice',
+            array(
+                'label' => 'Choisissez la catégorie à laquelle vous voulez associer la vidéo'
+            ));
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

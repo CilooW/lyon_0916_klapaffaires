@@ -16,10 +16,10 @@ class FrontController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $categoryVideos = $em->getRepository('KlapBundle:CategoryVideo')->findAll();
+        $testimonies = $em->getRepository('KlapBundle:Testimony')->findAll();
 
-        return $this->render('front/videos.html.twig', array(
-            'categoryVideos' => $categoryVideos,
+        return $this->render('front/index.html.twig', array(
+            'testimonies' => $testimonies,
         ));
     }
 
