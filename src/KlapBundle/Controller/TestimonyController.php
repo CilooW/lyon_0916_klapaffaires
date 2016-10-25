@@ -44,17 +44,7 @@ class TestimonyController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $file = $testimony->getWPicturePath();
 
-            $fileName = md5(uniqid()).'.'.$file->guessExtension();
-
-            $file->move(
-                $this->getParameter('wpictures_directory'),
-                $fileName
-            );
-
-
-            $testimony->setWPicturePath($fileName);
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($testimony);

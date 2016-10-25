@@ -6,7 +6,7 @@
         <div class="container">
             <div id="maintitle" class ="col-xs-12">
                 <h1>L'humain <strong>au coeur</strong> de la vidéo!</h1>
-                <a href="{{ path('front_videos_category') }}" video.php"><button class="button-header">Nos vidéos!</button></a>
+                <a href="{{ path('front_videos_category') }}"><button class="button-header">Nos vidéos!</button></a>
             </div>
         </div>
 
@@ -104,7 +104,7 @@
                     <div class="row">
                         {% for testimony in testimonies %}
                         <div class="col-xs-12 col-md-4  temoin">
-                            <img src="{{ asset(testimony.wPicturePath) }}">
+                            <img src="{{ asset(wpictures_directory ~ testimony.wPicturePath) }}">
                         </div>
                         <p class="col-xs-12 col-md-8">{{ testimony.wDescription }}</p>
                         {% endfor %}
