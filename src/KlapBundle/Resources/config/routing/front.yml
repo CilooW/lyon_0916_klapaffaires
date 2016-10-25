@@ -1,6 +1,6 @@
 front_index:
     path:     /
-    defaults: { _controller: "KlapBundle:Testimony:index" }
+    defaults: { _controller: "KlapBundle:Front:index" }
     methods: GET
 
 front_aboutus:
@@ -10,7 +10,7 @@ front_aboutus:
 
 front_videos:
     path:     /videos
-    defaults: { _controller: "KlapBundle:CategoryVideo:index" }
+    defaults: { _controller: "KlapBundle:Front:index" }
     methods: GET
 
 front_videos_category:

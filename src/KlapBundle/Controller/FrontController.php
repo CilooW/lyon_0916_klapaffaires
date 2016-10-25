@@ -8,14 +8,19 @@
 
 namespace KlapBundle\Controller;
 
-
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class FrontController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('front/index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+
+        $categoryVideos = $em->getRepository('KlapBundle:CategoryVideo')->findAll();
+
+        return $this->render('front/videos.html.twig', array(
+            'categoryVideos' => $categoryVideos,
+        ));
     }
 
     public function aboutUsAction()
