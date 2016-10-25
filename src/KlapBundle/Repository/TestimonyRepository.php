@@ -12,4 +12,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class TestimonyRepository extends EntityRepository
 {
+    public function getLastTestimony()
+    {
+        $query = $this->createQueryBuilder('t')
+                        ->orderBy('t.id', 'DESC')
+                        ->setMaxResults(1)
+                        ->getQuery();
+
+        return $query->getResult();
+    }
+
+
 }
