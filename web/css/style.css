@@ -359,7 +359,7 @@ hr {
     background-image: url(../img/Img-video.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
     clear: both;
@@ -700,7 +700,7 @@ figure.effect-apollo:hover p {
     background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
     clear: both;
@@ -764,7 +764,7 @@ figure.effect-apollo:hover p {
     background-image: url(../img/mentions-legales-klap-affaires.jpeg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
     clear: both;
@@ -800,7 +800,7 @@ figure.effect-apollo:hover p {
     background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
     clear: both;
