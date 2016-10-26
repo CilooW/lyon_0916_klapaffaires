@@ -4,6 +4,7 @@ namespace KlapBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use KlapBundle\Entity\Testimony;
+use KlapBundle\Repository\TestimonyRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use KlapBundle\Form\TestimonyType;
@@ -25,7 +26,7 @@ class TestimonyController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $testimonies = $em->getRepository('KlapBundle:Testimony')->findAll();
+        $testimonies = $em->getRepository('KlapBundle:Testimony')->GetLastTestimony();
 
         return $this->render('testimony/index.html.twig', array(
             'testimonies' => $testimonies,

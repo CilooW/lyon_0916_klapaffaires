@@ -17,19 +17,27 @@ class FrontController extends Controller
 {
     public function indexAction()
     {
-        $em = $this->getDoctrine()->getManager();
 
-        $testimonies = $em->getRepository('KlapBundle:Testimony')->findAll();
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
+        $videos = $repository->getThreeLastVideo();
 
-        return $this->render('front/index.html.twig', array(
-            'testimonies' => $testimonies,
-        ));
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:Testimony");
+        $testimonies = $repository->getLastTestimony();
+
+        return $this->render('front/index.html.twig',
+                        array("videos" => $videos, "testimonies" => $testimonies)
+        );
     }
 
 
     public function aboutUsAction()
     {
-        return $this->render('front/aboutus.html.twig');
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:Employees");
+        $employees = $repository->findAll();
+
+        return $this->render('front/aboutus.html.twig',
+                            array("employees" => $employees)
+        );
     }
 
     public function videosAction($categoryId)

@@ -22,7 +22,7 @@ class IntegrationVideoController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $integrationVideos = $em->getRepository('KlapBundle:IntegrationVideo')->findAll();
+        $integrationVideos = $em->getRepository('KlapBundle:IntegrationVideo')->GetThreeLastVideo($em);
 
         return $this->render('integrationvideo/index.html.twig', array(
             'integrationVideos' => $integrationVideos,

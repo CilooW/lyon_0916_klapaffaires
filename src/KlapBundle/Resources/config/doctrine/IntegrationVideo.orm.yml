@@ -16,7 +16,7 @@ KlapBundle\Entity\IntegrationVideo:
         description:
             type: text
         addDate:
-            type: datetime
+            type: string
             unique: true
 
     manyToOne:

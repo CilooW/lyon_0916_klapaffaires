@@ -3,6 +3,7 @@
 namespace KlapBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\EntityManager;
 
 /**
  * IntegrationVideoRepository
@@ -12,18 +13,19 @@ use Doctrine\ORM\EntityRepository;
  */
 class IntegrationVideoRepository extends EntityRepository
 {
-    public function findVideoByCategory($categoryId)
+
+
+    public function getThreeLastVideo()
     {
-        $query = $this->getEntityManager()
-            ->createQuery(
-                'SELECT v, c FROM KlapBundle:IntegrationVideo v
-                 JOIN v.category_video c
-                 WHERE v.id = :id'
-            )->setParameter('id', $categoryId);
-        try {
-            return $query->getSingleResult();
-        } catch (\Doctrine\ORM\NoResultException $e) {
-            return null;
-        }
+        $query = $this->createQueryBuilder('iv')
+                        ->orderBy('iv.id', 'DESC')
+                        ->setMaxResults(3)
+                        ->getQuery();
+
+        return $query->getResult();
     }
+
+
+
+
 }

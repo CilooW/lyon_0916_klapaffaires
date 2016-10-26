@@ -29,6 +29,7 @@ class IntegrationVideo
      */
     private $addDate;
 
+
     private $video;
 
 
@@ -36,6 +37,7 @@ class IntegrationVideo
     {
         $this->addDate = new \DateTime("now");
     }
+
 
 
     /**
@@ -56,7 +58,10 @@ class IntegrationVideo
      */
     public function setIframe($iframe)
     {
-        $this->iframe = $iframe;
+        $search = "watch?v=";
+        $replace = "embed/";
+
+        $this->iframe = str_replace($search, $replace, $iframe);
 
         return $this;
     }
