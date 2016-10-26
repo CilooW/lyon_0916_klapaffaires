@@ -792,7 +792,88 @@ figure.effect-apollo:hover p {
     margin-bottom: 30px;
     padding: 10px;
 }
+/**//**//**//**//**/
+/*   CONTACT FORM */
+/**//**//**//**//**/
 
+#img-header-contact-form {
+    background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    padding-top: 20%;
+    color: #ffffff;
+}
+
+#img-header-contact-form h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #ffffff;
+}
+
+#img-header-contact-form strong {
+    color: #00a1e5;
+}
+
+#contact-form{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#contact-form label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact-form #button-send {
+    display: block;
+    margin: 25px auto 25px;
+    background-color: #00a1e5;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 150px;
+    border: 0;
+    height: 40px;
+    font-size: 0.9em;
+}
+
+#contact-form #button-send:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #363636;
+    font-size: 0.9em;
+}
+
+#formulaire_nom,
+#formulaire_prenom,
+#formulaire_societe,
+#formulaire_email,
+#formulaire_message {
+    display: block;
+    margin: 0 auto;
+    padding-left: 18px;
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#formulaire_nom,
+#formulaire_prenom,
+#formulaire_societe,
+#formulaire_email {
+    height: 40px;
+}
+
+#formulaire_message {
+    height: 100px;
+    padding-top: 10px;
+}
 
 /**//**//**//**/
 /*   FOOTER   */

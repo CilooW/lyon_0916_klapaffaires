@@ -9,7 +9,9 @@
 namespace KlapBundle\Controller;
 
 
+use KlapBundle\Entity\Formulaire;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class FrontController extends Controller
 {
@@ -38,7 +40,7 @@ class FrontController extends Controller
         return $this->render('front/service.html.twig');
     }
 
-    public function contact()
+    public function contactAction()
     {
         return $this->render('front/contact.html.twig');
     }
@@ -53,4 +55,27 @@ class FrontController extends Controller
         return $this->render('front/footer.html.twig');
     }
 
+    /**
+     * Creates a new Formulaire entity.
+     *
+     */
+    public function newAction(Request $request)
+    {
+        $formulaire = new Formulaire();
+        $form = $this->createForm('KlapBundle\Form\FormulaireType', $formulaire);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($formulaire);
+            $em->flush();
+
+            return $this->redirectToRoute('front_contact', array('id' => $formulaire->getId()));
+        }
+
+        return $this->render('front/contact.html.twig', array(
+            'formulaire' => $formulaire,
+            'form' => $form->createView(),
+        ));
+    }
 }

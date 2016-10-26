@@ -25,8 +25,8 @@ front_service:
 
 front_contact:
     path:     /contact
-    defaults: { _controller: "KlapBundle:Formulaire:new" }
-    methods: GET
+    defaults: { _controller: "KlapBundle:Front:new" }
+    methods: [GET, POST]
 
 front_legal:
     path:     /legal
