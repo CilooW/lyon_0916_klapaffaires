@@ -5,6 +5,7 @@ namespace KlapBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class TestimonyType extends AbstractType
 {
@@ -13,7 +14,19 @@ class TestimonyType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('wName')->add('wFirstname')->add('wDescription')->add('wPicturePath')        ;
+        $builder
+            ->add('wName', 'text', array(
+                'label' => 'Nom du témoin'
+            ))
+            ->add('wFirstname', 'text', array(
+                'label' => 'Prénom du témoin'
+            ))
+            ->add('wDescription', 'text', array(
+                'label' => 'Description'
+            ))
+            ->add('wPicturePath', FileType::class, array(
+                'label' => 'Photo du témoignage'
+            ));
     }
     
     /**

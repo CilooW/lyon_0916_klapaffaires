@@ -14,10 +14,6 @@ klap_formulaire:
     resource: "@KlapBundle/Resources/config/routing/formulaire.yml"
     prefix:   /formulaire
 
-klap_testimony:
-    resource: "@KlapBundle/Resources/config/routing/testimony.yml"
-    prefix:   /testimony
-
 klap_front:
     resource: "@KlapBundle/Resources/config/routing/front.yml"
     prefix:   /front

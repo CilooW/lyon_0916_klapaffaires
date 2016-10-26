@@ -29,6 +29,29 @@ class IntegrationVideo
      */
     private $addDate;
 
+    private $categoryId;
+
+    /**
+     * @return mixed
+     */
+    public function getCategoryId()
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * @param mixed $categoryId
+     */
+    public function setCategoryId($categoryId)
+    {
+        $this->categoryId = $categoryId;
+    }
+
+    public function __construct()
+    {
+        $this->addDate = new \DateTime("now");
+    }
+
 
     /**
      * Get id
@@ -107,5 +130,34 @@ class IntegrationVideo
     public function getAddDate()
     {
         return $this->addDate;
+    }
+    /**
+     * @var \KlapBundle\Entity\CategoryVideo
+     */
+    private $video;
+
+
+    /**
+     * Set video
+     *
+     * @param \KlapBundle\Entity\CategoryVideo $video
+     *
+     * @return IntegrationVideo
+     */
+    public function setVideo(\KlapBundle\Entity\CategoryVideo $video = null)
+    {
+        $this->video = $video;
+
+        return $this;
+    }
+
+    /**
+     * Get video
+     *
+     * @return \KlapBundle\Entity\CategoryVideo
+     */
+    public function getVideo()
+    {
+        return $this->video;
     }
 }
