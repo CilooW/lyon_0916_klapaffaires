@@ -28,7 +28,12 @@ class FrontController extends Controller
 
     public function aboutUsAction()
     {
-        return $this->render('front/aboutus.html.twig');
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:Employees");
+        $employees = $repository->findAll();
+
+        return $this->render('front/aboutus.html.twig',
+                            array("employees" => $employees)
+        );
     }
 
     public function videosAction()
