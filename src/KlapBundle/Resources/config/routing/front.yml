@@ -10,7 +10,7 @@ front_aboutus:
 
 front_videos:
     path:     /videos
-    defaults: { _controller: "KlapBundle:Front:index" }
+    defaults: { _controller: "KlapBundle:Front:videos" }
     methods: GET
 
 front_videos_category:

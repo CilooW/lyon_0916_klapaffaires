@@ -40,14 +40,16 @@ class FrontController extends Controller
         );
     }
 
-    public function videosAction($categoryId)
+    public function videosAction()
     {
-        $product = $this->getDoctrine()
-            ->getRepository('KlapBundle:IntegrationVideo')
-            ->findVideoByCategory($categoryId);
-        $category = $product->getCategory();
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
+        $videos = $repository->findVideoByCategoryId();
 
-        return $this->render('front/videos_category.html.twig');
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
+        $categoryVideos = $repository->findAll();
+
+        return $this->render('front/videos.html.twig',
+            array("videos" => $videos, "categoryVideos" => $categoryVideos));
     }
 
     public function videosCategoryAction()

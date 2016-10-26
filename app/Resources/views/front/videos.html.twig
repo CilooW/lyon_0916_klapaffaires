@@ -34,9 +34,10 @@
         </div>
         <!-- Video Bloc -->
         <div class="container-fluid">
+            {% for video in videos %}
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/-L-r0BfmlcM" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
                     <p>Symbiose - Côté zen Bien-être et esthétique Coiffure et services barbier
@@ -45,7 +46,8 @@
                         www.symbiose-cotezen.fr</p>
                 </div>
             </div>
-
+            {% endfor %}
+<!--
             <div class="col-xs-12 col-sm-6 col-md-4 container-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item video-youtube" src="https://www.youtube.com/embed/V9H8s565uvs" allowfullscreen></iframe>
@@ -86,7 +88,7 @@
                 <div class="video-description">
                     <p>Un réseau d’affaires lyonnais qui propose une fois par mois des soirées thématiques sur le monde de l’entreprise.</p>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
     <!-- Description of our videos -->
