@@ -12,4 +12,18 @@ use Doctrine\ORM\EntityRepository;
  */
 class IntegrationVideoRepository extends EntityRepository
 {
+    public function findVideoByCategory($categoryId)
+    {
+        $query = $this->getEntityManager()
+            ->createQuery(
+                'SELECT v, c FROM KlapBundle:IntegrationVideo v
+                 JOIN v.category_video c
+                 WHERE v.id = :id'
+            )->setParameter('id', $categoryId);
+        try {
+            return $query->getSingleResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
 }

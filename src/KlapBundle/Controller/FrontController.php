@@ -9,6 +9,9 @@
 namespace KlapBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use KlapBundle\Repository\IntegrationVideoRepository;
+use KlapBundle\Entity\IntegrationVideo;
+use Symfony\Component\HttpFoundation\Request;
 
 class FrontController extends Controller
 {
@@ -23,14 +26,20 @@ class FrontController extends Controller
         ));
     }
 
+
     public function aboutUsAction()
     {
         return $this->render('front/aboutus.html.twig');
     }
 
-    public function videosAction()
+    public function videosAction($categoryId)
     {
-        return $this->render('front/videos.html.twig');
+        $product = $this->getDoctrine()
+            ->getRepository('KlapBundle:IntegrationVideo')
+            ->findVideoByCategory($categoryId);
+        $category = $product->getCategory();
+
+        return $this->render('front/videos_category.html.twig');
     }
 
     public function videosCategoryAction()
