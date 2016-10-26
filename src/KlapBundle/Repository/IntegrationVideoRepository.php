@@ -3,6 +3,7 @@
 namespace KlapBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\EntityManager;
 
 /**
  * IntegrationVideoRepository
@@ -12,4 +13,18 @@ use Doctrine\ORM\EntityRepository;
  */
 class IntegrationVideoRepository extends EntityRepository
 {
+
+    public function getThreeLastVideo()
+    {
+        $query = $this->createQueryBuilder('iv')
+                        ->orderBy('iv.id', 'DESC')
+                        ->setMaxResults(3)
+                        ->getQuery();
+
+        return $query->getResult();
+    }
+
+
+
+
 }
