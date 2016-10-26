@@ -82,6 +82,19 @@ class FrontController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($formulaire);
             $em->flush();
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Nouveau message de ' . $formulaire->getNom(). ' '  . $formulaire->getPrenom() . ' reçu de votre site Klap Affaires')
+                ->setFrom($formulaire->getEmail())
+                ->setTo('etudiants.wcs.lyon@gmail.com')
+                ->setBody($formulaire->getMessage()
+                    //$this->renderView(
+                    // app/Resources/views/Emails/registration.html.twig
+                    //    'Emails/registration.html.twig',
+                    //    array('name' => $name)
+                   // ),
+                  //  'text/html'
+                );
+            $this->get('mailer')->send($message);
 
             return $this->redirectToRoute('front_contact', array('id' => $formulaire->getId()));
         }

@@ -30,30 +30,6 @@ class FormulaireController extends Controller
     }
 
     /**
-     * Creates a new Formulaire entity.
-     *
-     */
-    public function newAction(Request $request)
-    {
-        $formulaire = new Formulaire();
-        $form = $this->createForm('KlapBundle\Form\FormulaireType', $formulaire);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($formulaire);
-            $em->flush();
-
-            return $this->redirectToRoute('formulaire_show', array('id' => $formulaire->getId()));
-        }
-
-        return $this->render('formulaire/new.html.twig', array(
-            'formulaire' => $formulaire,
-            'form' => $form->createView(),
-        ));
-    }
-
-    /**
      * Finds and displays a Formulaire entity.
      *
      */

@@ -23,11 +23,6 @@ class FormulaireType extends AbstractType
         ;
     }
 
-    public function getName()
-    {
-        return 'contact';
-    }
-    
     /**
      * @param OptionsResolver $resolver
      */
