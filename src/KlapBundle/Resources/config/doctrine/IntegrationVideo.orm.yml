@@ -16,13 +16,13 @@ KlapBundle\Entity\IntegrationVideo:
         description:
             type: text
         addDate:
-            type: string
+            type: datetime
             unique: true
 
     manyToOne:
         video:
             targetEntity: CategoryVideo
-            inversedBy: integration_video
+            inversedBy: integrationVideo
             joinColumn:
                 name: category_id
                 referencedColumnName: id

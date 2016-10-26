@@ -164,4 +164,56 @@ class CategoryVideo
     {
         return $this->categoryTitle;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $integration_video;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->integration_video = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add integrationVideo
+     *
+     * @param \KlapBundle\Entity\IntegrationVideo $integrationVideo
+     *
+     * @return CategoryVideo
+     */
+    public function addIntegrationVideo(\KlapBundle\Entity\IntegrationVideo $integrationVideo)
+    {
+        $this->integration_video[] = $integrationVideo;
+
+        return $this;
+    }
+
+    /**
+     * Remove integrationVideo
+     *
+     * @param \KlapBundle\Entity\IntegrationVideo $integrationVideo
+     */
+    public function removeIntegrationVideo(\KlapBundle\Entity\IntegrationVideo $integrationVideo)
+    {
+        $this->integration_video->removeElement($integrationVideo);
+    }
+
+    /**
+     * Get integrationVideo
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getIntegrationVideo()
+    {
+        return $this->integration_video;
+    }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $integrationVideo;
+
+
 }

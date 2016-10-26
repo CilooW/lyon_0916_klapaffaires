@@ -32,7 +32,7 @@ KlapBundle\Entity\CategoryVideo:
             column: category_title
 
     oneToMany:
-        integration_video:
+        integrationVideo:
             targetEntity: IntegrationVideo
             mappedBy: video
 

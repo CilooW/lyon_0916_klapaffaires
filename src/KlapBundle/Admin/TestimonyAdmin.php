@@ -26,22 +26,38 @@ class TestimonyAdmin extends Admin
         $formMapper->add('wDescription', 'text',
             array('label' => 'Témoignage'
             ));
-        $formMapper->add('wPicturePath', 'file',
-            array('label' => 'Photo du témoin'
+
+        $formMapper->add('file', 'file',
+            array('label' => 'Photo',
+                'required' => false
             ));
     }
 
+    public function prePersist($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    public function preUpdate($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    public function manageFileUpload($image)
+    {
+        if ($image->getFile()){
+            $image->refreshUpdate();
+        }
+    }
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('wName', 'text',
-            array('label' => 'Nom'
-            ));
+        $datagridMapper->add('wName');
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('wName', 'text',
-            array('label' => 'Nom'
-            ));
+        $listMapper
+            ->addIdentifier('wName');
+
     }
 }

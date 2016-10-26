@@ -3,12 +3,14 @@
 namespace KlapBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Testimony
  */
 class Testimony
 {
+    const SERVER_PATH_TO_IMAGE_FOLDER = 'uploads/wpictures';
     /**
      * @var int
      */
@@ -34,6 +36,9 @@ class Testimony
      */
     private $wPicturePath;
 
+    private $file;
+
+    private $updated;
 
     /**
      * Get id
@@ -135,5 +140,70 @@ class Testimony
     public function getWPicturePath()
     {
         return $this->wPicturePath;
+    }
+
+
+
+
+    public function setFile(UploadedFile $file = null)
+    {
+        $this->file = $file;
+    }
+
+    public function getFile()
+    {
+        return $this->file;
+    }
+    public function upload()
+    {
+        if(null === $this->getFile())
+        {
+            return;
+        }
+
+        $this->getFile()->move(
+            Testimony::SERVER_PATH_TO_IMAGE_FOLDER,
+            $this->getFile()->getClientOriginalName()
+        );
+
+        $this->wPicturePath = $this->getFile()->getClientOriginalName();
+
+        $this->setFile(null);
+    }
+
+    public function lifecycleFileUpload()
+    {
+        $this->upload();
+    }
+
+    public function refreshUpdate()
+    {
+        $this->setUpdated(new \DateTime('now'));
+    }
+
+    /**
+     * @var \DateTime
+     */
+
+
+    private function setUpdated($updated)
+    {
+        $this->updated = $updated;
+
+        return $this;
+    }
+
+
+
+
+
+    /**
+     * Get updated
+     *
+     * @return \DateTime
+     */
+    public function getUpdated()
+    {
+        return $this->updated;
     }
 }

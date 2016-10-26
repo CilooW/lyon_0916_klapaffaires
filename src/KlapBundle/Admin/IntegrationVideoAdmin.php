@@ -8,10 +8,14 @@
 
 namespace KlapBundle\Admin;
 
+use KlapBundle\KlapBundle;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
+use Sonata\AdminBundle\Show\ShowMapper;
+use Sonata\AdminBundle\Route\RouteCollection;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 class IntegrationVideoAdmin extends Admin
 {
@@ -25,6 +29,13 @@ class IntegrationVideoAdmin extends Admin
             array(
                 'label' => 'Entrez une description de la vidéo'
             ));
+        $formMapper->add('video', EntityType::class, array(
+            'class' => 'KlapBundle:CategoryVideo',
+            'choice_label' => 'category'
+        ),
+            array(
+                'label' => 'Choisissez la catégorie à laquelle vous voulez associer la vidéo'
+            ));
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
@@ -34,6 +45,20 @@ class IntegrationVideoAdmin extends Admin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('description');
+        $listMapper
+            ->addIdentifier('description')
+            ->add('_action', 'actions', array (
+                'actions' => array(
+                    'show' => array(),
+                    'edit' => array(),
+                    'delete' => array(),
+                )
+            ));
     }
+
+   /* protected function configureShowFields(ShowMapper $showMapper)
+    {
+        $showMapper
+            ->add('')
+    }*/
 }

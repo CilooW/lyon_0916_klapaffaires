@@ -2,10 +2,15 @@
 
 namespace KlapBundle\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use KlapBundle\Entity\Testimony;
 use KlapBundle\Repository\TestimonyRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use KlapBundle\Form\TestimonyType;
+use Symfony\Component\HttpFoundation\File\File;
+
+
 
 /**
  * Testimony controller.
@@ -39,11 +44,14 @@ class TestimonyController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($testimony);
             $em->flush($testimony);
 
-            return $this->redirectToRoute('testimony_show', array('id' => $testimony->getId()));
+            return $this->redirect($this->generateUrl('testimony_new'));
         }
 
         return $this->render('testimony/new.html.twig', array(
@@ -77,6 +85,8 @@ class TestimonyController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+
+
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('testimony_edit', array('id' => $testimony->getId()));
