@@ -18,34 +18,20 @@
 
 <section class="container-fluid video-presentation">
     <div class="container">
+    {% for employee in employees %}
         <div class="col-xs-12 col-sm-6 center-presentation">
-            <h2>Rémi Reibel</h2>
+            <h2>{{ employee.firstName }} {{ employee.lastName }}</h2>
             <hr />
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item video-youtube" src="{{ employee.videoUrl }}" allowfullscreen></iframe>
+            </div>
 
-                 <img class="img-circle" src="{{ asset('img/remi-reibel-klap-affaires.jpg') }}">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-                omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-                ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
-                ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-        </div>
+            <br>
+            {{ employee.videoDescription }}
 
-        <div class="col-xs-12 col-sm-6 center-presentation">
-            <h2>Christophe Lacassagne</h2>
-            <hr />
-                <img class="img-circle" src="{{ asset('img/christophe-lacassagne-klap-affaires.jpg') }}">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-                omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-                ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
-                ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
         </div>
+    {% endfor %}
+
     </div>
 
 </section>
