@@ -29,6 +29,29 @@ class IntegrationVideo
      */
     private $addDate;
 
+    private $categoryId;
+
+    /**
+     * @return mixed
+     */
+    public function getCategoryId()
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * @param mixed $categoryId
+     */
+    public function setCategoryId($categoryId)
+    {
+        $this->categoryId = $categoryId;
+    }
+
+    public function __construct()
+    {
+        $this->addDate = new \DateTime("now");
+    }
+
 
     /**
      * Get id

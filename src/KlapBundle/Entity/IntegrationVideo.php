@@ -29,6 +29,14 @@ class IntegrationVideo
      */
     private $addDate;
 
+    private $video;
+
+
+    public function __construct()
+    {
+        $this->addDate = new \DateTime("now");
+    }
+
 
     /**
      * Get id
@@ -108,10 +116,7 @@ class IntegrationVideo
     {
         return $this->addDate;
     }
-    /**
-     * @var \KlapBundle\Entity\CategoryVideo
-     */
-    private $video;
+
 
 
     /**

@@ -22,7 +22,7 @@ KlapBundle\Entity\IntegrationVideo:
     manyToOne:
         video:
             targetEntity: CategoryVideo
-            inversedBy: integration_video
+            inversedBy: integrationVideo
             joinColumn:
                 name: category_id
                 referencedColumnName: id

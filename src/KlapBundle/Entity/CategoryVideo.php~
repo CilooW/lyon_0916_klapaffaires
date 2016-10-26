@@ -210,4 +210,10 @@ class CategoryVideo
     {
         return $this->integration_video;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $integrationVideo;
+
+
 }

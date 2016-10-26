@@ -12,6 +12,8 @@ use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
+use Sonata\AdminBundle\Show\ShowMapper;
+use Sonata\AdminBundle\Route\RouteCollection;
 
 class IntegrationVideoAdmin extends Admin
 {
@@ -25,7 +27,7 @@ class IntegrationVideoAdmin extends Admin
             array(
                 'label' => 'Entrez une description de la vidéo'
             ));
-        $formMapper->add('categoryId', 'choice',
+        $formMapper->add('video', 'choice',
             array(
                 'label' => 'Choisissez la catégorie à laquelle vous voulez associer la vidéo'
             ));
@@ -38,6 +40,20 @@ class IntegrationVideoAdmin extends Admin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('description');
+        $listMapper
+            ->addIdentifier('description')
+            ->add('_action', 'actions', array (
+                'actions' => array(
+                    'show' => array(),
+                    'edit' => array(),
+                    'delete' => array(),
+                )
+            ));
     }
+
+   /* protected function configureShowFields(ShowMapper $showMapper)
+    {
+        $showMapper
+            ->add('')
+    }*/
 }
