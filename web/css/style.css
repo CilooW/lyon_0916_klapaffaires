@@ -84,9 +84,8 @@ hr {
     color: white;
 }
 #myNavbar a:hover{
-    text-decoration: underline;
     text-decoration-color: white;
-    color: #00a1e5;
+    font-size: 1.6em;
 }
 
 #myNavbar .border-white{
@@ -99,6 +98,7 @@ hr {
 
 .fa {
     color: white;
+    font-size: 0.8em;
 }
 
 .fa:hover{
