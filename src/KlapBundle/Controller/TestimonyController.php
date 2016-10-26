@@ -3,6 +3,7 @@
 namespace KlapBundle\Controller;
 
 use KlapBundle\Entity\Testimony;
+use KlapBundle\Repository\TestimonyRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -20,9 +21,9 @@ class TestimonyController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $testimonies = $em->getRepository('KlapBundle:Testimony')->findAll();
+        $testimonies = $em->getRepository('KlapBundle:Testimony')->GetLastTestimony();
 
-        return $this->render('front/index.html.twig', array(
+        return $this->render('testimony/index.html.twig', array(
             'testimonies' => $testimonies,
         ));
     }
