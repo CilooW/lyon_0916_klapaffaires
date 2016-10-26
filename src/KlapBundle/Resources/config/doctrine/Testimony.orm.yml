@@ -20,4 +20,9 @@ KlapBundle\Entity\Testimony:
         wPicturePath:
             type: string
             length: 255
-    lifecycleCallbacks: {  }
+        updated:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks:
+        prePersist:   [ lifecycleFileUpload ]
+        preUpdate:    [ lifecycleFileUpload ]

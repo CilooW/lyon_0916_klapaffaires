@@ -39,6 +39,15 @@ class CategoryVideo
      */
     private $categoryTitle;
 
+    protected $integrationVideo;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->integrationVideo = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -164,18 +173,17 @@ class CategoryVideo
     {
         return $this->categoryTitle;
     }
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $integration_video;
 
-    /**
-     * Constructor
-     */
-    public function __construct()
+
+    public function setIntegrationVideo($integrationVideo)
     {
-        $this->integration_video = new \Doctrine\Common\Collections\ArrayCollection();
+        if (count($integrationVideo) > 0) {
+            foreach ($integrationVideo as $i) {
+                $this->addIntegrationVideo($i);
+            }
+        }
     }
+
 
     /**
      * Add integrationVideo
@@ -186,9 +194,15 @@ class CategoryVideo
      */
     public function addIntegrationVideo(\KlapBundle\Entity\IntegrationVideo $integrationVideo)
     {
-        $this->integration_video[] = $integrationVideo;
+        $this->integrationVideo[] = $integrationVideo;
 
         return $this;
+    }
+
+    public function addIntegrationVide(\KlapBundle\Entity\IntegrationVideo $integrationVide)
+    {
+        $integrationVide->setVideo($this);
+        $this->integrationVideo->add($integrationVide);
     }
 
     /**
@@ -198,7 +212,7 @@ class CategoryVideo
      */
     public function removeIntegrationVideo(\KlapBundle\Entity\IntegrationVideo $integrationVideo)
     {
-        $this->integration_video->removeElement($integrationVideo);
+        $this->integrationVideo->removeElement($integrationVideo);
     }
 
     /**
@@ -208,6 +222,11 @@ class CategoryVideo
      */
     public function getIntegrationVideo()
     {
-        return $this->integration_video;
+        return $this->integrationVideo;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+
+
 }

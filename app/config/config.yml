@@ -7,10 +7,12 @@ imports:
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: en
+    locale: fr
+    wpicture_directory: '%kernel.root_dir%/../web/uploads/wpictures'
 
 framework:
     #esi:             ~
+
 
     translator:      { fallbacks: [en] }
     secret:          "%secret%"
@@ -36,6 +38,8 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+        wpictures_directory: "uploads/wpictures/"
 
 # Doctrine Configuration
 doctrine:
@@ -75,4 +79,7 @@ sonata_block:
         # enable the SonataAdminBundle block
         sonata.admin.block.admin_list:
             contexts: [admin]
+
+sonata_admin:
+    title:  Klap-affaires
 
