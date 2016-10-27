@@ -364,8 +364,8 @@ hr {
 }
 
 .button-intern {
-    position: absolute;
-    margin: 3% 25% 0 26%;
+    display: block;
+    margin: 1.5em auto;
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
@@ -403,29 +403,12 @@ hr {
 #img-header-video h1 {
     text-align: center;
     font-size: 4em;
-    padding: 25% 0 0 0;
+    display: block;
+    margin: 0 auto;
     color: #ffffff;
+    padding-top: 25%;
 }
 
-@media screen and (max-width: 1200px){
-    #img-header-video h1 {
-        font-size: 3em;
-        padding: 35% 0 0 0;
-    }
-}
-
-@media screen and (max-width: 640px){
-    #img-header-video h1 {
-        font-size: 2em;
-        padding: 40% 5% 0 0;
-    }
-}
-
-@media screen and (max-width: 360px){
-    #img-header-video h1 {
-        padding: 70% 0 0 0;
-    }
-}
 
 #img-header-video strong {
     color: #00a1e5;
