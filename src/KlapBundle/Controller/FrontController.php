@@ -10,6 +10,7 @@ namespace KlapBundle\Controller;
 
 use KlapBundle\Entity\Formulaire;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use KlapBundle\Repository\IntegrationVideoRepository;
 use KlapBundle\Entity\IntegrationVideo;
 use Symfony\Component\HttpFoundation\Request;
@@ -106,4 +107,16 @@ class FrontController extends Controller
             'form' => $form->createView(),
         ));
     }
+
+        /**
+         *
+         *
+         */
+        public function slugAction($slug)
+        {
+            $categoryTitle = $this->generateUrl(
+                'front_show',
+                array('slug' => 'h1')
+            );
+        }
 }

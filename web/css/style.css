@@ -326,22 +326,20 @@ hr {
 .center-support img {
     display: block;
     margin: 0 auto;
-
 }
 
-.img-circle {
-    max-width: 200px;
-    max-height: 200px;
+.logo-apa p {
+    padding-top: 1.5em;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
 }
 
-.logo-presta{
-    max-width: 200px;
-}
-.logo-presta img{
+.logo-presta {
     display: block;
     margin: 0 auto;
-    width: 100%
 }
+
 .center-support-img {
     border: 1px solid black;
     border-radius: 50%;
@@ -882,7 +880,7 @@ figure.effect-apollo:hover p {
 #footer-global {
     background-color: #363636;
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 50px;
 }
 
