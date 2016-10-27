@@ -26,6 +26,7 @@ class TestimonyAdmin extends Admin
         $formMapper->add('wDescription', 'text',
             array('label' => 'Témoignage'
             ));
+
         $formMapper->add('file', 'file',
             array('label' => 'Photo',
                 'required' => false

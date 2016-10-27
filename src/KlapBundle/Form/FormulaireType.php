@@ -22,7 +22,7 @@ class FormulaireType extends AbstractType
             ->add('message')
         ;
     }
-    
+
     /**
      * @param OptionsResolver $resolver
      */
