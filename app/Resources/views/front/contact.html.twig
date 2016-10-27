@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <div class="container-fluid" id="img-header-contact-form">
+        <div class="container">
+            <h1>Contactez <strong>Klap'Affaires</strong></h1>
+        </div>
+    </div>
+    <section class="container-fluid">
+        <div class="container video-category">
+            <h2>Discutons ensemble de votre projet autour d'un café!</h2>
+            <hr />
+            <h3><em>La vidéo est le support incontournable sur le web!</em></h3>
+        </div>
+        <div class="col-xs-12 col-md-6 col-md-offset-3" id="contact-form">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <input id="button-send" type="submit" value="Envoyer votre message" />
+            {{ form_end(form) }}
+        </div>
+    </section>
+{% endblock %}
