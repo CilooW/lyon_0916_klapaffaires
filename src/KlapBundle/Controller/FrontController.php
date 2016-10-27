@@ -94,13 +94,7 @@ class FrontController extends Controller
                 ->setSubject('Nouveau message de ' . $formulaire->getNom(). ' '  . $formulaire->getPrenom() . ' reçu de votre site Klap Affaires')
                 ->setFrom($formulaire->getEmail())
                 ->setTo('etudiants.wcs.lyon@gmail.com')
-                ->setBody($formulaire->getMessage()
-                    //$this->renderView(
-                    // app/Resources/views/Emails/registration.html.twig
-                    //    'Emails/registration.html.twig',
-                    //    array('name' => $name)
-                   // ),
-                  //  'text/html'
+                ->setBody('Vous venez de recevoir un mail de '. $formulaire->getNom() . ' ' . $formulaire->getPrenom() . 'Le message est : ' . $formulaire->getMessage()
                 );
             $this->get('mailer')->send($message);
 

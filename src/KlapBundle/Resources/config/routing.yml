@@ -21,3 +21,4 @@ klap_front:
 klap_homepage:
     path:     /
     defaults: { _controller: KlapBundle:Default:index }
+
