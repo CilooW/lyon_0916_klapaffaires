@@ -8,7 +8,10 @@
 
 namespace KlapBundle\Controller;
 
+
+use KlapBundle\Entity\CategoryVideo;
 use KlapBundle\Entity\Formulaire;
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use KlapBundle\Repository\IntegrationVideoRepository;
@@ -42,19 +45,27 @@ class FrontController extends Controller
         );
     }
 
-    public function videosAction($categoryId)
+    public function videosAction(IntegrationVideo $integrationVideo, CategoryVideo $categoryVideo)
     {
-        $product = $this->getDoctrine()
-            ->getRepository('KlapBundle:IntegrationVideo')
-            ->findVideoByCategory($categoryId);
-        $category = $product->getCategory();
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
+        $videos = $repository->findVideoByCategoryId($integrationVideo->getId());
 
-        return $this->render('front/videos_category.html.twig');
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
+        $categoryVideos = $repository->findAll();
+
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
+        $elements = $repository->findElementById($categoryVideo->getId());
+
+        return $this->render('front/videos.html.twig', array(
+            "videos" => $videos, "categoryVideos" => $categoryVideos, "elements" => $elements));
     }
 
     public function videosCategoryAction()
     {
-        return $this->render('front/videos_category.html.twig');
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
+        $categoryVideos = $repository->findAll();
+        return $this->render('front/videos_category.html.twig',
+            array("categoryVideos" => $categoryVideos));
     }
 
     public function serviceAction()

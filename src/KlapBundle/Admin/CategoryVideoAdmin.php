@@ -28,9 +28,9 @@ class CategoryVideoAdmin extends Admin
             array(
                 'label' => 'Longue description'
             ));
-        $formMapper->add('picture', 'text',
-            array(
-                'label' => 'image'
+        $formMapper->add('file', 'file',
+            array('label' => 'Photo',
+                'required' => false
             ));
         $formMapper->add('category_title', 'text',
             array(
@@ -39,6 +39,22 @@ class CategoryVideoAdmin extends Admin
 
     }
 
+    public function prePersist($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    public function preUpdate($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    public function manageFileUpload($image)
+    {
+        if ($image->getFile()){
+            $image->refreshUpdate();
+        }
+    }
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper->add('category');

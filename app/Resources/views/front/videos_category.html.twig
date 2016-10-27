@@ -19,64 +19,28 @@
 
     <!-- Image Category Grid -->
 
+
     <div class="row">
         <div class="grid" id="img-category">
+            {% for categoryvideo in categoryVideos %}
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <figure class="effect-apollo">
-                    <img src="{{ asset('img/Klap-affaires-video-categorie-hotellerie.jpg') }}" alt="img18"/>
-                    <figcaption>
-                        <h2><span>Hôtellerie - Restauration</span></h2>
-                        <p>Apollo's last game of pool was so strange.</p>
-                        <a href="{{ path('front_videos') }}"></a>
-                    </figcaption>
-                </figure>
-            </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4">
                 <figure class="effect-apollo">
-                    <img src="{{ asset('img/Klap-affaires-video-categorie-scolaire.jpg') }}" alt="img18"/>
+                    <img src="{{ asset(category_picture ~ categoryvideo.picture) }}" alt="img18"/>
                     <figcaption>
-                        <h2><span>Scolaire</span></h2>
-                        <p>Apollo's last game of pool was so strange.</p>
-                        <a href="#"></a>
+                        <h2><span>{{ categoryvideo.categoryTitle }}</span></h2>
+                        <p>{{ categoryvideo.shortDesc }}</p>
+                        <a href="{{ path('front_videos', {'id': categoryvideo.id}) }}"></a>
                     </figcaption>
                 </figure>
-            </div>
 
-            <div class="col-xs-12 col-sm-6  col-md-4">
-                <figure class="effect-apollo">
-                    <img src="{{ asset('img/Klap-affaires-video-categorie-cv-event.jpg') }}" alt="img18"/>
-                    <figcaption>
-                        <h2><span>Evènements</span></h2>
-                        <p>Apollo's last game of pool was so strange.</p>
-                        <a href="#"></a>
-                    </figcaption>
-                </figure>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <figure class="effect-apollo">
-                    <img src="{{ asset('img/Klap-affaires-video-categorie-pme-tpe.jpg') }}" alt="img18"/>
-                    <figcaption>
-                        <h2>PME<span>/TPE</span></h2>
-                        <p>Apollo's last game of pool was so strange.</p>
-                        <a href="#"></a>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <figure class="effect-apollo">
-                    <img src="{{ asset('img/Klap-affaires-video-categorie-cv-video.jpg') }}" alt="img18"/>
-                    <figcaption>
-                        <h2>CV <span>Video</span></h2>
-                        <p>Apollo's last game of pool was so strange.</p>
-                        <a href="#"></a>
-                    </figcaption>
-                </figure>
-            </div>
-
+            {% endfor %}
         </div>
+
     </div>
+
+
 </section>
 
 {% endblock %}
