@@ -27,7 +27,7 @@
                     <figcaption>
                         <h2><span>{{ categoryvideo.categoryTitle }}</span></h2>
                         <p>{{ categoryvideo.shortDesc }}</p>
-                        <a href="{{ path('front_videos') }}"></a>
+                        <a href="{{ path('front_videos', {'id': categoryvideo.id}) }}"></a>
                     </figcaption>
                 </figure>
             </div>

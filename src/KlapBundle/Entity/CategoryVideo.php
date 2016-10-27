@@ -190,7 +190,7 @@ class CategoryVideo
     }
 
 
-    /**
+   /**
      * Add integrationVideo
      *
      * @param \KlapBundle\Entity\IntegrationVideo $integrationVideo
@@ -276,9 +276,7 @@ class CategoryVideo
         $this->setUpdated(new \DateTime('now'));
     }
 
-    /**
-     * @var \DateTime
-     */
+
 
 
     private function setUpdated($updated)

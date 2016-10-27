@@ -16,7 +16,7 @@
                     Un moyen simple et efficace de faire le buzz, si celle-ci est faite de manière professionnelle...</em></h3>
             <ul class="category">
                 {% for categoryVideo in categoryVideos %}
-                <li><button>{{ categoryVideo.category }}</button></li>
+                <li><a href="{{ path("front_videos", {'id': categoryVideo.id}) }}"><button>{{ categoryVideo.category }}</button></a></li>
                 {% endfor %}
 
 
@@ -40,10 +40,7 @@
                     <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}" allowfullscreen></iframe>
                 </div>
                 <div class="video-description">
-                    <p>Symbiose - Côté zen Bien-être et esthétique Coiffure et services barbier
-                        202 Boulevard du 11 novembre -
-                        69590 Saint Symphorien sur Coise
-                        www.symbiose-cotezen.fr</p>
+                    <p>{{ video.description }}</p>
                 </div>
             </div>
             {% endfor %}
@@ -53,10 +50,11 @@
     <!-- Description of our videos -->
     <section class="container-fluid video-presentation">
         <div class="container">
+            {% for element in elements %}
             <div class="col-xs-12">
-                <h2>Hook numéro 3</h2>
+                <h2>{{ element.categoryTitle }}</h2>
                 <hr />
-                <h3><em>Sous-titre description texte.</em></h3>
+                <h3><em>{{ element.shortDesc }}</em></h3>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
@@ -64,14 +62,10 @@
                 </div>
                 <div class="col-xs-12 col-md-6 text-presentation">
                     <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur!Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntureaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                       {{ element.longDesc }}
                     </p>
                 </div>
-
+             {% endfor %}
                 <div class="col-xs-12 text-presentation">
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,

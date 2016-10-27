@@ -9,7 +9,7 @@ front_aboutus:
     methods: GET
 
 front_videos:
-    path:     /videos
+    path:     /videos/{id}/
     defaults: { _controller: "KlapBundle:Front:videos" }
     methods: GET
 

@@ -25,11 +25,13 @@ class IntegrationVideoRepository extends EntityRepository
         return $query->getResult();
     }
 
-    public function findVideoByCategoryId()
+    public function findVideoByCategoryId($categoryId)
     {
         $req = $this->createQueryBuilder('vc')
             ->select()
             ->join('KlapBundle\Entity\CategoryVideo', 'cv', 'WITH', 'vc.video = cv.id' )
+            ->where('cv.id = ?1')
+            ->setParameter(1, $categoryId)
             ->getQuery();
 
         return $req->getResult();
