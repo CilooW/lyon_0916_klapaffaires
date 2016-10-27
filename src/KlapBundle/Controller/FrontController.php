@@ -54,7 +54,10 @@ class FrontController extends Controller
 
     public function videosCategoryAction()
     {
-        return $this->render('front/videos_category.html.twig');
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
+        $categoryVideos = $repository->findAll();
+        return $this->render('front/videos_category.html.twig',
+            array("categoryVideos" => $categoryVideos));
     }
 
     public function serviceAction()

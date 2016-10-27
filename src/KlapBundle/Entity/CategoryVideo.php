@@ -3,12 +3,15 @@
 namespace KlapBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * CategoryVideo
  */
 class CategoryVideo
 {
+
+    const SERVER_PATH_TO_IMAGE_FOLDER = 'uploads/categoryvideos';
     /**
      * @var int
      */
@@ -38,6 +41,8 @@ class CategoryVideo
      * @var string
      */
     private $categoryTitle;
+
+    private $file;
 
     protected $integrationVideo;
 
@@ -229,4 +234,71 @@ class CategoryVideo
      */
 
 
+    /**
+     * @var \DateTime
+     */
+    private $updated;
+
+
+    public function setFile(UploadedFile $file = null)
+    {
+        $this->file = $file;
+    }
+
+    public function getFile()
+    {
+        return $this->file;
+    }
+    public function upload()
+    {
+        if(null === $this->getFile())
+        {
+            return;
+        }
+
+        $this->getFile()->move(
+            CategoryVideo::SERVER_PATH_TO_IMAGE_FOLDER,
+            $this->getFile()->getClientOriginalName()
+        );
+
+        $this->picture = $this->getFile()->getClientOriginalName();
+
+        $this->setFile(null);
+    }
+
+    public function lifecycleFileUpload()
+    {
+        $this->upload();
+    }
+
+    public function refreshUpdate()
+    {
+        $this->setUpdated(new \DateTime('now'));
+    }
+
+    /**
+     * @var \DateTime
+     */
+
+
+    private function setUpdated($updated)
+    {
+        $this->updated = $updated;
+
+        return $this;
+    }
+
+
+
+
+
+    /**
+     * Get updated
+     *
+     * @return \DateTime
+     */
+    public function getUpdated()
+    {
+        return $this->updated;
+    }
 }

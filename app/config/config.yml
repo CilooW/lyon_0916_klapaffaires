@@ -40,6 +40,7 @@ twig:
     strict_variables: "%kernel.debug%"
     globals:
         wpictures_directory: "uploads/wpictures/"
+        category_picture: "uploads/categoryvideos/"
 
 # Doctrine Configuration
 doctrine:
