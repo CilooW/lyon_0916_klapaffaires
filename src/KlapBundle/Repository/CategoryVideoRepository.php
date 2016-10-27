@@ -12,5 +12,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class CategoryVideoRepository extends EntityRepository
 {
+    public function findElementById($id)
+    {
+        $req = $this->createQueryBuilder('cv')
+            ->select()
+            ->join('KlapBundle\Entity\IntegrationVideo', 'vc', 'WITH', 'cv.id = vc.video' )
+            ->where('vc.video = ?1')
+            ->setParameter(1, $id)
+            ->getQuery();
 
+        return $req->getResult();
+    }
 }

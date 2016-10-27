@@ -24,7 +24,7 @@ class CategoryVideoController extends Controller
 
         $categoryVideos = $em->getRepository('KlapBundle:CategoryVideo')->findAll();
 
-        return $this->render('front/videos.html.twig', array(
+        return $this->render('categoryvideo/index.html.twig', array(
             'categoryVideos' => $categoryVideos,
         ));
     }

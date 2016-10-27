@@ -29,28 +29,15 @@ class IntegrationVideo
      */
     private $addDate;
 
-    private $categoryId;
 
-    /**
-     * @return mixed
-     */
-    public function getCategoryId()
-    {
-        return $this->categoryId;
-    }
+    private $video;
 
-    /**
-     * @param mixed $categoryId
-     */
-    public function setCategoryId($categoryId)
-    {
-        $this->categoryId = $categoryId;
-    }
 
     public function __construct()
     {
         $this->addDate = new \DateTime("now");
     }
+
 
 
     /**
@@ -71,7 +58,10 @@ class IntegrationVideo
      */
     public function setIframe($iframe)
     {
-        $this->iframe = $iframe;
+        $search = "watch?v=";
+        $replace = "embed/";
+
+        $this->iframe = str_replace($search, $replace, $iframe);
 
         return $this;
     }
@@ -131,10 +121,7 @@ class IntegrationVideo
     {
         return $this->addDate;
     }
-    /**
-     * @var \KlapBundle\Entity\CategoryVideo
-     */
-    private $video;
+
 
 
     /**
