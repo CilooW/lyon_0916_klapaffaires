@@ -198,11 +198,6 @@ hr {
     z-index: 5;
 }
 
-@media screen and (max-width: 1200px){
-    #maintitle h1 {
-        font-size: 3.5em;
-    }
-}
 
 @media screen and (max-width: 1000px){
     #maintitle h1 {
@@ -213,7 +208,6 @@ hr {
 @media screen and (max-width: 360px){
     #maintitle h1 {
         padding: 50% 0 0 0;
-        font-size: 2em;
     }
 }
 
@@ -786,13 +780,15 @@ figure.effect-apollo:hover p {
     overflow: hidden;
     clear: both;
     text-align: center;
-    padding-top: 20%;
     color: #ffffff;
 }
 
 #img-header-contact-form h1 {
     text-align: center;
     font-size: 4em;
+    display: block;
+    margin: 0 auto;
+    padding-top: 25%;
     color: #ffffff;
 }
 

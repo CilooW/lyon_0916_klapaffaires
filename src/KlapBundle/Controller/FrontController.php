@@ -118,16 +118,4 @@ class FrontController extends Controller
             'form' => $form->createView(),
         ));
     }
-
-        /**
-         *
-         *
-         */
-        public function slugAction($slug)
-        {
-            $categoryTitle = $this->generateUrl(
-                'front_show',
-                array('slug' => 'h1')
-            );
-        }
 }

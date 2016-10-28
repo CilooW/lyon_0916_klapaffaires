@@ -33,6 +33,10 @@ KlapBundle\Entity\CategoryVideo:
         updated:
             type: datetime
             nullable: true
+        slug:
+            type: string
+            length: 255
+            unique: true
 
     oneToMany:
         integrationVideo:
