@@ -432,9 +432,23 @@ hr {
 
 
 /**//**/ /**//**/
+/* Header page | Contact */
+/**//**/ /**//**/
+#img-header-contact-form {
+    background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    color: #ffffff;
+}
+
+/**//**/ /**//**/
 /* PAGE | VIDEO */
 /**//**/ /**//**/
-
 #img-header-video {
     background-image: url(../img/Img-video.jpg) ;
     background-repeat: no-repeat;
@@ -464,6 +478,7 @@ hr {
 }
 
 @media screen and (max-width: 1200px){
+    #img-header-contact-form,
     #img-header-aboutus,
     #img-header-video {
         height: 500px;
@@ -472,21 +487,14 @@ hr {
 }
 
 @media screen and (max-width: 600px){
-    #img-header-aboutus,
+    #img-header-contact-form,
     #img-header-aboutus,
     #img-header-video {
         height: 400px;
     }
 }
 
-@media screen and (max-width: 360px){
-    #img-header-aboutus,
-    #img-header-aboutus,
-    #img-header-video {
-        height: 300px;
-    }
-}
-
+#img-header-contact-form h1,
 #img-header-aboutus h1,
 #img-header-video h1 {
     text-align: center;
@@ -498,18 +506,20 @@ hr {
 }
 
 @media screen and (max-width: 1200px){
+    #img-header-contact-form h1,
     #img-header-aboutus h1,
     #img-header-video h1 {
         font-size: 3em;
-        padding-top: 25%;
+        padding-top: 35%;
     }
 }
 
 @media screen and (max-width: 600px){
+    #img-header-contact-form h1,
     #img-header-aboutus h1,
     #img-header-video h1 {
         font-size: 2em;
-        padding-top: 25%;
+        padding-top: 50%;
     }
 }
 
@@ -880,27 +890,6 @@ figure.effect-apollo:hover p {
 /**//**//**//**//**/
 /*   CONTACT FORM */
 /**//**//**//**//**/
-
-#img-header-contact-form {
-    background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-    width: 100%;
-    overflow: hidden;
-    clear: both;
-    text-align: center;
-    color: #ffffff;
-}
-
-#img-header-contact-form h1 {
-    text-align: center;
-    font-size: 4em;
-    display: block;
-    margin: 0 auto;
-    padding-top: 25%;
-    color: #ffffff;
-}
 
 #img-header-contact-form strong {
     color: #00a1e5;
