@@ -30,7 +30,7 @@ class IntegrationVideoRepository extends EntityRepository
         $req = $this->createQueryBuilder('vc')
             ->select()
             ->join('KlapBundle\Entity\CategoryVideo', 'cv', 'WITH', 'vc.video = cv.id' )
-            ->where('cv.id = ?1')
+            ->where('vc.video = ?1')
             ->setParameter(1, $categoryId)
             ->getQuery();
 
