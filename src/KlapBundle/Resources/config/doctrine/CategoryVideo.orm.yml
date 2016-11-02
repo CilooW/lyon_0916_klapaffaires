@@ -19,8 +19,7 @@ KlapBundle\Entity\CategoryVideo:
             length: '50'
             column: short_desc
         longDesc:
-            type: string
-            length: 255
+            type: text
             column: long_desc
         picture:
             type: string
@@ -33,10 +32,6 @@ KlapBundle\Entity\CategoryVideo:
         updated:
             type: datetime
             nullable: true
-        slug:
-            type: string
-            length: 255
-            unique: true
 
     oneToMany:
         integrationVideo:
