@@ -7,7 +7,9 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
-
+    # keep your service names short
+    app.slugger:
+        class: KlapBundle\Utils\Slugger
 
     admin.categoryVideo:
         class: KlapBundle\Admin\CategoryVideoAdmin
@@ -38,3 +40,4 @@ services:
         arguments: [~, KlapBundle\Entity\Testimony, ~]
         tags:
             - { name: sonata.admin, manager_type: orm, label: Témoignage }
+

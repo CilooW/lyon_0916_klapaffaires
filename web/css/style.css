@@ -18,6 +18,63 @@ hr {
 }
 
 /* Navbar */
+
+#navbarBg {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#myNavbar a {
+    background-color: transparent;
+    font-size: 1.65em;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.navbar-default {
+    border: none;
+}
+
+#icon-rs-head {
+    display: inline-block;
+    position: absolute;
+    padding-top: 120px;
+    right: 0;
+    border: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #icon-rs-head {
+        padding-top: 80px;
+    }
+}
+#icon-rs-head a {
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+#icon-rs-head li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 50px;
+}
+
+#icon-rs-head a:hover {
+    color: #00a1e5;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-toggle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: -15px;
+}
+
+
+/*
 @media (max-width: 980px) {
     .navbar-header {
         float: none;
@@ -124,6 +181,8 @@ hr {
     height: 20px;
     visibility: hidden;
 }
+/*
+
 
 
 /**//**/ /**//**/
@@ -157,7 +216,13 @@ hr {
 
 @media screen and (max-width: 1000px){
     .button-header {
-        margin: 65% 36.8% 0 36.8%;
+        margin: 100% 36.8% 0 36.8%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .button-header {
+        margin: 100% 0 0 15%;
     }
 }
 
@@ -178,6 +243,7 @@ hr {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
     width: 100%;
     height: 300px;
     position: relative;
@@ -198,22 +264,18 @@ hr {
     z-index: 5;
 }
 
-@media screen and (max-width: 1200px){
-    #maintitle h1 {
-        font-size: 3.5em;
-    }
-}
 
 @media screen and (max-width: 1000px){
     #maintitle h1 {
-        padding: 40% 15% 0 15%;
+        padding: 30% 15% 0 15%;
+        font-size: 3em;
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 450px){
     #maintitle h1 {
-        padding: 50% 0 0 0;
         font-size: 2em;
+        padding: 60% 0 0 0;
     }
 }
 
@@ -241,16 +303,22 @@ hr {
     z-index: -2;
 }
 
+@media screen and (max-width: 991px){
+    .videointro {
+        height: 100vh;
+    }
+}
+
 .bgwhite {
     background: white;
     clear: both;
-    height: 375px;
+    height: auto;
 }
 
 .bgwhite h2 {
     padding-top: 35px;
 }
-
+.temoignage p,
 .bgwhite p {
     font-size: 1.2em;
     line-height: 2em;
@@ -262,6 +330,7 @@ hr {
 
 #text-index p {
     line-height: 2em;
+    font-size: 1.2em;
 }
 
 #imgtransition h2,
@@ -269,10 +338,11 @@ hr {
     color: white;
     font-size: 2.2em;
     line-height: 1.5em;
-    padding-top: 8%;
+    padding-top: 9%;
 }
 
 @media screen and (max-width: 1000px){
+    #imgtransition h2,
     #videaste h2 {
         padding-top: 12%;
         font-size: 2em;
@@ -280,8 +350,15 @@ hr {
 }
 
 @media screen and (max-width: 620px){
-    #videaste h2 {
+    #imgtransition h2{
         padding-top: 0;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #videaste h2 {
+        padding-top: 30px;
     }
 }
 
@@ -307,6 +384,16 @@ hr {
 /* PAGE | ABOUTUS */
 /**//**/ /**//**/
 
+#img-header-aboutus {
+    background-image: url(../img/klap-affaires-qsn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
 .center-presentation {
     width:50%;
     text-align: justify;
@@ -318,6 +405,13 @@ hr {
     padding-bottom : 15px;
 }
 
+
+.video-presentation p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .center-support {
     width:30%;
     text-align: center;
@@ -326,22 +420,20 @@ hr {
 .center-support img {
     display: block;
     margin: 0 auto;
-
 }
 
-.img-circle {
-    max-width: 200px;
-    max-height: 200px;
+.logo-apa p {
+    padding-top: 1.5em;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
 }
 
-.logo-presta{
-    max-width: 200px;
-}
-.logo-presta img{
+.logo-presta {
     display: block;
     margin: 0 auto;
-    width: 100%
 }
+
 .center-support-img {
     border: 1px solid black;
     border-radius: 50%;
@@ -352,9 +444,23 @@ hr {
 
 
 /**//**/ /**//**/
+/* Header page | Contact */
+/**//**/ /**//**/
+#img-header-contact-form {
+    background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    color: #ffffff;
+}
+
+/**//**/ /**//**/
 /* PAGE | VIDEO */
 /**//**/ /**//**/
-
 #img-header-video {
     background-image: url(../img/Img-video.jpg) ;
     background-repeat: no-repeat;
@@ -366,8 +472,8 @@ hr {
 }
 
 .button-intern {
-    position: absolute;
-    margin: 3% 25% 0 26%;
+    display: block;
+    margin: 1.5em auto;
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
@@ -384,6 +490,8 @@ hr {
 }
 
 @media screen and (max-width: 1200px){
+    #img-header-contact-form,
+    #img-header-aboutus,
     #img-header-video {
         height: 500px;
     }
@@ -391,44 +499,43 @@ hr {
 }
 
 @media screen and (max-width: 600px){
+    #img-header-contact-form,
+    #img-header-aboutus,
     #img-header-video {
         height: 400px;
     }
 }
 
-@media screen and (max-width: 360px){
-    #img-header-video {
-        height: 300px;
-    }
-}
-
+#img-header-contact-form h1,
+#img-header-aboutus h1,
 #img-header-video h1 {
     text-align: center;
     font-size: 4em;
-    padding: 25% 0 0 0;
+    display: block;
+    margin: 0 auto;
     color: #ffffff;
+    padding-top: 25%;
 }
 
 @media screen and (max-width: 1200px){
+    #img-header-contact-form h1,
+    #img-header-aboutus h1,
     #img-header-video h1 {
         font-size: 3em;
-        padding: 35% 0 0 0;
+        padding-top: 35%;
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 600px){
+    #img-header-contact-form h1,
+    #img-header-aboutus h1,
     #img-header-video h1 {
         font-size: 2em;
-        padding: 40% 5% 0 0;
+        padding-top: 50%;
     }
 }
 
-@media screen and (max-width: 360px){
-    #img-header-video h1 {
-        padding: 70% 0 0 0;
-    }
-}
-
+#img-header-aboutus strong,
 #img-header-video strong {
     color: #00a1e5;
 }
@@ -684,7 +791,7 @@ figure.effect-apollo:hover p {
 }
 
 #img-category h2 {
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 #img-category p {
@@ -761,7 +868,7 @@ figure.effect-apollo:hover p {
 
 
 #img-header-mentions-legales {
-    background-image: url(../img/mentions-legales-klap-affaires.jpeg) ;
+    background-image: url(../img/klap-affaires-mentions-legales.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
@@ -781,8 +888,14 @@ figure.effect-apollo:hover p {
 
 #head-mentions-legales h2 {
     text-align: center;
+    font-style: italic;
     font-size: 1.5em;
     padding-top: 10px;
+}
+
+#head-mentions-legales p {
+    line-height: 1.5em;
+    font-size: 1.2em;
 }
 
 .coordonnees {
@@ -795,25 +908,6 @@ figure.effect-apollo:hover p {
 /**//**//**//**//**/
 /*   CONTACT FORM */
 /**//**//**//**//**/
-
-#img-header-contact-form {
-    background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-    width: 100%;
-    overflow: hidden;
-    clear: both;
-    text-align: center;
-    padding-top: 20%;
-    color: #ffffff;
-}
-
-#img-header-contact-form h1 {
-    text-align: center;
-    font-size: 4em;
-    color: #ffffff;
-}
 
 #img-header-contact-form strong {
     color: #00a1e5;
@@ -863,6 +957,16 @@ figure.effect-apollo:hover p {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1024px){
+    #formulaire_nom,
+    #formulaire_prenom,
+    #formulaire_societe,
+    #formulaire_email,
+    #formulaire_message {
+        width: 80%;
+    }
+}
+
 #formulaire_nom,
 #formulaire_prenom,
 #formulaire_societe,
@@ -882,7 +986,7 @@ figure.effect-apollo:hover p {
 #footer-global {
     background-color: #363636;
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 50px;
 }
 
@@ -892,9 +996,31 @@ figure.effect-apollo:hover p {
     height: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+    .social-container {
+        padding-top: 20px;
+    }
+}
+
+.logo-klap-head,
 .logo-klap {
     width: 180px;
     display: block;
+}
+
+@media screen and (max-width: 1024px){
+    .logo-klap-head,
+    .logo-klap {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .logo-klap-head {
+        width: 90px;
+        margin-top: -5px;
+        margin-left: -20px;
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -928,8 +1054,11 @@ figure.effect-apollo:hover p {
     font-size: 1.5em;
 }
 
-.social-footer li:hover,
-.social li:hover {
+.social-footer i {
+    color: #ffffff;
+}
+
+.social-footer i:hover {
     color: #00a1e5;
 }
 
@@ -948,6 +1077,7 @@ figure.effect-apollo:hover p {
     .mentions-legales,
     .contact-container {
         text-align: center;
+        padding-top: 40px;
     }
 }
 .category button,
