@@ -211,6 +211,7 @@ hr {
 .bgwhite p {
     font-size: 1.2em;
     line-height: 2em;
+    text-align: justify;
 }
 
 #videaste {
@@ -220,6 +221,7 @@ hr {
 #text-index p {
     line-height: 2em;
     font-size: 1.2em;
+    text-align: justify;
 }
 
 #imgtransition h2,
@@ -284,7 +286,7 @@ hr {
 }
 
 .center-presentation {
-    width:50%;
+    width:33%;
     text-align: justify;
 }
 
@@ -299,6 +301,14 @@ hr {
     font-size: 1.2em;
     line-height: 1.5em;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1024px) {
+    .video-presentation p {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
 }
 
 .center-support {
@@ -916,13 +926,13 @@ figure.effect-apollo:hover p {
 @media screen and (max-width: 1024px){
     .logo-klap-head,
     .logo-klap {
-        width: 120px;
+        width: 140px;
     }
 }
 
 @media screen and (max-width: 1024px){
     .logo-klap-head {
-        width: 90px;
+        width: 100px;
         margin-top: -5px;
         margin-left: -20px;
     }

@@ -50,14 +50,14 @@
     </section>
     <!-- Description of our videos -->
     <section class="container-fluid video-presentation">
-        <div class="container">
+        <div class="container-fluid">
             {% for element in elements %}
             <div class="col-xs-12">
                 <h2>{{ element.categoryTitle }}</h2>
                 <hr />
                 <h3><em>{{ element.shortDesc }}</em></h3>
             </div>
-            <div class="row">
+            <div class="container-fluid">
                 <div class="col-xs-12 col-md-6">
                     <img class="img-presentation" src="{{ asset('img/reportage-video-lyon-klap-affaires.jpeg') }}" alt="#">
                 </div>
