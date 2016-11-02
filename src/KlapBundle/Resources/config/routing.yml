@@ -1,18 +1,3 @@
-klap_integrationvideo:
-    resource: "@KlapBundle/Resources/config/routing/integrationvideo.yml"
-    prefix:   /integrationvideo
-
-klap_categoryvideo:
-    resource: "@KlapBundle/Resources/config/routing/categoryvideo.yml"
-    prefix:   /categoryvideo
-
-klap_employees:
-    resource: "@KlapBundle/Resources/config/routing/employees.yml"
-    prefix:   /employees
-
-klap_formulaire:
-    resource: "@KlapBundle/Resources/config/routing/formulaire.yml"
-    prefix:   /formulaire
 
 klap_front:
     resource: "@KlapBundle/Resources/config/routing/front.yml"
