@@ -1,0 +1,43 @@
+KlapBundle\Entity\CategoryVideo:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\CategoryVideoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        category:
+            type: string
+            length: '70'
+            nullable: true
+            unique: true
+        shortDesc:
+            type: string
+            length: '50'
+            column: short_desc
+        longDesc:
+            type: text
+            column: long_desc
+        picture:
+            type: string
+            length: '100'
+        categoryTitle:
+            type: string
+            length: '100'
+            unique: true
+            column: category_title
+        updated:
+            type: datetime
+            nullable: true
+
+    oneToMany:
+        integrationVideo:
+            targetEntity: IntegrationVideo
+            mappedBy: video
+
+    lifecycleCallbacks:
+        prePersist:   [ lifecycleFileUpload ]
+        preUpdate:    [ lifecycleFileUpload ]

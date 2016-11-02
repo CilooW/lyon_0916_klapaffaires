@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Klap Affaires | Publireportage video Lyon{% endblock %}
+{% block body %}
+        <div id="index">
+
+        <div class="container">
+            <div id="maintitle" class="col-xs-12">
+                <h1>L'humain <strong>au coeur</strong> de la vidéo!</h1>
+                <a href="{{ path('front_videos_category') }}"><button class="button-header">Nos vidéos!</button></a>
+            </div>
+        </div>
+
+        <section class="videointro">
+            <video autoplay loop id="videointro" class="hidden-xs hidden-sm">
+                <source src="{{ asset('media/intro.webm') }}" type="video/webm">
+                <source src="{{ asset('media/intro.mp4') }}" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="bgwhite container-fluid" >
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2>Klap'Affaires en quelques mots</h2>
+                    <hr />
+                    <h3><em>Sous titre</em></h3>
+                    <p>La vidéo est un moyen simple et efficace de faire à la fois une communication interactive et le buzz.
+                        Nous sommes ainsi à mi-chemin entre la publicité et le documentaire, où nous ajoutons un côté humain
+                        pour une réelle immersion à au cœur de votre activité. Le tout rythmé par des professionnels : journaliste,
+                        cameraman et coach en prise de parole. Un reportage produit par l’équipe de Klap’Affaires permet de mettre en
+                        avant votre énergie professionnelle. La conception et la réalisation de cet outil de communication va s’appuyer
+                        sur l’humain partageant ainsi les valeurs portées par votre entreprise au travers des femmes et des hommes qui les
+                        transmettent. Cette vidéo vous offre également une visibilité sur le web au travers d’un référencement et grâce au
+                        partage sur nos différents réseaux. Elle s’intègre également parfaitement sur votre site Internet et en signature
+                        de mail donnant ainsi une véritable visibilité.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid imgfix" id="videaste">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2>Référencement et partage sur nos réseaux et notre chaine YouTube.</h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-fluid video-presentation">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2>Visualisez nos trois derniers tournages.</h2>
+                    <hr />
+                    <h3><em>Nous vous accompagnons dans la réalisation du scénario, à la prise de parole, en passant par le tournage et la postproduction.</em></h3>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                {% for video in videos %}
+                <div class="col-xs-12 col-md-4 container-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="{{ video.iframe }}" allowfullscreen></iframe>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="container" id="video-description">
+                    <div class="col-xs-12" id="text-index">
+                        <p>Visualisez nos trois derniers tournages et découvrez l’ensemble de notre travail dans les
+                            différents secteurs d’activités au travers de notre panel de vidéos. Des plaisirs de la
+                            table aux espaces touristiques en passant par les hébergements, partez à la rencontre de
+                            différents lieux de vie. Rencontrez également les différents univers du monde de l’entreprise
+                            pour mieux comprendre les métiers. Restituez par l’image les moments clefs de votre vie professionnelle.
+                            Humanisez votre présentation et augmentez votre référencement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="imgfix container-fluid" id="imgtransition">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2>Vous souhaitez conforter votre image de marque, amplifier votre notoriété et ainsi développer votre clientèle....</h2>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="container-fluid">
+            <div class="container">
+                <div class="col-xs-12 temoignage">
+                    <h2>Témoignages</h2>
+                    <hr />
+                    <h3><em>Nos clients témoignent</em></h3>
+                    <div class="row">
+                        {% for testimony in testimonies %}
+                        <div class="col-xs-12 col-md-4 temoin">
+                            <img src="{{ asset(wpictures_directory ~ testimony.wPicturePath) }}">
+                        </div>
+                        <p class="col-xs-12 col-md-8">{{ testimony.wDescription }}</p>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

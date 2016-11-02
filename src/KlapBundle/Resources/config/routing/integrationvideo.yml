@@ -1,0 +1,24 @@
+integrationvideo_index:
+    path:     /
+    defaults: { _controller: "KlapBundle:IntegrationVideo:index" }
+    methods:  GET
+
+integrationvideo_show:
+    path:     /{id}/show
+    defaults: { _controller: "KlapBundle:IntegrationVideo:show" }
+    methods:  GET
+
+integrationvideo_new:
+    path:     /new
+    defaults: { _controller: "KlapBundle:IntegrationVideo:new" }
+    methods:  [GET, POST]
+
+integrationvideo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "KlapBundle:IntegrationVideo:edit" }
+    methods:  [GET, POST]
+
+integrationvideo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "KlapBundle:IntegrationVideo:delete" }
+    methods:  DELETE
