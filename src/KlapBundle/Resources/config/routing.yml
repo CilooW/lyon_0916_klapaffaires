@@ -16,9 +16,7 @@ klap_formulaire:
 
 klap_front:
     resource: "@KlapBundle/Resources/config/routing/front.yml"
-    prefix:   /front
+    prefix:   /
 
-klap_homepage:
-    path:     /
-    defaults: { _controller: KlapBundle:Default:index }
+
 
