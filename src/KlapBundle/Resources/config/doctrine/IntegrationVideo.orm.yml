@@ -1,0 +1,30 @@
+KlapBundle\Entity\IntegrationVideo:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\IntegrationVideoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        iframe:
+            type: string
+            length: 255
+            nullable: true
+        description:
+            type: text
+        addDate:
+            type: datetime
+            unique: true
+
+    manyToOne:
+        video:
+            targetEntity: CategoryVideo
+            inversedBy: integrationVideo
+            joinColumn:
+                name: category_id
+                referencedColumnName: id
+
+    lifecycleCallbacks: {  }

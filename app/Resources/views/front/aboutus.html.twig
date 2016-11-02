@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container-fluid" id="img-header-aboutus">
+    <div class="container">
+        <h1>Qui sommes <strong>nous</strong>?</h1>
+        <a href="{{ path('front_contact') }}"><button class="button-intern">Contactez-nous!</button></a>
+    </div>
+</div>
+<!-- Introduction Remi & Christophe -->
+<section class="container-fluid">
+    <div class="container video-category">
+        <h2>Un service, une équipe pour vous accompagner!</h2>
+        <hr />
+        <h3><em>Avec leurs compétences complémentaires, Klap'Affaires vous propose de vous démarquer efficacement</em></h3>
+    </div>
+</section>
+
+<section class="container-fluid video-presentation">
+    <div class="container">
+    {% for employee in employees %}
+        <div class="col-xs-12 col-sm-6 center-presentation">
+            <h2>{{ employee.firstName }} {{ employee.lastName }}</h2>
+            <hr />
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item video-youtube" src="{{ employee.videoUrl }}" allowfullscreen></iframe>
+            </div>
+            <br />
+            <p>
+            {{ employee.videoDescription }}
+            </p>
+        </div>
+    {% endfor %}
+
+    </div>
+
+</section>
+
+<section class="imgfix container-fluid" id="imgtransition">
+</section>
+
+<!-- your accompagnment -->
+<section class="container-fluid video-presentation">
+    <div class="container">
+        <div class="col-xs-12">
+            <h2>Votre Accompagnement en 3 étapes</h2>
+            <hr />
+            <h3><em>Accompagnement en 3 étapes</em></h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-xs-12 col-md-4 logo-apa">
+                <img class="logo-presta" src="{{ asset('img/personnage-klap-affaires-logo.png') }}">
+            <p><strong>Avant</strong></p>
+            <p>Pour définir ensemble vos besoins et vous apporter des solutions</p>
+        </div>
+
+        <div class="col-xs-12 col-md-4 logo-apa">
+                <img class="logo-presta" src="{{ asset('img/video-klap-affaires-logo.png') }}">
+            <p><strong>Pendant</strong></p>
+            <p>Lors de la préparation du scénario et votre coaching lors du tournage</p>
+        </div>
+
+        <div class="col-xs-12 col-md-4 logo-apa">
+                <img class="logo-presta" src="{{ asset('img/link-klap-affaires-logo.png') }}">
+            <p><strong>Après</strong></p>
+            <p>Par un montage dynamique et une communication sur nos réseaux</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

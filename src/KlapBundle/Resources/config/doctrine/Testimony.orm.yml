@@ -1,0 +1,28 @@
+KlapBundle\Entity\Testimony:
+    type: entity
+    table: null
+    repositoryClass: KlapBundle\Repository\TestimonyRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        wName:
+            type: string
+            length: '100'
+        wFirstname:
+            type: string
+            length: '100'
+        wDescription:
+            type: text
+        wPicturePath:
+            type: string
+            length: 255
+        updated:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks:
+        prePersist:   [ lifecycleFileUpload ]
+        preUpdate:    [ lifecycleFileUpload ]
