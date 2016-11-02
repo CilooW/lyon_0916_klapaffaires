@@ -16,8 +16,8 @@
             <h3><em>Les vidéos sont de plus en plus privilégiées et suscitent un véritable attrait.
                     Un moyen simple et efficace de faire le buzz, si celle-ci est faite de manière professionnelle...</em></h3>
             <ul class="category">
-                {% for categoryVideo in categoryVideos %}
-                <li><a href="{{ path("front_videos", {'id': categoryVideo.id}) }}"><button>{{ categoryVideo.category }}</button></a></li>
+                {% for categoryvideo in categoryVideos %}
+                <li><a href="{{ path("front_videos", {'id': categoryvideo.id}) }}"><button>{{ categoryvideo.category }}</button></a></li>
                 {% endfor %}
 
 
@@ -26,13 +26,7 @@
     </section>
 
     <section class="container-fluid video-presentation">
-        <div class="container">
-            <div class="col-xs-12">
-                <h2>Hook numéro 2</h2>
-                <hr />
-                <h3><em>Courte description de la catégorie de vidéo.</em></h3>
-            </div>
-        </div>
+
         <!-- Video Bloc -->
         <div class="container-fluid">
             {% for video in videos %}
