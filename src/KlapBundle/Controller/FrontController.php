@@ -18,6 +18,7 @@ use KlapBundle\Repository\IntegrationVideoRepository;
 use KlapBundle\Entity\IntegrationVideo;
 use Symfony\Component\HttpFoundation\Request;
 
+
 class FrontController extends Controller
 {
     public function indexAction()

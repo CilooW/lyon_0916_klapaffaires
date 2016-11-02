@@ -21,7 +21,8 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
-            new Cocur\Slugify\Bridge\Symfony\CocurSlugifyBundle()
+            new Cocur\Slugify\Bridge\Symfony\CocurSlugifyBundle(),
+            new EWZ\Bundle\RecaptchaBundle\EWZRecaptchaBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

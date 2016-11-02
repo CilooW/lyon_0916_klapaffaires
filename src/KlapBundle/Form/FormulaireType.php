@@ -5,6 +5,8 @@ namespace KlapBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use EWZ\Bundle\RecaptchaBundle\Form\Type\EWZRecaptchaType;
+use EWZ\Bundle\RecaptchaBundle\Validator\Constraints\IsTrue as RecaptchaTrue;
 
 class FormulaireType extends AbstractType
 {
@@ -20,6 +22,21 @@ class FormulaireType extends AbstractType
             ->add('societe')
             ->add('email')
             ->add('message')
+            ->add('recaptcha', EWZRecaptchaType::class, array(
+                'attr' => array(
+                    'options' => array(
+                        'theme' => 'light',
+                        'type'  => 'image',
+                        'size'  => 'normal',
+                        'defer' => true,
+                        'async' => true
+                    )
+                ),
+                'mapped'      => false,
+                'constraints' => array(
+                    new RecaptchaTrue()
+                )
+            ))
         ;
     }
 
