@@ -62,6 +62,14 @@ class CategoryVideoAdmin extends Admin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('category');
+        $listMapper->addIdentifier('category', null, array(
+            'label' => 'Nom de l\'employé'))
+            ->add('_action', 'actions', array (
+                'actions' => array(
+                    'show' => array(),
+                    'edit' => array(),
+                    'delete' => array(),
+                )
+            ));
     }
 }
