@@ -35,16 +35,17 @@ class EmployeesAdmin extends Admin
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('firstName');
+        $datagridMapper->add('firstName', null, array(
+            'label' => 'Nom de l\'associé'
+        ));
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper->addIdentifier('firstName', null, array(
-            'label' => 'Nom de l\'employé'))
+            'label' => 'Nom de l\'associé'))
                     ->add('_action', 'actions', array (
                         'actions' => array(
-                            'show' => array(),
                             'edit' => array(),
                             'delete' => array(),
                         )
