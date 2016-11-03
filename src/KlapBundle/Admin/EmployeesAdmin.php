@@ -40,6 +40,14 @@ class EmployeesAdmin extends Admin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('firstName');
+        $listMapper->addIdentifier('firstName', null, array(
+            'label' => 'Nom de l\'employé'))
+                    ->add('_action', 'actions', array (
+                        'actions' => array(
+                            'show' => array(),
+                            'edit' => array(),
+                            'delete' => array(),
+                        )
+                    ));
     }
 }

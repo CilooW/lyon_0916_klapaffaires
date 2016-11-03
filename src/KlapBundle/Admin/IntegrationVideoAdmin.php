@@ -40,7 +40,8 @@ class IntegrationVideoAdmin extends Admin
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('description');
+        $datagridMapper->add('description', null, array(
+            'label' => ''));
     }
 
     protected function configureListFields(ListMapper $listMapper)
