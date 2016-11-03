@@ -16,8 +16,8 @@
             <h3><em>Les vidéos sont de plus en plus privilégiées et suscitent un véritable attrait.
                     Un moyen simple et efficace de faire le buzz, si celle-ci est faite de manière professionnelle...</em></h3>
             <ul class="category">
-                {% for categoryVideo in categoryVideos %}
-                <li><a href="{{ path("front_videos", {'id': categoryVideo.id}) }}"><button>{{ categoryVideo.category }}</button></a></li>
+                {% for categoryvideo in categoryVideos %}
+                <li><a href="{{ path("front_videos", {'id': categoryvideo.id}) }}"><button>{{ categoryvideo.category }}</button></a></li>
                 {% endfor %}
 
 
@@ -25,14 +25,8 @@
         </div>
     </section>
 
-    <section class="container-fluid video-presentation" id="video-display">
-        <div class="container">
-            <div class="col-xs-12">
-                <h2>Hook numéro 2</h2>
-                <hr />
-                <h3><em>Courte description de la catégorie de vidéo.</em></h3>
-            </div>
-        </div>
+    <section class="container-fluid video-presentation">
+
         <!-- Video Bloc -->
         <div class="container-fluid">
             <div class="row">
@@ -58,9 +52,10 @@
                 <hr />
                 <h3><em>{{ element.shortDesc }}</em></h3>
             </div>
-            <div class="container-fluid">
-                <div class="col-xs-12 col-md-4">
-                    <img class="img-presentation" src="{{ asset('img/reportage-video-lyon-klap-affaires.jpeg') }}" alt="#">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <img class="img-presentation" src="{{ asset(category_picture ~ element.picture) }}" alt="#">
                 </div>
                 <div class="col-xs-12 col-md-8 text-presentation">
                     <p>
