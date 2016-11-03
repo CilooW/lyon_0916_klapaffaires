@@ -20,7 +20,7 @@ hr {
 /* Navbar */
 
 #navbarBg {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 #myNavbar a {
@@ -29,6 +29,10 @@ hr {
     padding-top: 35px;
     padding-bottom: 20px;
     color: #ffffff;
+}
+
+#myNavbar a:hover {
+    color: #00a1e5;
 }
 
 .navbar-default {
@@ -48,10 +52,6 @@ hr {
         padding-top: 80px;
     }
 }
-#icon-rs-head a {
-    font-size: 1.8em;
-    color: #ffffff;
-}
 
 #icon-rs-head li {
     display: inline-block;
@@ -59,8 +59,14 @@ hr {
     padding-left: 50px;
 }
 
+#icon-rs-head a {
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
 #icon-rs-head a:hover {
     color: #00a1e5;
+    text-decoration: solid;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -298,7 +304,7 @@ hr {
 
 
 .video-presentation p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5em;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
@@ -396,6 +402,10 @@ hr {
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #000000;
+}
+
+#video-display {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 1200px){
@@ -713,70 +723,8 @@ figure.effect-apollo:hover p {
     font-size: 0.8em;
     line-height: 1.2em;
 }
-/*
-                                        ***prestation***
-                                        ----------------
-                                        ----------------
-*/
-#img-header-presta {
-    background-image: url(../img/Img-prestation-klap-affaire.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-    width: 100%;
-    overflow: hidden;
-    clear: both;
-    text-align: center;
-    font-size: 4em;
-    padding-top: 30%;
-    color: #ffffff;
-}
 
-@media screen and (max-width: 1200px){
-    #img-header-presta {
-        height: 300px;
-    }
-}
 
-@media screen and (max-width: 600px){
-    #img-header-presta {
-        height: 400px;
-    }
-}
-
-.presta-text {
-    padding-top: 5%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    line-height: 2em;
-}
-
-.presta-text ul {
-    margin-top: 2px;
-}
-
-#presta-container {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-#presta-container h2 {
-    text-align: center;
-    margin-top: 35px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#presta-container h3 {
-    text-align: center;
-    margin-top: 25px;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
-}
-
-.imgpresta img {
-    display: block;
-    width: 100%;
-}
 /**//**//**//**//**//**/
 /* MENTIONS LEGALES   */
 /**//**//**//**//**//**/
@@ -834,9 +782,9 @@ figure.effect-apollo:hover p {
 
 #contact-form label {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: block;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
 }
 
@@ -846,17 +794,16 @@ figure.effect-apollo:hover p {
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
-    width: 150px;
+    width: 170px;
     border: 0;
     height: 40px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 #contact-form #button-send:hover {
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #363636;
-    font-size: 0.9em;
 }
 
 #formulaire_nom,
@@ -865,11 +812,10 @@ figure.effect-apollo:hover p {
 #formulaire_email,
 #formulaire_message {
     display: block;
-    margin: 0 auto;
-    padding-left: 18px;
-    width: 40%;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 0 20px;
 }
 
 @media screen and (max-width: 1024px){
@@ -995,6 +941,7 @@ figure.effect-apollo:hover p {
         padding-top: 40px;
     }
 }
+
 .category button,
 .contact-container button {
     background-color: #00a1e5;

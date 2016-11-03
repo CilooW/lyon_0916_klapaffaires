@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section class="container-fluid video-presentation">
+    <section class="container-fluid video-presentation" id="video-display">
         <div class="container">
             <div class="col-xs-12">
                 <h2>Hook numéro 2</h2>
@@ -35,17 +35,18 @@
         </div>
         <!-- Video Bloc -->
         <div class="container-fluid">
-            {% for video in videos %}
-            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}" allowfullscreen></iframe>
+            <div class="row">
+                {% for video in videos %}
+                <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-description">
+                        <p>{{ video.description }}</p>
+                    </div>
                 </div>
-                <div class="video-description">
-                    <p>{{ video.description }}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-
         </div>
     </section>
     <!-- Description of our videos -->
@@ -58,10 +59,10 @@
                 <h3><em>{{ element.shortDesc }}</em></h3>
             </div>
             <div class="container-fluid">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-4">
                     <img class="img-presentation" src="{{ asset('img/reportage-video-lyon-klap-affaires.jpeg') }}" alt="#">
                 </div>
-                <div class="col-xs-12 col-md-6 text-presentation">
+                <div class="col-xs-12 col-md-8 text-presentation">
                     <p>
                        {{ element.longDesc }}
                     </p>
