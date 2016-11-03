@@ -29,33 +29,35 @@
 
         <!-- Video Bloc -->
         <div class="container-fluid">
-            {% for video in videos %}
-            <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}" allowfullscreen></iframe>
+            <div class="row">
+                {% for video in videos %}
+                <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-description">
+                        <p>{{ video.description }}</p>
+                    </div>
                 </div>
-                <div class="video-description">
-                    <p>{{ video.description }}</p>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-
         </div>
     </section>
     <!-- Description of our videos -->
     <section class="container-fluid video-presentation">
-        <div class="container">
+        <div class="container-fluid">
             {% for element in elements %}
             <div class="col-xs-12">
                 <h2>{{ element.categoryTitle }}</h2>
                 <hr />
                 <h3><em>{{ element.shortDesc }}</em></h3>
             </div>
+
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <img class="img-presentation" src="{{ asset(category_picture ~ element.picture) }}" alt="#">
                 </div>
-                <div class="col-xs-12 col-md-6 text-presentation">
+                <div class="col-xs-12 col-md-8 text-presentation">
                     <p>
                        {{ element.longDesc }}
                     </p>
