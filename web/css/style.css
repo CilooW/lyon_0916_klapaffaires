@@ -484,6 +484,11 @@ hr {
     display: inline-block;
     padding-right: 35px;
     font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+#video-presentation2 {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .video-template h2,
