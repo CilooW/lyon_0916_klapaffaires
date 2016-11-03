@@ -57,16 +57,17 @@ class CategoryVideoAdmin extends Admin
     }
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('category');
+        $datagridMapper->add('category', null, array(
+            'label' => 'Catégories'
+        ));
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper->addIdentifier('category', null, array(
-            'label' => 'Nom de l\'employé'))
+            'label' => 'Catégories'))
             ->add('_action', 'actions', array (
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
