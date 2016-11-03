@@ -18,8 +18,12 @@ class FormulaireType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add('prenom')
-            ->add('societe')
+            ->add('prenom', null, array(
+                'label' => 'Prénom'
+            ))
+            ->add('societe', null, array(
+                'label' => 'Société'
+            ))
             ->add('email')
             ->add('message')
             ->add('recaptcha', EWZRecaptchaType::class, array(
