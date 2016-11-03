@@ -51,13 +51,23 @@ class TestimonyAdmin extends Admin
     }
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('wName');
+        $datagridMapper->add('wName', null, array(
+            'label' => 'Nom du Témoin'));
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier('wName');
+            ->addIdentifier('wName', null, array(
+                'label' => 'Nom du Témoin')
+            )
+            ->add('_action', 'actions', array (
+                'actions' => array(
+                    'show' => array(),
+                    'edit' => array(),
+                    'delete' => array(),
+                )
+            ));
 
     }
 }

@@ -8,7 +8,7 @@ security:
             memory:
                 users:
                     admin:
-                        password: WCSroxx
+                        password: klap2016!
                         roles: 'ROLE_ADMIN'
 
     firewalls:

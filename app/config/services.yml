@@ -11,33 +11,28 @@ services:
     app.slugger:
         class: KlapBundle\Utils\Slugger
 
-    admin.categoryVideo:
-        class: KlapBundle\Admin\CategoryVideoAdmin
-        arguments: [~, KlapBundle\Entity\CategoryVideo, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: Categorie }
+    admin.testimony:
+            class: KlapBundle\Admin\TestimonyAdmin
+            arguments: [~, KlapBundle\Entity\Testimony, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, group: Accueil, label: Témoignage }
+
 
     admin.employees:
         class: KlapBundle\Admin\EmployeesAdmin
         arguments: [~, KlapBundle\Entity\Employees, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: Associés }
-
-    admin.formulaire:
-        class: KlapBundle\Admin\FormulaireAdmin
-        arguments: [~, KlapBundle\Entity\Formulaire, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: Formulaire }
+            - { name: sonata.admin, manager_type: orm, group: Qui-sommes-nous?, label: Associés }
 
     admin.integrationvideo:
         class: KlapBundle\Admin\IntegrationVideoAdmin
         arguments: [~, KlapBundle\Entity\IntegrationVideo, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: Video }
+            - { name: sonata.admin, manager_type: orm, group: Vidéos, label: Vidéos }
 
-    admin.testimony:
-        class: KlapBundle\Admin\TestimonyAdmin
-        arguments: [~, KlapBundle\Entity\Testimony, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: Témoignage }
+    admin.categoryVideo:
+            class: KlapBundle\Admin\CategoryVideoAdmin
+            arguments: [~, KlapBundle\Entity\CategoryVideo, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, group: Vidéos, label: Catégorie }
 
