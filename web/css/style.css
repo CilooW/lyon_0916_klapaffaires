@@ -86,8 +86,6 @@ hr {
 
 
 .button-header {
-    position: absolute;
-    margin: 45% 42% 0 42%;
     background-color: #00a1e5;
     color: #ffffff;
     border-radius: 10px;
@@ -95,30 +93,14 @@ hr {
     border: 0;
     height: 40px;
     font-size: 1.2em;
+    display: block;
+    margin: 40px auto;
 }
 
 .button-header:hover {
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #000000;
-}
-
-@media screen and (max-width: 1200px){
-    .button-header {
-        margin: 52% 40% 0 40%;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .button-header {
-        margin: 100% 36.8% 0 36.8%;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .button-header {
-        margin: 100% 0 0 15%;
-    }
 }
 
 #index html, body {
@@ -145,11 +127,15 @@ hr {
     margin-top: 35px;
 }
 
-#maintitle h1 {
+#maintitle {
     position : absolute;
+    top:42%;
+    width:100%;
+}
+
+#maintitle h1 {
     font-size: 4em;
     text-align: center;
-    padding: 35% 15% 0 15%;
     color: #ffffff;
     z-index: 5;
 }
@@ -162,7 +148,6 @@ hr {
 
 @media screen and (max-width: 1000px){
     #maintitle h1 {
-        padding: 30% 15% 0 15%;
         font-size: 3em;
     }
 }
@@ -170,7 +155,6 @@ hr {
 @media screen and (max-width: 450px){
     #maintitle h1 {
         font-size: 2em;
-        padding: 60% 0 0 0;
     }
 }
 
@@ -413,7 +397,7 @@ hr {
     #img-header-contact-form,
     #img-header-aboutus,
     #img-header-video {
-        height: 500px;
+        height: 500px;:
     }
 
 }
@@ -484,6 +468,11 @@ hr {
     display: inline-block;
     padding-right: 35px;
     font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+#video-presentation2 {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .video-template h2,
