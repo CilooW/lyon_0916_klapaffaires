@@ -44,7 +44,6 @@ class EmployeesAdmin extends Admin
             'label' => 'Nom de l\'employé'))
                     ->add('_action', 'actions', array (
                         'actions' => array(
-                            'show' => array(),
                             'edit' => array(),
                             'delete' => array(),
                         )
