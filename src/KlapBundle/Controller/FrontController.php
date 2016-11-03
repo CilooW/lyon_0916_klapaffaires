@@ -14,9 +14,9 @@ use KlapBundle\Entity\Formulaire;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use KlapBundle\Repository\IntegrationVideoRepository;
 use KlapBundle\Entity\IntegrationVideo;
 use Symfony\Component\HttpFoundation\Request;
+
 
 class FrontController extends Controller
 {

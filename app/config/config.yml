@@ -89,3 +89,12 @@ sonata_admin:
         user_block: '%kernel.root_dir%/Resources/views/custom_user_menu.html.twig'
 
 
+
+ewz_recaptcha:
+    public_key:  6LdV8AoUAAAAADyVR3k5QArglDzoP9oHzUbs2JvZ
+    private_key: 6LdV8AoUAAAAAERXn7qnXYC5zIkKpgp6eV_1I6jT
+    # Not needed as "%kernel.default_locale%" is the default value for the locale key
+    locale_key:  %kernel.default_locale%
+    locale_from_request: true
+
+
