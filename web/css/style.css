@@ -331,6 +331,13 @@ hr {
     width: 200px;
 }
 
+.employee-name {
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
 
 /**//**/ /**//**/
 /* Header page | Contact */

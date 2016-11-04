@@ -20,7 +20,7 @@
     <div>
     {% for employee in employees %}
         <div class="col-xs-12 col-md-4">
-            <h2>{{ employee.firstName }} {{ employee.lastName }}</h2>
+            <h4 class="employee-name">{{ employee.firstName }} {{ employee.lastName }}</h4>
             <hr />
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item video-youtube" src="{{ employee.videoUrl }}" allowfullscreen></iframe>
