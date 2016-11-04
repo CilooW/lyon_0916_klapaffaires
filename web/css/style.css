@@ -984,3 +984,34 @@ figure.effect-apollo:hover p {
 #wildcode:hover {
     color: #00a1e5;
 }
+
+/**//**//**//**/
+/*   LOGIN    */
+/**//**//**//**/
+
+.login {
+    text-align: center;
+    background-image: url(../img/reportage-video-lyon-klap-affaires.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    color:white;
+}
+
+#login-form {
+
+    border-radius:3%;
+    display:block;
+}
+
+#login-form label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    display: block;
+    text-align: left;
+}
+
+#login-title {
+    margin-bottom:180px;
+    margin-top: 30px;
+}

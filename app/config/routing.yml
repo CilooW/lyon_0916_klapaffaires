@@ -11,5 +11,9 @@ _sonata_admin:
     type: sonata_admin
     prefix: /admin
 
+login:
+    path:   /login
+    defaults: { _controller: KlapBundle:Security:login }
+
 logout:
     path: /admin/logout
