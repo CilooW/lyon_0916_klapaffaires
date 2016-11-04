@@ -17,7 +17,11 @@
                     Un moyen simple et efficace de faire le buzz, si celle-ci est faite de manière professionnelle...</em></h3>
             <ul class="category">
                 {% for categoryvideo in categoryVideos %}
-                <li><a href="{{ path("front_videos", {'id': categoryvideo.id}) }}"><button>{{ categoryvideo.category }}</button></a></li>
+                    {% if categoryvideo.id != app.request.get('id') %}
+                        <li><a href="{{ path("front_videos", {'id': categoryvideo.id}) }}"><button>{{ categoryvideo.category }}</button></a></li>
+                    {% else %}
+                        <li><a href="{{ path("front_videos", {'id': categoryvideo.id}) }}"><button class="actives">{{ categoryvideo.category }}</button></a></li>
+                    {% endif %}
                 {% endfor %}
 
 
