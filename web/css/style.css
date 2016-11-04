@@ -603,7 +603,6 @@ hr {
 .grid figure img {
     position: relative;
     display: block;
-    min-height: 100%;
     max-width: 100%;
     opacity: 0.8;
 }
@@ -630,6 +629,8 @@ hr {
     width: 100%;
     height: 100%;
 }
+
+
 
 /*-----------------*/
 /***** Apollo *****/
@@ -920,7 +921,7 @@ figure.effect-apollo:hover p {
 }
 
 .mentions-legales {
-    text-align: left;
+    text-align: center;
     padding-bottom: 30px;
     font-size: 0.8em;
 }
@@ -953,6 +954,12 @@ figure.effect-apollo:hover p {
     font-size: 0.9em;
 }
 
+.category .actives {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #363636;
+    font-size: 0.9em;
+}
 #mentions-legales {
     text-decoration: none;
     color: #ffffff;
