@@ -421,7 +421,10 @@ hr {
 #img-header-video-category h1,
 #img-header-contact-form h1,
 #img-header-aboutus h1,
-#img-header-video h1 {
+#img-header-video h1,
+#img-header-error-403,
+#img-header-error-404,
+#img-header-error-500 {
     text-align: center;
     font-size: 4em;
     display: block;
@@ -1014,4 +1017,39 @@ figure.effect-apollo:hover p {
 #login-title {
     margin-bottom:180px;
     margin-top: 30px;
+}
+
+
+/**//**//**//**/
+/*   ERROR    */
+/**//**//**//**/
+
+#img-header-error-403 {
+    background-image: url(../img/error-403.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+#img-header-error-404 {
+    background-image: url(../img/error-404.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+#img-header-error-500 {
+    background-image: url(../img/error-500.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
 }
