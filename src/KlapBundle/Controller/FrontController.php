@@ -105,7 +105,7 @@ class FrontController extends Controller
             $message = \Swift_Message::newInstance()
                 ->setSubject('Nouveau message de ' . $formulaire->getNom(). ' '  . $formulaire->getPrenom() . ' reçu de votre site Klap Affaires')
                 ->setFrom($formulaire->getEmail())
-                ->setTo('etudiants.wcs.lyon@gmail.com')
+                ->setTo('info@klapaffaires.fr')
                 ->setBody('Vous venez de recevoir un mail de '. $formulaire->getNom() . ' ' . $formulaire->getPrenom() . 'Le message est : ' . $formulaire->getMessage()
                 );
             $this->get('mailer')->send($message);
