@@ -8,6 +8,11 @@
         </div>
     </div>
     <section class="container-fluid">
+        {% for message in app.session.flashbag.get('info') %}
+
+            <p id="message_formulaire">{{ message }}</p>
+
+        {% endfor %}
         <div class="container video-category">
             <h2>Discutons ensemble de votre projet autour d'un café!</h2>
             <hr />

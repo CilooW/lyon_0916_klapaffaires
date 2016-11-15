@@ -820,6 +820,17 @@ figure.effect-apollo:hover p {
     padding: 0 20px;
 }
 
+#message_formulaire {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+    padding-top: 30px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    color: green;
+}
+
 @media screen and (max-width: 1024px){
     #formulaire_nom,
     #formulaire_prenom,

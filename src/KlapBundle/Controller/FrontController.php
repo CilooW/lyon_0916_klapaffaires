@@ -94,6 +94,7 @@ class FrontController extends Controller
      */
     public function newAction(Request $request)
     {
+        $session = $request->getSession();
         $formulaire = new Formulaire();
         $form = $this->createForm('KlapBundle\Form\FormulaireType', $formulaire);
         $form->handleRequest($request);
@@ -109,6 +110,7 @@ class FrontController extends Controller
                 ->setBody('Vous venez de recevoir un mail de '. $formulaire->getNom() . ' ' . $formulaire->getPrenom() . 'Le message est : ' . $formulaire->getMessage()
                 );
             $this->get('mailer')->send($message);
+            $session->getFlashBag()->add('info', 'Votre message a bien été envoyé');
 
             return $this->redirectToRoute('front_contact', array('id' => $formulaire->getId()));
         }
