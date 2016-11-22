@@ -10,6 +10,7 @@ namespace KlapBundle\Controller;
 
 
 
+use KlapBundle\Entity\CategoryVideo;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -41,18 +42,18 @@ class FrontController extends Controller
         );
     }
 
-    public function videosAction()
+    public function videosAction(CategoryVideo $categoryVideo)
     {
+        //$repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
+        //$videos = $repository->findAll();
 
-        $repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
-        $videos = $repository->findAll();
-
-       $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
+        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
         $elements = $repository->findAll();
 
-
         return $this->render('front/videos.html.twig', array(
-           "videos" => $videos, "elements" => $elements));
+            "videos" => $categoryVideo->getIntegrationVideo(),
+            "elements" => $elements,
+        ));
     }
 
     public function videosCategoryAction()
@@ -98,14 +99,13 @@ class FrontController extends Controller
         } else {
             $errors = $resp->getErrorCodes();
         }
-        $Request = $this->getRequest();
-        if ($Request->getMethod() == "POST") {
+        if ($request->getMethod() == "POST") {
             //$Subject = $Request->get("Subject");
-            $email = $Request->get("email");
-            $message = $Request->get("message");
-            $last_name = $Request->get("last_name");
-            $first_name = $Request->get("first_name");
-            $society = $Request->get("society");
+            $email = $request->get("email");
+            $message = $request->get("message");
+            $last_name = $request->get("last_name");
+            $first_name = $request->get("first_name");
+            $society = $request->get("society");
 
             $mailer = $this->container->get('mailer');
             $transport = \Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')

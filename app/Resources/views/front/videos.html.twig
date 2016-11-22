@@ -5,26 +5,31 @@
     <div class="container-fluid" id="img-header-video">
         <div class="container">
             <h1>Spécialiste du <strong>publireportage</strong> vidéo!</h1>
-            <a href="{{ path('front_contact') }}"><button class="button-intern">Contactez-nous!</button></a>
+            <a href="{{ path('front_contact') }}">
+                <button class="button-intern">Contactez-nous!</button>
+            </a>
         </div>
     </div>
     <!-- Category list -->
     <section class="container-fluid">
         <div class="container video-category">
             <h2>Nos catégories</h2>
-            <hr />
+            <hr/>
             <h3><em>Les vidéos sont de plus en plus privilégiées et suscitent un véritable attrait.
-                    Un moyen simple et efficace de faire le buzz, si celle-ci est faite de manière professionnelle...</em></h3>
+                    Un moyen simple et efficace de faire le buzz, si celle-ci est faite de manière
+                    professionnelle...</em></h3>
             <ul class="category">
                 {% for element in elements %}
                     {% if element.id != app.request.get('id') %}
-                        <li><a href="{{ path("front_videos", {'id': element.id}) }}"><button>{{ element.category }}</button></a></li>
+                        <li><a href="{{ path("front_videos", {'id': element.id}) }}">
+                                <button>{{ element.category }}</button>
+                            </a></li>
                     {% else %}
-                        <li><a href="{{ path("front_videos", {'id': element.id}) }}"><button class="actives">{{ element.category }}</button></a></li>
+                        <li><a href="{{ path("front_videos", {'id': element.id}) }}">
+                                <button class="actives">{{ element.category }}</button>
+                            </a></li>
                     {% endif %}
                 {% endfor %}
-
-
             </ul>
         </div>
     </section>
@@ -36,16 +41,15 @@
             <div class="row">
 
                 {% for video in videos %}
-                {% if video.video.id == app.request.get('id') %}
-                <div class="col-xs-12 col-sm-6 col-md-4 container-video">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}" allowfullscreen></iframe>
+                    <div class="col-xs-12 col-sm-6 col-md-4 container-video">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item video-youtube" src="{{ asset(video.iframe) }}"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-description">
+                            <p>{{ video.description }}</p>
+                        </div>
                     </div>
-                    <div class="video-description">
-                        <p>{{ video.description }}</p>
-                    </div>
-                </div>
-                    {% endif %}
                 {% endfor %}
             </div>
         </div>
@@ -54,10 +58,9 @@
     <section class="container-fluid video-presentation">
         <div class="row" id="video-presentation2">
             {% for element in elements %}
-                {% if element.id == app.request.get('id') %}
             <div class="col-xs-12">
                 <h2>{{ element.categoryTitle }}</h2>
-                <hr />
+                <hr/>
                 <h3><em>{{ element.shortDesc }}</em></h3>
             </div>
 
@@ -67,11 +70,10 @@
                 </div>
                 <div class="col-md-12 col-lg-8 text-presentation">
                     <p>
-                       {{ element.longDesc }}
+                        {{ element.longDesc }}
                     </p>
                 </div>
-                {% endif %}
-             {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </section>
