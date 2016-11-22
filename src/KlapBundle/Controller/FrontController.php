@@ -9,13 +9,8 @@
 namespace KlapBundle\Controller;
 
 
-use KlapBundle\Entity\CategoryVideo;
-use KlapBundle\Entity\Formulaire;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use KlapBundle\Entity\IntegrationVideo;
-use Symfony\Component\HttpFoundation\Request;
 
 
 class FrontController extends Controller
@@ -45,19 +40,18 @@ class FrontController extends Controller
         );
     }
 
-    public function videosAction(IntegrationVideo $integrationVideo, CategoryVideo $categoryVideo)
+    public function videosAction()
     {
+
         $repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
-        $videos = $repository->findVideoByCategoryId($integrationVideo->getId());
+        $videos = $repository->findAll();
 
-        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
-        $categoryVideos = $repository->findAll();
+       $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
+        $elements = $repository->findAll();
 
-        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
-        $elements = $repository->findElementById($categoryVideo->getId());
 
         return $this->render('front/videos.html.twig', array(
-            "videos" => $videos, "categoryVideos" => $categoryVideos, "elements" => $elements));
+           "videos" => $videos, "elements" => $elements));
     }
 
     public function videosCategoryAction()
@@ -92,32 +86,40 @@ class FrontController extends Controller
      * Creates a new Formulaire entity.
      *
      */
-    public function newAction(Request $request)
+    public function newAction($gRecaptchaResponse, $remoteIp)
     {
-        $session = $request->getSession();
-        $formulaire = new Formulaire();
-        $form = $this->createForm('KlapBundle\Form\FormulaireType', $formulaire);
-        $form->handleRequest($request);
+        $Request = $this->container->get('request_stack')->getCurrentRequest();
+        $secret = '6LdV8AoUAAAAAERXn7qnXYC5zIkKpgp6eV_1I6jT';
+        $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+        $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
+        if ($resp->isSuccess()) {
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($formulaire);
-            $em->flush();
-            $message = \Swift_Message::newInstance()
-                ->setSubject('Nouveau message de ' . $formulaire->getNom(). ' '  . $formulaire->getPrenom() . ' reçu de votre site Klap Affaires')
-                ->setFrom($formulaire->getEmail())
-                ->setTo('info@klapaffaires.fr')
-                ->setBody('Vous venez de recevoir un mail de '. $formulaire->getNom() . ' ' . $formulaire->getPrenom() . 'Le message est : ' . $formulaire->getMessage()
-                );
-            $this->get('mailer')->send($message);
-            $session->getFlashBag()->add('info', 'Votre message a bien été envoyé');
-
-            return $this->redirectToRoute('front_contact', array('id' => $formulaire->getId()));
+        } else {
+            $errors = $resp->getErrorCodes();
         }
+        if ($Request->getMethod() == "POST") {
+            //$Subject = $Request->get("Subject");
+            $email = $Request->get("email");
+            $message = $Request->get("message");
+            $last_name = $Request->get("last_name");
+            $first_name = $Request->get("first_name");
+            $tel = $Request->get("tel");
 
-        return $this->render('front/contact.html.twig', array(
-            'formulaire' => $formulaire,
-            'form' => $form->createView(),
-        ));
+            $mailer = $this->container->get('mailer');
+            $transport = \Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
+                ->setUsername('etudiants.wcs.lyon@gmail.com')
+                ->setPassword('Teamsocket88');
+            $mailer = \Swift_Mailer::newInstance($transport);
+            $message = \Swift_Message::newInstance('Test')
+                ->setSubject("Un nouveau message sur klapaffaires")
+                ->setFrom($email)
+                ->setTo('etudiants.wcs.lyon@gmail.com')
+                ->setContentType("text/html")
+                ->setBody('email : ' . $email . '<br />' . 'Prénom : ' . $first_name . '<br />' . 'Nom : ' . $last_name . '<br />' .
+                    'N° de téléphone : ' . $tel . '<br /><br />' . $message);
+            $this->get('mailer')->send($message);
+
+        }
+        return $this->render('front/contact.html.twig');
     }
 }
