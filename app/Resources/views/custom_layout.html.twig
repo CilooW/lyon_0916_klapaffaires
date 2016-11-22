@@ -36,6 +36,7 @@ file that was distributed with this source code.
     {% endblock %}
 
     {% block javascripts %}
+
         <script>
             window.SONATA_CONFIG = {
                 CONFIRM_EXIT: {% if admin_pool is defined and admin_pool.getOption('confirm_exit') %}true{% else %}false{% endif %},
@@ -241,7 +242,7 @@ file that was distributed with this source code.
                             {% endif %}
                         {% endblock side_bar_nav %}
                         {% block side_bar_after_nav %}
-                            <p class="text-center small" style="border-top: 1px solid #444444; padding-top: 10px"><a href="http://sonata-project.org" rel="noreferrer" target="_blank">sonata project</a></p>
+                            <p class="text-center small" style="border-top: 1px solid #444444; padding-top: 10px"><a href="https://www.youtube.com/channel/UCCMSs4vsqVsx5iGDIfy9bfA" rel="noreferrer" target="_blank">chaîne youtube Klapaffaires</a></p>
                         {% endblock %}
                     {% endblock sonata_side_nav %}
                 </section>
@@ -331,8 +332,7 @@ file that was distributed with this source code.
     </div>
 {% endblock sonata_wrapper %}
 
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<script>tinymce.init({ selector:'textarea' });</script>
+
 
 </body>
 </html>

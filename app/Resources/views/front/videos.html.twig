@@ -49,7 +49,7 @@
                                     allowfullscreen></iframe>
                         </div>
                         <div class="video-description">
-                            <p>{{ video.description }}</p>
+                            <p>{{ video.description | raw }}</p>
                         </div>
                     </div>
                 {% endfor %}
@@ -60,6 +60,7 @@
     <section class="container-fluid video-presentation">
         <div class="row" id="video-presentation2">
             {% for element in elements %}
+            {% if element.id == app.request.get('id') %}
             <div class="col-xs-12">
                 <h2>{{ element.categoryTitle }}</h2>
                 <hr/>
@@ -76,6 +77,7 @@
                        {{ element.longDesc | raw}}
                     </p>
                 </div>
+                {% endif %}
              {% endfor %}
 
             </div>
