@@ -89,6 +89,7 @@ sonata_admin:
     title_logo: img/favico.png
     templates:
         user_block: '%kernel.root_dir%/Resources/views/custom_user_menu.html.twig'
+        layout: '%kernel.root_dir%/Resources/views/custom_layout.html.twig'
 
 
 

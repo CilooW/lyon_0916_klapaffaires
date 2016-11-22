@@ -22,7 +22,7 @@ class CategoryVideoAdmin extends Admin
             ));
         $formMapper->add('short_desc', 'text',
             array(
-                'label' => 'Courte description'
+                'label' => 'Courte description(maximum 50 caractères, espaces compris)'
             ));
         $formMapper->add('long_desc', 'textarea',
             array(
