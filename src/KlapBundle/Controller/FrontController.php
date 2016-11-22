@@ -9,12 +9,9 @@
 namespace KlapBundle\Controller;
 
 
-use KlapBundle\Entity\CategoryVideo;
 use KlapBundle\Entity\Formulaire;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use KlapBundle\Entity\IntegrationVideo;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -45,19 +42,17 @@ class FrontController extends Controller
         );
     }
 
-    public function videosAction(IntegrationVideo $integrationVideo, CategoryVideo $categoryVideo)
+    public function videosAction()
     {
+
         $repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
-        $videos = $repository->findVideoByCategoryId($integrationVideo->getId());
+        $videos = $repository->findAll();
 
         $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
-        $categoryVideos = $repository->findAll();
-
-        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
-        $elements = $repository->findElementById($categoryVideo->getId());
+        $elements = $repository->findAll();
 
         return $this->render('front/videos.html.twig', array(
-            "videos" => $videos, "categoryVideos" => $categoryVideos, "elements" => $elements));
+            "videos" => $videos, "elements" => $elements));
     }
 
     public function videosCategoryAction()
