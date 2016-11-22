@@ -107,7 +107,7 @@ class FrontController extends Controller
             $this->get('mailer')->send($message);
             $session->getFlashBag()->add('info', 'Votre message a bien été envoyé');
 
-            return $this->redirectToRoute('front_contact', array('id' => $formulaire->getId()));
+            return $this->redirectToRoute('front_contact');
         }
 
         return $this->render('front/contact.html.twig', array(
