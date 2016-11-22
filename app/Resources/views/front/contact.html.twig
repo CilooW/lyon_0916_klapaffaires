@@ -7,7 +7,7 @@
             <h1>Contactez <strong>Klap'Affaires</strong></h1>
         </div>
     </div>
-    <section class="container-fluid">
+    <div class="container-fluid">
         {% for message in app.session.flashbag.get('info') %}
 
             <p id="message_formulaire">{{ message }}</p>
@@ -20,20 +20,44 @@
         </div>
         <div class="col-xs-12 col-md-6 col-md-offset-3" id="contact-form">
             <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-            {{ form_start(form) }}
-            {{ form_widget(form) }}
-            {% form_theme form 'EWZRecaptchaBundle:Form:ewz_recaptcha_widget.html.twig' %}
+                <form name="formulaire" action="{{ path('front_contact') }}" method="post" >
+                    <div id="formulaire">
 
-            {{ form_widget(form.recaptcha, { 'attr': {
-                'options' : {
-                    'theme': 'light',
-                    'type': 'image',
-                    'size': 'normal'
-                },
-            } }) }}
-            <input id="button-send" type="submit" value="Envoyer votre message" />
-            {{ form_end(form) }}
+                        <div >
+                            <label class="required" for="first_name">Prénom</label>
+                            <input  name="first_name" id="formulaire_prenom" type="text" required>
+                        </div>
+                        <div>
+                            <label class="required" for="last_name">Nom</label>
+                            <input  name="last_name" id="formulaire_nom"  type="text" required>
+                        </div>
+                        <div>
+                            <label class="required" for="email">Email</label>
+                            <input  name="email" id="formulaire_email"  type="email" required>
+                        </div>
+                        <div>
+                            <label class="required" for="society">Société</label>
+                            <input  name="society" id="formulaire_societe"  type="text" >
+                        </div>
+                        <div>
+                            <label class="required" for="message">Message</label>
+                            <textarea id="formulaire_message" name="message" rows="10" minlength="5" required></textarea>
+                        </div>
+                        <div>
+                            <label for="formulaire_recaptcha">Recaptcha</label>
+                            <div  name="formulaire_recaptcha" class="g-recaptcha" data-sitekey="6Lf-jwoUAAAAAHYZflFv0otlfv8RDnd8qQ8936l3" data-callback="enableBtn"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="button-send" name="submit" type="submit" value="Envoyer le message" id="contact_forms">
+                        </div>
+                        <div>{{ app.request.get('sended') }}</div>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+    {% block javascripts %}
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        {% endblock %}
 {% endblock %}

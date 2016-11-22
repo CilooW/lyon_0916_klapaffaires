@@ -26,7 +26,9 @@
         "sonata-project/doctrine-orm-admin-bundle": "2.3.*",
         "sonata-project/easy-extends-bundle": "^2.1",
         "cocur/slugify": "^2.3",
-        "excelwebzone/recaptcha-bundle": "^1.4"
+        "excelwebzone/recaptcha-bundle": "^1.4",
+        "google/recaptcha": "~1.1"
+
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

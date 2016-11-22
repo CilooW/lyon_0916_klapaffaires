@@ -27,6 +27,4 @@ class IntegrationVideoRepository extends EntityRepository
 
 
 
-
-
 }
