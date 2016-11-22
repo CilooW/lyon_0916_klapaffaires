@@ -11,6 +11,7 @@ namespace KlapBundle\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 
 class FrontController extends Controller
@@ -86,9 +87,9 @@ class FrontController extends Controller
      * Creates a new Formulaire entity.
      *
      */
-    public function newAction($gRecaptchaResponse, $remoteIp)
+    public function newAction($gRecaptchaResponse, $remoteIp, Request $request)
     {
-        $Request = $this->container->get('request_stack')->getCurrentRequest();
+        $session = $request->getSession();
         $secret = '6LdV8AoUAAAAAERXn7qnXYC5zIkKpgp6eV_1I6jT';
         $recaptcha = new \ReCaptcha\ReCaptcha($secret);
         $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
@@ -97,13 +98,14 @@ class FrontController extends Controller
         } else {
             $errors = $resp->getErrorCodes();
         }
+        $Request = $this->getRequest();
         if ($Request->getMethod() == "POST") {
             //$Subject = $Request->get("Subject");
             $email = $Request->get("email");
             $message = $Request->get("message");
             $last_name = $Request->get("last_name");
             $first_name = $Request->get("first_name");
-            $tel = $Request->get("tel");
+            $society = $Request->get("society");
 
             $mailer = $this->container->get('mailer');
             $transport = \Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
@@ -116,8 +118,9 @@ class FrontController extends Controller
                 ->setTo('etudiants.wcs.lyon@gmail.com')
                 ->setContentType("text/html")
                 ->setBody('email : ' . $email . '<br />' . 'Prénom : ' . $first_name . '<br />' . 'Nom : ' . $last_name . '<br />' .
-                    'N° de téléphone : ' . $tel . '<br /><br />' . $message);
-            $this->get('mailer')->send($message);
+                    'Nom de la société: ' . $society . '<br /><br />' . $message);
+            $mailer->send($message);
+            $session->getFlashBag()->add('info', 'Votre message a bien été envoyé');
 
         }
         return $this->render('front/contact.html.twig');
