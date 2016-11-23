@@ -2,7 +2,6 @@
 
 namespace KlapBundle\Entity;
 
-use Cocur\Slugify\Slugify;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -53,7 +52,6 @@ class CategoryVideo
     public function __construct()
     {
         $this->integrationVideo = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->slug = new Slugify();
 
     }
 

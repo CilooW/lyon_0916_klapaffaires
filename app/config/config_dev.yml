@@ -30,7 +30,3 @@ monolog:
         #    type:   chromephp
         #    level:  info
 
-swiftmailer:
-    transport: gmail
-    username:  etudiants.wcs.lyon@gmail.com
-    password:  Teamsocket88
