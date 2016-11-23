@@ -9,12 +9,11 @@
 namespace KlapBundle\Controller;
 
 
-use KlapBundle\Entity\CategoryVideo;
 use KlapBundle\Entity\Formulaire;
 
+
+use KlapBundle\Entity\CategoryVideo;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use KlapBundle\Entity\IntegrationVideo;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -45,19 +44,19 @@ class FrontController extends Controller
         );
     }
 
-    public function videosAction(IntegrationVideo $integrationVideo, CategoryVideo $categoryVideo)
+
+    public function videosAction(CategoryVideo $categoryVideo)
     {
-        $repository = $this->getDoctrine()->getRepository("KlapBundle:IntegrationVideo");
-        $videos = $repository->findVideoByCategoryId($integrationVideo->getId());
+
 
         $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
-        $categoryVideos = $repository->findAll();
-
-        $repository = $this->getDoctrine()->getRepository("KlapBundle:CategoryVideo");
-        $elements = $repository->findElementById($categoryVideo->getId());
+        $elements = $repository->findAll();
 
         return $this->render('front/videos.html.twig', array(
-            "videos" => $videos, "categoryVideos" => $categoryVideos, "elements" => $elements));
+
+            "videos" => $categoryVideo->getIntegrationVideo(),
+            "elements" => $elements,
+        ));
     }
 
     public function videosCategoryAction()
@@ -92,32 +91,39 @@ class FrontController extends Controller
      * Creates a new Formulaire entity.
      *
      */
-    public function newAction(Request $request)
+    public function newAction($gRecaptchaResponse, $remoteIp, Request $request)
     {
         $session = $request->getSession();
-        $formulaire = new Formulaire();
-        $form = $this->createForm('KlapBundle\Form\FormulaireType', $formulaire);
-        $form->handleRequest($request);
+        $secret = '6LdV8AoUAAAAAERXn7qnXYC5zIkKpgp6eV_1I6jT';
+        $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+        $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
+        if (!$resp->isSuccess()) {
+            $errors = $resp->getErrorCodes();
+        }
+        if ($request->getMethod() == "POST") {
+            //$Subject = $Request->get("Subject");
+            $email = $request->get("email");
+            $message = $request->get("message");
+            $last_name = $request->get("last_name");
+            $first_name = $request->get("first_name");
+            $society = $request->get("society");
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($formulaire);
-            $em->flush();
-            $message = \Swift_Message::newInstance()
-                ->setSubject('Nouveau message de ' . $formulaire->getNom(). ' '  . $formulaire->getPrenom() . ' reçu de votre site Klap Affaires')
-                ->setFrom($formulaire->getEmail())
+            $mailer = $this->container->get('mailer');
+            $transport = \Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
+                ->setUsername('info@klapaffaires.fr')
+                ->setPassword(' ');
+            $mailer = \Swift_Mailer::newInstance($transport);
+            $message = \Swift_Message::newInstance('Test')
+                ->setSubject("Un nouveau message sur klapaffaires")
+                ->setFrom('info@klapaffaires.fr')
                 ->setTo('info@klapaffaires.fr')
-                ->setBody('Vous venez de recevoir un mail de '. $formulaire->getNom() . ' ' . $formulaire->getPrenom() . 'Le message est : ' . $formulaire->getMessage()
-                );
-            $this->get('mailer')->send($message);
+                ->setContentType("text/html")
+                ->setBody('email : ' . $email . '<br />' . 'Prénom : ' . $first_name . '<br />' . 'Nom : ' . $last_name . '<br />' .
+                    'Nom de la société: ' . $society . '<br /><br />' . $message);
+            $mailer->send($message);
             $session->getFlashBag()->add('info', 'Votre message a bien été envoyé');
 
-            return $this->redirectToRoute('front_contact', array('id' => $formulaire->getId()));
         }
-
-        return $this->render('front/contact.html.twig', array(
-            'formulaire' => $formulaire,
-            'form' => $form->createView(),
-        ));
+        return $this->render('front/contact.html.twig');
     }
 }

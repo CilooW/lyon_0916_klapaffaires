@@ -98,6 +98,7 @@ A chaque fois que vous créerez une nouvelle catégorie, un nouveau bouton s'aff
     * cliquez sur "__mettre à jour__" ou sur "__mettre à jour et fermer__"
 
 - **Supprimer une catégorie** : 
+    * __Attention ! si vous souhaitez supprimer une catégorie, il faut vérifier qu'il n'y ait plus de vidéos associées à cette catégorie. S'il reste des vidéos associées à cette catégorie, vous aurez un message d'erreur et l'impossibilité de supprimer ladite catégorie.__
     * Cliquez sur "__liste__" 
     * Cliquez sur "__supprimer__" sur la ligne de la catégorie que vous voulez supprimer.
     * Si vous souhaitez supprimer plusieurs catégories d'un coup, cliquez sur les petits carrés blancs à gauche de la liste. Une fois toutes les catégories sélectionnées, choisissez l'option "supprimer" en bas de la liste et cliquez sur "ok".

@@ -67,6 +67,9 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
+    encryption: ssl
+    auth_mode: login
+
     transport: "%mailer_transport%"
     host:      "%mailer_host%"
     username:  "%mailer_user%"
@@ -87,12 +90,13 @@ sonata_admin:
     title_logo: img/favico.png
     templates:
         user_block: '%kernel.root_dir%/Resources/views/custom_user_menu.html.twig'
+        layout: '%kernel.root_dir%/Resources/views/custom_layout.html.twig'
 
 
 
 ewz_recaptcha:
-    public_key:  6LdV8AoUAAAAADyVR3k5QArglDzoP9oHzUbs2JvZ
-    private_key: 6LdV8AoUAAAAAERXn7qnXYC5zIkKpgp6eV_1I6jT
+    public_key:  6LcMjAsUAAAAAE3ERlLCqLZwSEQWwKpo0zJMXh0q
+    private_key: 6LfgjAsUAAAAAGJiiEedjT95q9JeibR2MlMUTJb7
     # Not needed as "%kernel.default_locale%" is the default value for the locale key
     locale_key:  %kernel.default_locale%
     locale_from_request: true
