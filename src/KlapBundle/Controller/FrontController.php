@@ -113,13 +113,13 @@ class FrontController extends Controller
 
             $mailer = $this->container->get('mailer');
             $transport = \Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
-                ->setUsername('etudiants.wcs.lyon@gmail.com')
-                ->setPassword('Teamsocket88');
+                ->setUsername('info@klapaffaires.fr')
+                ->setPassword(' ');
             $mailer = \Swift_Mailer::newInstance($transport);
             $message = \Swift_Message::newInstance('Test')
                 ->setSubject("Un nouveau message sur klapaffaires")
                 ->setFrom($email)
-                ->setTo('etudiants.wcs.lyon@gmail.com')
+                ->setTo('info@klapaffaires.fr')
                 ->setContentType("text/html")
                 ->setBody('email : ' . $email . '<br />' . 'Prénom : ' . $first_name . '<br />' . 'Nom : ' . $last_name . '<br />' .
                     'Nom de la société: ' . $society . '<br /><br />' . $message);
