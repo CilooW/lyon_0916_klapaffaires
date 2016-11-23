@@ -97,10 +97,7 @@ class FrontController extends Controller
         $secret = '6LdV8AoUAAAAAERXn7qnXYC5zIkKpgp6eV_1I6jT';
         $recaptcha = new \ReCaptcha\ReCaptcha($secret);
         $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
-        if ($resp->isSuccess()) {
-
-
-        } else {
+        if (!$resp->isSuccess()) {
             $errors = $resp->getErrorCodes();
         }
         if ($request->getMethod() == "POST") {
@@ -118,7 +115,7 @@ class FrontController extends Controller
             $mailer = \Swift_Mailer::newInstance($transport);
             $message = \Swift_Message::newInstance('Test')
                 ->setSubject("Un nouveau message sur klapaffaires")
-                ->setFrom($email)
+                ->setFrom('info@klapaffaires.fr')
                 ->setTo('info@klapaffaires.fr')
                 ->setContentType("text/html")
                 ->setBody('email : ' . $email . '<br />' . 'Prénom : ' . $first_name . '<br />' . 'Nom : ' . $last_name . '<br />' .
